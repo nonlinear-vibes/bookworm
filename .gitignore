@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+
+# Local data: raw dataset, Qdrant storage, SQLite database
+data/
+
+# Locally installed binaries (Qdrant runs from here until Docker)
+tools/
