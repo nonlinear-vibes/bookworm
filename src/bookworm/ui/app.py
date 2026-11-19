@@ -23,9 +23,9 @@ from bookworm.ui.account import availability, load_account
 from bookworm.ui.runner import run_until_pause
 
 
-DESCRIPTION_PREVIEW_CHARS = 150
+DESCRIPTION_PREVIEW_CHARS = 130
 
-st.set_page_config(page_title="Bookworm AI", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Bookworm", page_icon="📚", layout="wide")
 
 # Fit both columns to the window so the page itself never scrolls and the chat
 # input stays in view; the panels scroll inside instead. Heights are the window
@@ -188,7 +188,7 @@ def run_step(payload, label: str) -> None:
 left, right = st.columns([5, 6], gap="large")
 
 with left:
-    st.title("📚 Bookworm AI", anchor=False)
+    st.title("📚 Bookworm", anchor=False)
     with st.container(height=600, border=False, key="left_panel"):
         render_account()
         render_search_results(values.get("search_results", []))
