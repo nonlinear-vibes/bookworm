@@ -1,0 +1,22 @@
+# Keep the build context small: only pyproject.toml, uv.lock, README.md,
+# src/, scripts/ and evals/ are needed inside the image.
+
+# Local environments and caches
+.venv/
+**/__pycache__/
+**/*.py[oc]
+.vscode/
+.git/
+
+# Secrets and local settings (compose.yaml sets the environment instead)
+.env
+
+# Runtime data: the CSV is downloaded at init, Qdrant and SQLite live in volumes
+data/
+
+# Locally installed binaries
+tools/
+
+# Docker files themselves
+docker/
+compose.yaml

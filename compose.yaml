@@ -1,20 +1,79 @@
-# Stub: three services, matching the planned Docker setup.
-# TODO: finish and test once everything works locally.
+# Bookworm services. Only the app UI is published to the host; Ollama and
+# Qdrant are reached over the compose network by service name.
+# TODO (step 5): app service.
+
+# Model names, shared by the Ollama service (which pulls them) and the app.
+x-models: &models
+  LLM_MODEL: mistral
+  EMBEDDING_MODEL: qwen3-embedding:0.6b
+
+# Shared by the init and app services: one image, same settings and data.
+x-app: &app
+  build:
+    context: .
+    dockerfile: docker/app.Dockerfile
+  image: bookworm-app
+  environment:
+    <<: *models
+    OLLAMA_BASE_URL: http://ollama:11434
+    QDRANT_URL: http://qdrant:6333
+    BOOKS_CSV_PATH: /app/data/raw/books.csv
+    SQLITE_PATH: /app/data/sqlite/bookworm.db
+    BOOK_LIMIT: 2000
+  volumes:
+    - appdata:/app/data
 
 services:
   ollama:
-    image: ollama/ollama
-    # TODO: entrypoint that pulls the models on first start.
-    # entrypoint: ["/bin/sh", "/ollama-entrypoint.sh"]
+    image: ollama/ollama:0.40.16
+    entrypoint: ["/bin/sh", "/ollama-entrypoint.sh"]
+    environment:
+      <<: *models
     volumes:
       - ollama:/root/.ollama
-      # - ./docker/ollama-entrypoint.sh:/ollama-entrypoint.sh:ro
-    # TODO: GPU access requires the NVIDIA container runtime.
+      - ./docker/ollama-entrypoint.sh:/ollama-entrypoint.sh:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    healthcheck:
+      # Healthy only once both models are pulled (first start downloads ~5 GB).
+      test: ["CMD-SHELL", "ollama show \"$$LLM_MODEL\" >/dev/null && ollama show \"$$EMBEDDING_MODEL\" >/dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 60m
+      start_interval: 5s
 
   qdrant:
-    image: qdrant/qdrant
+    image: qdrant/qdrant:v1.20.2
+    environment:
+      QDRANT__TELEMETRY_DISABLED: "true"
     volumes:
-      - ./data/qdrant_storage:/qdrant/storage
+      - qdrant:/qdrant/storage
+    healthcheck:
+      # The image has no curl/wget, so query /readyz through bash's /dev/tcp.
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/6333 && printf 'GET /readyz HTTP/1.0\\r\\n\\r\\n' >&3 && grep -q '200 OK' <&3"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+      start_interval: 2s
+
+  # One-off: download the CSV, ingest into Qdrant, seed SQLite. Skips
+  # whatever is already done, so it is fast on every later start.
+  init:
+    <<: *app
+    command: ["python", "scripts/init_data.py"]
+    restart: "no"
+    depends_on:
+      ollama:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
 
   app:
     build:
@@ -32,3 +91,5 @@ services:
 
 volumes:
   ollama:
+  qdrant:
+  appdata:
