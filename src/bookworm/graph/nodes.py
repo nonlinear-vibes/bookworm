@@ -359,7 +359,8 @@ def result_fusion(state: RagState) -> dict:
 
 
 def retrieval_evaluator(state: RagState) -> dict:
-    """Judge whether the fused results are relevant enough to the search task."""
+    """Supposed to judge whether the fused results are relevant
+    enough to the search task. Currently doesn't do anything."""
 
     # TODO: implement a cross-encoder reranker to score the results against the query.
     passed   = True

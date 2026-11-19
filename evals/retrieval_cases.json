@@ -1,0 +1,67 @@
+{
+  "_about": "Retrieval test set over the first 2000 books (BOOK_LIMIT=2000). Book IDs are stable hashes of the book metadata, see bookworm/ingestion/loader.py.",
+
+  "known_item": {
+    "_about": "Exactly one relevant book per query: the target. Recall@5 = Hit@5.",
+    "cases": [
+      {"id": "K1", "variant": "exact title + author",
+       "query": "Do you have Camera Lucida by Roland Barthes?",
+       "target": "BK-8049D388D382", "target_title": "Camera Lucida: Reflections on Photography"},
+      {"id": "K2", "variant": "exact title",
+       "query": "Is Frommer's South Africa in the catalogue?",
+       "target": "BK-920D2BE40DB5", "target_title": "Frommer's South Africa"},
+      {"id": "K3", "variant": "misremembered title",
+       "query": "I'm looking for that short story collection called Welding with Kids or something like that.",
+       "target": "BK-DBFBB4CC872C", "target_title": "Welding with Children: Stories"},
+      {"id": "K4", "variant": "plot description, no title",
+       "query": "There's a novel about America's leading taxidermist and his estate in rural New York around 1917. What is it?",
+       "target": "BK-70D843303170", "target_title": "The Manikin: A Novel"},
+      {"id": "K5", "variant": "plot description, no title",
+       "query": "I want the last book of a trilogy about the Haitian Revolution.",
+       "target": "BK-6AC635321B55", "target_title": "The Stone that the Builder Refused: A Novel"},
+      {"id": "K6", "variant": "plot description, no title",
+       "query": "A book about a teenage girl who tries to contact the other side with a Ouija board.",
+       "target": "BK-27D3C50550C2", "target_title": "The Healing Time of Hickeys"},
+      {"id": "K7", "variant": "content description, no title",
+       "query": "Do you have a recipe book about classic American roadside diner food?",
+       "target": "BK-D7FCBE881E01", "target_title": "More Retro Diner: A Second Helping of Roadside Recipes"}
+    ]
+  },
+
+  "metadata": {
+    "_about": "Relevant set = every book among the 2000 whose catalogue metadata satisfies `relevant_if` (exact author name, exact genre label, inclusive years). Genre labels in the dataset are noisy, so this is relevance according to the catalogue.",
+    "cases": [
+      {"id": "M1", "variant": "author",
+       "query": "Do you have any books by Mercer Mayer?",
+       "relevant_if": {"author": "Mercer Mayer"}},
+      {"id": "M2", "variant": "author",
+       "query": "What do you have from Eric Jensen?",
+       "relevant_if": {"author": "Eric Jensen"}},
+      {"id": "M3", "variant": "author",
+       "query": "Show me Raymond Chandler's books.",
+       "relevant_if": {"author": "Raymond Chandler"}},
+      {"id": "M4", "variant": "genre + year",
+       "query": "Cookbooks published before 2000, please.",
+       "relevant_if": {"genre": "Cooking", "year_to": 1999}},
+      {"id": "M5", "variant": "genre + year",
+       "query": "Any computer books from the 1990s?",
+       "relevant_if": {"genre": "Computers", "year_from": 1990, "year_to": 1999}}
+    ]
+  },
+
+  "topic": {
+    "_about": "No complete relevant set. The top 5 of every configuration are pooled and judged by hand in labels/topic_pool.csv (TREC-style pooling).",
+    "cases": [
+      {"id": "T1", "variant": "mood",
+       "query": "Something cozy and uplifting to read on a rainy weekend."},
+      {"id": "T2", "variant": "mood / genre",
+       "query": "I'd like a dark psychological thriller."},
+      {"id": "T3", "variant": "topic",
+       "query": "Books that help parents raise their children."},
+      {"id": "T4", "variant": "topic",
+       "query": "History books about the Second World War."},
+      {"id": "T5", "variant": "topic",
+       "query": "A beginner-friendly book to learn computer programming."}
+    ]
+  }
+}
