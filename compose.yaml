@@ -1,6 +1,5 @@
 # Bookworm services. Only the app UI is published to the host; Ollama and
 # Qdrant are reached over the compose network by service name.
-# TODO (step 5): app service.
 
 # Model names, shared by the Ollama service (which pulls them) and the app.
 x-models: &models
@@ -29,6 +28,9 @@ services:
     entrypoint: ["/bin/sh", "/ollama-entrypoint.sh"]
     environment:
       <<: *models
+      # Keep models in memory for an hour after the last request (default 5 min),
+      # so a question after a pause does not pay the ~45 s model load again.
+      OLLAMA_KEEP_ALIVE: 1h
     volumes:
       - ollama:/root/.ollama
       - ./docker/ollama-entrypoint.sh:/ollama-entrypoint.sh:ro
@@ -75,19 +77,26 @@ services:
       qdrant:
         condition: service_healthy
 
+  # Streamlit UI. Starts only after init has finished successfully.
   app:
-    build:
-      context: .
-      dockerfile: docker/app.Dockerfile
+    <<: *app
+    ports:
+      - "127.0.0.1:8501:8501"
+    restart: unless-stopped
     depends_on:
-      - ollama
-      - qdrant
-    environment:
-      OLLAMA_BASE_URL: http://ollama:11434
-      QDRANT_URL: http://qdrant:6333
-      SQLITE_PATH: /app/data/sqlite/bookworm.db
-    volumes:
-      - ./data:/app/data
+      init:
+        condition: service_completed_successfully
+      ollama:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+      start_interval: 2s
 
 volumes:
   ollama:

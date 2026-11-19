@@ -15,9 +15,9 @@ def embed_documents(texts: list[str]) -> list[list[float]]:
     """Generate embeddings for book metadata and descriptions."""
     response = requests.post(
         f"{settings.ollama_base_url}/api/embed",
+        # No keep_alive here: the Ollama server's OLLAMA_KEEP_ALIVE applies.
         json={"model": settings.embedding_model,
-              "input": texts,
-              "keep_alive": "5m"},
+              "input": texts},
         timeout=300,
     )
     response.raise_for_status()

@@ -32,5 +32,9 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 
 EXPOSE 8501
 
+# hideWelcomeMessage: the URL banner would show container-internal addresses
+# and an "External URL" (looked up via checkip.amazonaws.com) that is not
+# reachable, since compose publishes the port on localhost only.
 CMD ["streamlit", "run", "src/bookworm/ui/app.py", \
-     "--server.address=0.0.0.0", "--server.port=8501", "--server.headless=true"]
+     "--server.address=0.0.0.0", "--server.port=8501", "--server.headless=true", \
+     "--browser.gatherUsageStats=false", "--logger.hideWelcomeMessage=true"]
