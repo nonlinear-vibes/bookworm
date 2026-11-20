@@ -1,6 +1,6 @@
 {
   "_about": [
-    "End-to-end cases for the main graph, run by run_agent.py. Each case runs for a fresh demo user on a scratch copy of the database.",
+    "End-to-end cases for the main graph, run by run_agent_eval.py. Each case runs for a fresh demo user on a scratch copy of the database.",
     "history: earlier turns as [role, text]. message: the user's new message; {loan_id} is filled with the user's first loan.",
     "setup.copies: number of FREE copies of a book before the run. setup.reservations: active reservations the user already has.",
     "approve: the answer given to every approval request (default: decline).",

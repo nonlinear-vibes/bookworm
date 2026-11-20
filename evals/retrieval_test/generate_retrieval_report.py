@@ -2,12 +2,12 @@
 
   known_item  one target book        -> Hit@1, Hit@5, MRR@5
   metadata    relevant set from the  -> Precision@5, Recall@5
-              catalogue (saved by run_retrieval.py)
+              catalogue (saved by run_retrieval_eval.py)
   topic       hand labels in         -> Precision@5, pooled Recall@5
               labels/topic_pool.csv
 
 Uses only the standard library, so it runs on the host as well:
-  python3 evals/retrieval_report.py
+  python3 -m evals.retrieval_test.generate_retrieval_report
 """
 
 import csv
@@ -81,7 +81,7 @@ def main() -> None:
         for case in cases[qtype]["cases"]:
             path = EVALS_DIR / "search_results" / f"{case['id']}.json"
             if not path.exists():
-                sys.exit(f"Missing {path.relative_to(EVALS_DIR)}: run run_retrieval.py first.")
+                sys.exit(f"Missing {path.relative_to(EVALS_DIR)}: run run_retrieval_eval.py first.")
             queries.append(json.loads(path.read_text(encoding="utf-8")))
 
     unjudged = 0

@@ -102,7 +102,7 @@ services:
       start_interval: 2s
 
   # Evaluation runner, started on demand only (profile), e.g.:
-  #   docker compose run --rm eval python evals/eval_agent.py
+  #   docker compose run --rm eval python -m evals.agent_test.run_agent_eval
   # ./evals is mounted, so case files, labels and results live in the repo
   # without rebuilding the image.
   eval:

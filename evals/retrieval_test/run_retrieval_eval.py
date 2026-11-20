@@ -13,9 +13,9 @@ For metadata queries, the relevant set is computed from the catalogue and
 saved with the results. Topic results are added to labels/topic_pool.csv
 for hand labelling (existing labels are kept).
 
-Usage (see compose.yaml):
-  docker compose run --rm eval python evals/run_retrieval.py
-Then label the new rows in labels/topic_pool.csv and run retrieval_report.py.
+Usage, from the project root (see compose.yaml):
+  docker compose run --rm eval python -m evals.retrieval_test.run_retrieval_eval
+Then label the new rows in labels/topic_pool.csv and run generate_retrieval_report.py.
 """
 
 import os
