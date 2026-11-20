@@ -3,7 +3,8 @@
 Each query runs as one user turn for a fresh demo user on a scratch copy of
 the SQLite database, through the same compiled graph the UI uses (no HTTP
 layer: the UI runs the graph in-process too). Approval requests are always
-declined, so no account changes. `--concurrency` simulated users each send
+approved, so lending actions really write to the (scratch) database.
+`--concurrency` simulated users each send
 their next query as soon as the previous one is answered (closed loop, no
 think time).
 
@@ -36,7 +37,7 @@ from pathlib import Path
 from statistics import mean
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from evals.common import prepare_user, run_turn, to_json, use_scratch_db
+from evals.common import percentile, prepare_user, run_turn, to_json, use_scratch_db
 
 TEST_DIR     = Path(__file__).resolve().parent
 QUERIES_FILE = TEST_DIR / "load_queries.json"
@@ -160,14 +161,6 @@ def run_retrieval_query(query: dict, t0: float) -> dict:
 
     record.update({"t_start": round(start - t0, 3), "t_end": round(time.perf_counter() - t0, 3)})
     return record
-
-
-def percentile(values: list[float], p: float) -> float:
-    """Linear-interpolated percentile, p in [0, 100]."""
-    values = sorted(values)
-    k = (len(values) - 1) * p / 100
-    lo, hi = int(k), min(int(k) + 1, len(values) - 1)
-    return values[lo] + (values[hi] - values[lo]) * (k - lo)
 
 
 def print_summary(records: list[dict], wall_s: float) -> None:

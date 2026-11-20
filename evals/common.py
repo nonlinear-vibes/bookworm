@@ -94,6 +94,14 @@ def to_json(value):
     return str(value)
 
 
+def percentile(values: list[float], p: float) -> float:
+    """Linear-interpolated percentile of `values`, p in [0, 100]."""
+    values = sorted(values)
+    k = (len(values) - 1) * p / 100
+    lo, hi = int(k), min(int(k) + 1, len(values) - 1)
+    return values[lo] + (values[hi] - values[lo]) * (k - lo)
+
+
 def run_turn(graph, payload: dict, config: dict, approve: bool,
              steps: list | None = None) -> tuple[list[dict], float]:
     """Stream one user turn through the graph until it ends.

@@ -209,7 +209,7 @@ def main() -> None:
             f"limit={args.limit}). Do not edit by hand; regenerate instead.",
             "category: topic, author, known_item, availability, reservation or general.",
             "book_id / title / author: the catalogue book the query was made from (full title).",
-            "Reservation requests are answered with 'decline' by the load runner, so no account changes.",
+            "The load runner approves every approval request, so lending actions write to its scratch database.",
         ],
         "mix": counts,
         "queries": queries,
