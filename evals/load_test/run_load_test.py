@@ -27,15 +27,15 @@ Usage, from the project root (see compose.yaml):
   docker compose run --rm eval python -m evals.load_test.run_load_test --retrieval-only
 """
 
-import sys
-import json
-import time
 import argparse
+import json
+import sys
 import threading
-from uuid import UUID, uuid4
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from statistics import mean
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from uuid import UUID, uuid4
 
 from evals.common import percentile, prepare_user, run_turn, to_json, use_scratch_db
 
@@ -89,6 +89,7 @@ def llm_recorder(calls: list):
 def run_query(graph, query: dict, t0: float) -> dict:
     """Run one query as one user turn; never raises."""
     from langchain_core.messages import HumanMessage
+
     from bookworm.observability import GraphObserver
 
     record = {"id": query["id"], "category": query["category"], "message": query["message"],
@@ -133,8 +134,8 @@ def run_query(graph, query: dict, t0: float) -> dict:
 
 def run_retrieval_query(query: dict, t0: float) -> dict:
     """Search only: the raw query through semantic search, keyword search and fusion."""
-    from bookworm.retrieval import search
     from bookworm.graph.nodes import result_fusion
+    from bookworm.retrieval import search
 
     record = {"id": query["id"], "category": query["category"], "message": query["message"],
               "worker": threading.current_thread().name}

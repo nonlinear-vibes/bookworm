@@ -7,9 +7,10 @@ to use them.
 
 import uuid
 from functools import lru_cache
-from qdrant_client import QdrantClient, models
-from bookworm.config import settings
 
+from qdrant_client import QdrantClient, models
+
+from bookworm.config import settings
 
 DENSE_VECTOR  = "dense"
 SPARSE_VECTOR = "bm25"

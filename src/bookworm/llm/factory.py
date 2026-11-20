@@ -1,8 +1,9 @@
-from langchain_ollama import ChatOllama
 from langchain_core.language_models import BaseChatModel
-# from langchain_core.language_models.fake_chat_models import FakeListChatModel
+from langchain_ollama import ChatOllama
 
-from bookworm.config import Settings, settings as default_settings
+# from langchain_core.language_models.fake_chat_models import FakeListChatModel
+from bookworm.config import Settings
+from bookworm.config import settings as default_settings
 
 
 def create_llm(settings: Settings | None = None) -> BaseChatModel:

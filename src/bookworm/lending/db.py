@@ -1,12 +1,11 @@
 """SQLite connection and schema for the lending system."""
 
 import sqlite3
-from pathlib import Path
-from contextlib import contextmanager
 from collections.abc import Iterator
+from contextlib import contextmanager
+from pathlib import Path
 
 from bookworm.config import settings
-
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS users (

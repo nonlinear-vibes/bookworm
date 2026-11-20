@@ -18,9 +18,9 @@ Usage, from the project root (see compose.yaml):
 Then label the new rows in labels/topic_pool.csv and run generate_retrieval_report.py.
 """
 
-import os
 import csv
 import json
+import os
 import time
 from pathlib import Path
 
@@ -35,10 +35,10 @@ def build_configs() -> dict:
     """Return name -> function(query) -> (top K books, retrieval plan or None)."""
     from langchain_core.messages import HumanMessage
 
-    from bookworm.retrieval import search
-    from bookworm.llm.factory import create_llm
     from bookworm.graph.nodes import result_fusion
     from bookworm.graph.rag_workflow import build_rag_graph
+    from bookworm.llm.factory import create_llm
+    from bookworm.retrieval import search
 
     rag_graph = build_rag_graph(create_llm())
 

@@ -1,8 +1,7 @@
 from functools import partial
 
-from langgraph.graph import StateGraph, START, END
+from langgraph.graph import END, START, StateGraph
 
-from bookworm.graph.state import RagState
 from bookworm.graph.nodes import (
     lexical_search_node,
     query_processor,
@@ -10,6 +9,7 @@ from bookworm.graph.nodes import (
     retrieval_evaluator,
     semantic_search_node,
 )
+from bookworm.graph.state import RagState
 
 
 def route_after_query_processor(state: RagState) -> list[str]:

@@ -16,13 +16,13 @@ Uses only the standard library, so it runs on the host as well:
   python3 -m evals.load_test.generate_load_report [--scenario s1]
 """
 
-import sys
+import argparse
 import json
 import math
-import argparse
+import sys
+from collections import defaultdict
 from pathlib import Path
 from statistics import mean
-from collections import defaultdict
 
 from evals.common import percentile
 

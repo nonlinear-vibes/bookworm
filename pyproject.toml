@@ -1,7 +1,7 @@
 [project]
 name = "bookworm-project"
 version = "0.1.0"
-description = "Add your description here"
+description = "Bookworm Library RAG Agent"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [

@@ -7,7 +7,6 @@ lending tools pass back to the graph.
 import sqlite3
 from datetime import date, datetime, timedelta
 
-
 LOAN_PERIOD_DAYS = 21
 MAX_RENEWALS     = 2
 

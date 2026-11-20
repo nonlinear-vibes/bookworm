@@ -4,7 +4,6 @@ import requests
 
 from bookworm.config import settings
 
-
 RETRIEVAL_INSTRUCTION = (
     "Given a user query for a library catalogue, "
     "retrieve books that are relevant to the query."

@@ -11,8 +11,8 @@ Uses only the standard library, so it runs on the host as well:
 """
 
 import csv
-import sys
 import json
+import sys
 from pathlib import Path
 
 EVALS_DIR = Path(__file__).resolve().parent

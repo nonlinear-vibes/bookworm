@@ -1,13 +1,20 @@
 from functools import partial
 
-from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import InMemorySaver
+from langgraph.graph import END, START, StateGraph
 
-from bookworm.llm.factory import create_llm
-from bookworm.graph.state import MainState
-from bookworm.graph.rag_workflow import build_rag_graph
 from bookworm.graph.lending_workflow import build_lending_graph
-from bookworm.graph.nodes import evaluator, intent_detector, lending_node, rag_node, task_planner, response_generator
+from bookworm.graph.nodes import (
+    evaluator,
+    intent_detector,
+    lending_node,
+    rag_node,
+    response_generator,
+    task_planner,
+)
+from bookworm.graph.rag_workflow import build_rag_graph
+from bookworm.graph.state import MainState
+from bookworm.llm.factory import create_llm
 
 
 def _planned_agents(state: MainState) -> set[str]:

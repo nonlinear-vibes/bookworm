@@ -13,11 +13,11 @@ Usage, from the project root (see compose.yaml):
   docker compose run --rm eval python -m evals.agent_test.run_agent_eval [case_id ...]
 """
 
-import sys
-import json
 import argparse
-from uuid import uuid4
+import json
+import sys
 from pathlib import Path
+from uuid import uuid4
 
 from evals.common import account, prepare_user, run_turn, to_json, use_scratch_db
 

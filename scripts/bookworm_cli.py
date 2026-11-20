@@ -11,8 +11,8 @@ Run with:  uv run python scripts/bookworm_cli.py [--debug] [--timings] [--timing
 
 import argparse
 import json
-import time
 import sys
+import time
 from datetime import datetime
 from uuid import uuid4
 
@@ -21,10 +21,14 @@ from langgraph.types import Command
 
 from bookworm.graph import nodes
 from bookworm.graph.workflow import build_graph
+from bookworm.lending.accounts import (
+    active_loans,
+    active_reservations,
+    create_demo_user,
+    describe_action,
+)
 from bookworm.lending.db import connect
-from bookworm.lending.accounts import active_loans, active_reservations, create_demo_user, describe_action
 from bookworm.observability import GraphObserver
-
 
 # Gray (ANSI "bright black") for status and timing output; plain text when not a terminal.
 _GRAY, _RESET = ("\033[90m", "\033[0m") if sys.stdout.isatty() else ("", "")

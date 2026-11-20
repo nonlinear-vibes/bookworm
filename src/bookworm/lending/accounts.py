@@ -4,16 +4,15 @@ Create demo users, read a user's loans and reservations, and describe
 pending lending actions for the approval prompt.
 """
 
+import hashlib
 import random
 import sqlite3
-import hashlib
-from uuid import uuid4
 from datetime import date, timedelta
+from uuid import uuid4
 
 from bookworm.config import settings
 from bookworm.lending.db import connect, init_schema
 from bookworm.lending.repository import HELD_COPIES_SQL, LOAN_PERIOD_DAYS
-
 
 USER_ID_HEX_CHARS    = 4
 MIN_LOANS, MAX_LOANS = 2, 3

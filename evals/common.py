@@ -10,11 +10,11 @@ must run before any bookworm module that reads the settings is imported.
 """
 
 import os
-import time
 import shutil
 import tempfile
-from pathlib import Path
+import time
 from datetime import datetime
+from pathlib import Path
 
 
 def use_scratch_db() -> Path:
@@ -39,9 +39,9 @@ def prepare_user(setup: dict | None = None) -> dict:
     setup.reservations: [book_id, ...] active reservations the user already has
     Returns the user ID and the ID of the user's first active loan.
     """
+    from bookworm.lending.accounts import active_loans, create_demo_user
     from bookworm.lending.db import connect
     from bookworm.lending.repository import HELD_COPIES_SQL
-    from bookworm.lending.accounts import active_loans, create_demo_user
 
     user_id = create_demo_user()
     setup   = setup or {}

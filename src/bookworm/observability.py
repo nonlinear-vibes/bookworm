@@ -21,7 +21,6 @@ from uuid import UUID
 from langchain_core.callbacks import BaseCallbackHandler
 from langgraph.errors import GraphInterrupt
 
-
 NODE_LABELS: dict[str, str] = {
     # Main graph
     "intent_detector":     "Analysing intent...",

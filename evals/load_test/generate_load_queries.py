@@ -18,16 +18,15 @@ Usage:
   docker compose run --rm eval python -m evals.load_test.generate_load_queries
 """
 
-import os
-import re
-import json
-import random
 import argparse
+import json
+import os
+import random
+import re
 from pathlib import Path
 
 from bookworm.config import settings
 from bookworm.ingestion.loader import load_books
-
 
 OUTPUT_PATH = Path(__file__).resolve().parent / "load_queries.json"
 

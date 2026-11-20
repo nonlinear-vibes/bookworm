@@ -5,7 +5,6 @@ from qdrant_client import models
 from bookworm.retrieval.embeddings import embed_query
 from bookworm.retrieval.qdrant_store import search_text, search_vectors
 
-
 # Results returned by each search before Result Fusion.
 SEARCH_LIMIT = 10
 

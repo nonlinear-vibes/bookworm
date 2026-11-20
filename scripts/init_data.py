@@ -12,10 +12,10 @@ Run with:  uv run python scripts/init_data.py --limit 2000
 In Docker: the `init` service in compose.yaml runs it before the UI starts.
 """
 
+import argparse
+import hashlib
 import os
 import time
-import hashlib
-import argparse
 
 import requests
 

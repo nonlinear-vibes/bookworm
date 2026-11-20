@@ -1,11 +1,10 @@
 """Load and normalize books from the raw CSV dataset."""
 
-import re
 import ast
 import csv
-import html
 import hashlib
-
+import html
+import re
 from pathlib import Path
 
 

@@ -10,10 +10,10 @@ created by scripts/init_db.py.
 Run with:  uv run streamlit run src/bookworm/ui/app.py
 """
 
-from uuid import uuid4
 from datetime import date, datetime
-import streamlit as st
+from uuid import uuid4
 
+import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
 from langgraph.types import Command
 
@@ -21,7 +21,6 @@ from bookworm.graph.workflow import build_graph
 from bookworm.lending.accounts import create_demo_user, describe_action
 from bookworm.ui.account import availability, load_account
 from bookworm.ui.runner import run_until_pause
-
 
 DESCRIPTION_PREVIEW_CHARS = 130
 

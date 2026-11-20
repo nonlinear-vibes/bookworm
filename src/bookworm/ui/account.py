@@ -3,9 +3,9 @@
 
 import sqlite3
 
+from bookworm.lending.accounts import active_loans, active_reservations
 from bookworm.lending.db import connect
 from bookworm.lending.repository import HELD_COPIES_SQL
-from bookworm.lending.accounts import active_loans, active_reservations
 
 
 def availability(book_ids: list[str]) -> dict[str, tuple[int, int]]:

@@ -12,7 +12,6 @@ from collections.abc import Callable
 
 from bookworm.observability import GraphObserver
 
-
 POLL_INTERVAL_S = 0.1
 
 
