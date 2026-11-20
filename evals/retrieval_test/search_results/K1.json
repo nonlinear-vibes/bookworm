@@ -1,0 +1,171 @@
+{
+  "id": "K1",
+  "variant": "exact title + author",
+  "query": "Do you have Camera Lucida by Roland Barthes?",
+  "target": "BK-8049D388D382",
+  "target_title": "Camera Lucida: Reflections on Photography",
+  "type": "known_item",
+  "runs": {
+    "semantic": {
+      "latency_s": 6.759,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-8049D388D382",
+          "title": "Camera Lucida: Reflections on Photography",
+          "author": "Roland Barthes",
+          "year": 2010,
+          "genres": "Photography",
+          "description": "A graceful, contemplative volume, Camera Lucida was first published in 1979. Commenting on artists such as Avedon, Clifford, Mapplethorpe, and Nadar, Roland Barthes presents photography as being outside the codes of language or culture, acting on the body as much as on the mind, and rendering death..."
+        },
+        {
+          "book_id": "BK-F10E4B88E913",
+          "title": "Logic of Images Essays & Conversations",
+          "author": "Wim Wenders",
+          "year": 1992,
+          "genres": "Film criticism",
+          "description": "This book is the companion volume to Emotion Pictures. In the book Wenders moves from a contemplation of pure cinema, to a consideration and analysis of his own films. Beginning with the question: Why do you make films?, Wenders expresses his own unique approach to cinema."
+        },
+        {
+          "book_id": "BK-A994C7686E55",
+          "title": "The Works of George Berkeley (Major works)",
+          "author": "George Berkeley",
+          "year": 2019,
+          "genres": "Philosophy",
+          "description": "The eighteenth century Irish philosopher George Berkeley is best known for his empiricist and idealist philosophy, which argues that reality consists only of minds and their ideas. He is also known for his critique of abstraction, an important premise in his argument for immaterialism. His chief..."
+        },
+        {
+          "book_id": "BK-4024812F8A6B",
+          "title": "The Magic Barrel",
+          "author": "Bernard Malamud",
+          "year": 2017,
+          "genres": "Fiction",
+          "description": "A matchmaker finds love for a would-be rabbi; a shopkeeper dies because he cannot afford a doctor; a little girl steals candy; an angel visits a grieving tailor. Through Malamud's great gifts as a writer - humour and profound concern for the matter of human life - he transmutes the particular..."
+        },
+        {
+          "book_id": "BK-7E595FD41831",
+          "title": "Memoirs of the Blind: The Self-Portrait and Other Ruins",
+          "author": "Jacques Derrida, Musée du Louvre",
+          "year": 1993,
+          "genres": "Art",
+          "description": "Twentieth-century French philosopher Jacques Derrida critiques famous and lesser-known works of art, discussing the history and philosophy of art, along with the ways that vision, blindness, and self-representation relate to drawing."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.006,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-8049D388D382",
+          "title": "Camera Lucida: Reflections on Photography",
+          "author": "Roland Barthes",
+          "year": 2010,
+          "genres": "Photography",
+          "description": "A graceful, contemplative volume, Camera Lucida was first published in 1979. Commenting on artists such as Avedon, Clifford, Mapplethorpe, and Nadar, Roland Barthes presents photography as being outside the codes of language or culture, acting on the body as much as on the mind, and rendering death..."
+        },
+        {
+          "book_id": "BK-B7ABF3866447",
+          "title": "Nomads of South Persia: The Basseri tribe of the Khamseh Confederacy",
+          "author": "Frederik Barth",
+          "year": 2013,
+          "genres": "History",
+          "description": "Many of the earliest books, particularly those dating back to the 1900s and before, are now extremely scarce and increasingly expensive. We are republishing these classic works in affordable, high quality, modern editions, using the original text and artwork."
+        },
+        {
+          "book_id": "BK-E4135B594995",
+          "title": "All Things Are Lights",
+          "author": "Robert Shea",
+          "year": 1986,
+          "genres": "Fiction",
+          "description": "Lured by the glory of the Crusades, legendary troubadour Roland battles the evil Amalric, the Inquisition, and infidel armies for the love of two women--Diana, a hunted Cathar heretic, and Nicolette, wed to Amalric"
+        },
+        {
+          "book_id": "BK-89DCF50B3F16",
+          "title": "Live from New York: An Uncensored History of Saturday Night Live",
+          "author": "Tom Shales, James Andrew Miller",
+          "year": 2014,
+          "genres": "Performing Arts",
+          "description": "James Andrew Miller and Tom Shales's definitive oral history of Saturday Night Live, hailed as \"incredible\" (Vulture) and \"required reading\" (People). When first published to celebrate the 30th anniversary of Saturday Night Live, Live from New York was immediately proclaimed the best book ever..."
+        },
+        {
+          "book_id": "BK-BE828659E8B7",
+          "title": "Lights, Camera, Love! (You're the One!)",
+          "author": "Francess Lin Lantz",
+          "year": 2000,
+          "genres": "Juvenile Nonfiction",
+          "description": "When her idol, handsome teen actor Brad Langley, comes to her town in the Florida Keys to shoot a movie, fourteen-year-old Jess gets a job as an extra and is shocked that he appears to be a temperamental brat."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.089,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-8049D388D382",
+          "title": "Camera Lucida: Reflections on Photography",
+          "author": "Roland Barthes",
+          "year": 2010,
+          "genres": "Photography",
+          "description": "A graceful, contemplative volume, Camera Lucida was first published in 1979. Commenting on artists such as Avedon, Clifford, Mapplethorpe, and Nadar, Roland Barthes presents photography as being outside the codes of language or culture, acting on the body as much as on the mind, and rendering death..."
+        },
+        {
+          "book_id": "BK-F10E4B88E913",
+          "title": "Logic of Images Essays & Conversations",
+          "author": "Wim Wenders",
+          "year": 1992,
+          "genres": "Film criticism",
+          "description": "This book is the companion volume to Emotion Pictures. In the book Wenders moves from a contemplation of pure cinema, to a consideration and analysis of his own films. Beginning with the question: Why do you make films?, Wenders expresses his own unique approach to cinema."
+        },
+        {
+          "book_id": "BK-B7ABF3866447",
+          "title": "Nomads of South Persia: The Basseri tribe of the Khamseh Confederacy",
+          "author": "Frederik Barth",
+          "year": 2013,
+          "genres": "History",
+          "description": "Many of the earliest books, particularly those dating back to the 1900s and before, are now extremely scarce and increasingly expensive. We are republishing these classic works in affordable, high quality, modern editions, using the original text and artwork."
+        },
+        {
+          "book_id": "BK-A994C7686E55",
+          "title": "The Works of George Berkeley (Major works)",
+          "author": "George Berkeley",
+          "year": 2019,
+          "genres": "Philosophy",
+          "description": "The eighteenth century Irish philosopher George Berkeley is best known for his empiricist and idealist philosophy, which argues that reality consists only of minds and their ideas. He is also known for his critique of abstraction, an important premise in his argument for immaterialism. His chief..."
+        },
+        {
+          "book_id": "BK-E4135B594995",
+          "title": "All Things Are Lights",
+          "author": "Robert Shea",
+          "year": 1986,
+          "genres": "Fiction",
+          "description": "Lured by the glory of the Crusades, legendary troubadour Roland battles the evil Amalric, the Inquisition, and infidel armies for the love of two women--Diana, a hunted Cathar heretic, and Nicolette, wed to Amalric"
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 1.647,
+      "plan": {
+        "keyword_query": "Camera Lucida Roland Barthes",
+        "semantic_query": "",
+        "metadata_filter": {
+          "author": "Roland Barthes",
+          "genre": null,
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-8049D388D382",
+          "title": "Camera Lucida: Reflections on Photography",
+          "author": "Roland Barthes",
+          "year": 2010,
+          "genres": "Photography",
+          "description": "A graceful, contemplative volume, Camera Lucida was first published in 1979. Commenting on artists such as Avedon, Clifford, Mapplethorpe, and Nadar, Roland Barthes presents photography as being outside the codes of language or culture, acting on the body as much as on the mind, and rendering death..."
+        }
+      ]
+    }
+  }
+}

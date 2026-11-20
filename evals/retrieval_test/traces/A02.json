@@ -1,0 +1,114 @@
+{
+  "case": {
+    "id": "A02",
+    "category": "general",
+    "history": [
+      [
+        "human",
+        "Do you have any books by Mercer Mayer?"
+      ],
+      [
+        "ai",
+        "Yes, we have several Little Critter books by Mercer Mayer, for example Little Critter: Just a Snowman and Little Critter: My Trip to the Hospital."
+      ]
+    ],
+    "message": "Great, thanks. That's all for today!",
+    "expect": {
+      "intent": "general",
+      "route": "none",
+      "approval": "none",
+      "outcome": "Polite goodbye, no new search."
+    }
+  },
+  "user": {
+    "user_id": "UR-8E3E",
+    "loan_id": "loan-0f8a6704"
+  },
+  "latency_s": 2.12,
+  "final": {
+    "intent": "general",
+    "task_plan": [],
+    "lending_result": "",
+    "answer": " You're welcome! I'm glad I could help you find some books by Mercer Mayer. If you ever need more recommendations or have any other questions, feel free to ask. Have a great day!"
+  },
+  "account_before": {
+    "loans": [
+      {
+        "loan_id": "loan-0f8a6704",
+        "book_id": "BK-E8FDE40FEABC",
+        "title": "Spirit of the Moon",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-59e658b4",
+        "book_id": "BK-D5653BF4BCFF",
+        "title": "The Dictionary of Blue and White Printed Pottery 1780-1880",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "account_after": {
+    "loans": [
+      {
+        "loan_id": "loan-0f8a6704",
+        "book_id": "BK-E8FDE40FEABC",
+        "title": "Spirit of the Moon",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-59e658b4",
+        "book_id": "BK-D5653BF4BCFF",
+        "title": "The Dictionary of Blue and White Printed Pottery 1780-1880",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "steps": [
+    {
+      "node": "intent_detector",
+      "update": {
+        "intent": "general",
+        "task_plan": [],
+        "lending_result": "",
+        "response_attempts": 0,
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    },
+    {
+      "node": "task_planner",
+      "update": {
+        "task_plan": []
+      }
+    },
+    {
+      "node": "response_generator",
+      "update": {
+        "messages": [
+          {
+            "type": "ai",
+            "content": " You're welcome! I'm glad I could help you find some books by Mercer Mayer. If you ever need more recommendations or have any other questions, feel free to ask. Have a great day!"
+          }
+        ],
+        "response_attempts": 1
+      }
+    },
+    {
+      "node": "evaluator",
+      "update": {
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    }
+  ]
+}

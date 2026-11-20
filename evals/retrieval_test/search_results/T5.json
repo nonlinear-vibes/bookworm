@@ -1,0 +1,201 @@
+{
+  "id": "T5",
+  "variant": "topic",
+  "query": "A beginner-friendly book to learn computer programming.",
+  "type": "topic",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.077,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-DCFF40288919",
+          "title": "The Essentials of PL/1 Programming Language (Essential Series)",
+          "author": "William Wesley Peterson",
+          "year": 1974,
+          "genres": "Computers",
+          "description": "This book provides students the essentials of programming languages such as, BASIC, FORTRAN, ALGOL, PL/1 APL, COBOL, SNOBOL."
+        },
+        {
+          "book_id": "BK-B4C1E0153515",
+          "title": "Learning to Program with Visual Basic",
+          "author": "Sylvia Langfield",
+          "year": 2019,
+          "genres": "Computers",
+          "description": "This book is a straightforward guide to the Visual Basic programming language and programming techniques. It covers all of the practical programming skills that may be required up to GCSE level and for those at AS Level with limited exposure to VB. It is suitable for both experienced programmers,..."
+        },
+        {
+          "book_id": "BK-483A6C40A52D",
+          "title": "C Programming Language Essentials (Essentials Study Guides)",
+          "author": "Ernest C. Ackermann, Research and Education Association",
+          "year": 1989,
+          "genres": "Computers",
+          "description": "REA’s Essentials provide quick and easy access to critical information in a variety of different fields, ranging from the most basic to the most advanced. As its name implies, these concise, comprehensive study guides summarize the essentials of the field covered. Essentials are helpful when..."
+        },
+        {
+          "book_id": "BK-02D0BB3CB8AE",
+          "title": "Oracle Security Step-by-Step (Version 2.0)",
+          "author": "Marlene Theriault",
+          "year": 2000,
+          "genres": "Computers",
+          "description": "Designed expressly for the beginner, Oracle8i Networking 101 teaches the critical topics necessary to run Oracle8i on a network."
+        },
+        {
+          "book_id": "BK-515B2726B15E",
+          "title": "Thinking Recursively",
+          "author": "Eric Roberts",
+          "year": 1986,
+          "genres": "Computers",
+          "description": "Thinking Recursively Eric S. Roberts Digital Equipment Corporation Recursion: The process of solving large problems by breaking them down into smaller, more simple problems that have identical forms. Thinking Recursively: A small text to solve large problems. Concentrating on the practical value of..."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-B4C1E0153515",
+          "title": "Learning to Program with Visual Basic",
+          "author": "Sylvia Langfield",
+          "year": 2019,
+          "genres": "Computers",
+          "description": "This book is a straightforward guide to the Visual Basic programming language and programming techniques. It covers all of the practical programming skills that may be required up to GCSE level and for those at AS Level with limited exposure to VB. It is suitable for both experienced programmers,..."
+        },
+        {
+          "book_id": "BK-757FF7450ECD",
+          "title": "Extending Acrobat Forms with JavaScript",
+          "author": "John Deubert",
+          "year": 2003,
+          "genres": "Computers",
+          "description": "Unlike other books on JavaScript, which explain how to write JavaScript programs for the Web,Extending Acrobat Forms with JavaScriptis the first and only book to explain how to use JavaScript to create sophisticated, interactive documents in Adobe Acrobat. Acrobat expertJohn Deubertteaches..."
+        },
+        {
+          "book_id": "BK-489BF11D674A",
+          "title": "3ds max 4 Bible",
+          "author": "Kelly L. Murdock",
+          "year": 2001,
+          "genres": "Computers",
+          "description": "More than 100 step-by-step tutorials give you valuable hands-on experience under the expert guidance of 3D master, Kelly Murdock. Increasingly complex scenes will prove useful to all 3D MAX users, from beginners to advanced. 3ds max 4 Bible will help you learn and master the most popular 3D..."
+        },
+        {
+          "book_id": "BK-515B2726B15E",
+          "title": "Thinking Recursively",
+          "author": "Eric Roberts",
+          "year": 1986,
+          "genres": "Computers",
+          "description": "Thinking Recursively Eric S. Roberts Digital Equipment Corporation Recursion: The process of solving large problems by breaking them down into smaller, more simple problems that have identical forms. Thinking Recursively: A small text to solve large problems. Concentrating on the practical value of..."
+        },
+        {
+          "book_id": "BK-E307C2F27E68",
+          "title": "Electrical Circuit Analysis Using the TI-85 or TI-86",
+          "author": "Richard Aston",
+          "year": 2000,
+          "genres": "Technology & Engineering",
+          "description": "This innovative book uses the hand-held programmable graphing calculator as both a calculating tool and a pedagogical tool to teach readers how to do classical circuit analysis and how to make mathematical models of electrical networks that can be programmed on the TI-85 or 86. Introduces a generic..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.085,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-B4C1E0153515",
+          "title": "Learning to Program with Visual Basic",
+          "author": "Sylvia Langfield",
+          "year": 2019,
+          "genres": "Computers",
+          "description": "This book is a straightforward guide to the Visual Basic programming language and programming techniques. It covers all of the practical programming skills that may be required up to GCSE level and for those at AS Level with limited exposure to VB. It is suitable for both experienced programmers,..."
+        },
+        {
+          "book_id": "BK-DCFF40288919",
+          "title": "The Essentials of PL/1 Programming Language (Essential Series)",
+          "author": "William Wesley Peterson",
+          "year": 1974,
+          "genres": "Computers",
+          "description": "This book provides students the essentials of programming languages such as, BASIC, FORTRAN, ALGOL, PL/1 APL, COBOL, SNOBOL."
+        },
+        {
+          "book_id": "BK-515B2726B15E",
+          "title": "Thinking Recursively",
+          "author": "Eric Roberts",
+          "year": 1986,
+          "genres": "Computers",
+          "description": "Thinking Recursively Eric S. Roberts Digital Equipment Corporation Recursion: The process of solving large problems by breaking them down into smaller, more simple problems that have identical forms. Thinking Recursively: A small text to solve large problems. Concentrating on the practical value of..."
+        },
+        {
+          "book_id": "BK-4379A9362AA7",
+          "title": "Bridge for Beginners: A Complete Course (Batsford Bridge Books)",
+          "author": "Zia Mahmood, Audrey Grant",
+          "year": 1998,
+          "genres": "Games & Activities",
+          "description": "A complete bridge course on bidding, play and defence for the complete beginner. Includes test hands to involve the student at each point. Originally published by Faber as LEARN BRIDGE WITH ZIA as part of the BRIDGE FOR BEGINNERS series"
+        },
+        {
+          "book_id": "BK-757FF7450ECD",
+          "title": "Extending Acrobat Forms with JavaScript",
+          "author": "John Deubert",
+          "year": 2003,
+          "genres": "Computers",
+          "description": "Unlike other books on JavaScript, which explain how to write JavaScript programs for the Web,Extending Acrobat Forms with JavaScriptis the first and only book to explain how to use JavaScript to create sophisticated, interactive documents in Adobe Acrobat. Acrobat expertJohn Deubertteaches..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.184,
+      "plan": {
+        "keyword_query": "computer programming beginner",
+        "semantic_query": "A beginner-friendly book to learn computer programming",
+        "metadata_filter": {
+          "author": null,
+          "genre": "Computer Programming",
+          "year_from": 2010,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-B4C1E0153515",
+          "title": "Learning to Program with Visual Basic",
+          "author": "Sylvia Langfield",
+          "year": 2019,
+          "genres": "Computers",
+          "description": "This book is a straightforward guide to the Visual Basic programming language and programming techniques. It covers all of the practical programming skills that may be required up to GCSE level and for those at AS Level with limited exposure to VB. It is suitable for both experienced programmers,..."
+        },
+        {
+          "book_id": "BK-7B5AF376ADA4",
+          "title": "A MANUAL OF STYLE",
+          "author": "Microsoft Corporation",
+          "year": 2012,
+          "genres": "Computers",
+          "description": "A guide for creating manuals, online help, and Web publications showing correct grammar, punctuation, and common misspellings of computer topics and terms."
+        },
+        {
+          "book_id": "BK-5694A4042D36",
+          "title": "Algorithms: Design Techniques and Analysis (Lecture Notes Series on Computing)",
+          "author": "M. H. Alsuwaiyel",
+          "year": 2016,
+          "genres": "Mathematics",
+          "description": ""
+        },
+        {
+          "book_id": "BK-4DAEF31A6731",
+          "title": "Praying the Bible for Your Life",
+          "author": "Stormie Omartian",
+          "year": 2012,
+          "genres": "Religion",
+          "description": "From bestselling and beloved author Stormie Omartian comes a unique collection of prayer insight accompanied by carefully chosen Scripture. Praying the Bible into Your Life gives readers the help they need to draw from God's power, truth, wisdom, and comfort for everyday guidance and decision..."
+        },
+        {
+          "book_id": "BK-3F073895A121",
+          "title": "Latin for Beginners (Language Guides)",
+          "author": "Clifford A. Hull, Steven R. Perkins, Tracy Barr",
+          "year": 2011,
+          "genres": "Foreign Language Study",
+          "description": "Earn-lay atin-Lay? No, not that kind of Latin! You can learn true Latin, with conjugations, declensions, and all those extra syllables – and it’s easier than you think. In fact, most people mistakenly think of learning Latin as perhaps the most useless, tedious, and difficult thing to do on earth...."
+        }
+      ]
+    }
+  }
+}

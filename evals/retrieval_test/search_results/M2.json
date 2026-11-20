@@ -1,0 +1,202 @@
+{
+  "id": "M2",
+  "variant": "author",
+  "query": "What do you have from Eric Jensen?",
+  "relevant_if": {
+    "author": "Eric Jensen"
+  },
+  "type": "metadata",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.078,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-CA2F2BCC542E",
+          "title": "Brain-Based Learning: The New Science of Teaching and Training, Revised Edition",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "The author presents research on how the brain processes information and offers practical methods to infuse your teaching and training with a renewed sense of purpose."
+        },
+        {
+          "book_id": "BK-9A71264AF16D",
+          "title": "Edge of Danger",
+          "author": "Jack Higgins",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "The action-packed new Sean Dillon novel. Master thriller writer Jack Higgins plunges his hugely popular hero into his ninth adventure – racing against time to prevent an assassination that would shock the world."
+        },
+        {
+          "book_id": "BK-AD6D832B9009",
+          "title": "Joshua and the Children",
+          "author": "Joseph Girzone",
+          "year": 1995,
+          "genres": "Fiction",
+          "description": "Tells the story of Joshua, the simple, hardworking man who does beautiful carpentry and has an extraordinary effect on everyone he meets, transforming them with warmth and love"
+        },
+        {
+          "book_id": "BK-1C77009AD3FE",
+          "title": "Crewel Lye (A Caustic Yarn)",
+          "author": "Piers Anthony",
+          "year": 1985,
+          "genres": "Fiction",
+          "description": "Jordon, once a brave knight, now a ghost in Castle Roogna, has the magical ability to recover from almost any injury, but first, he must find his scattered bones, four hundred years after his betrayal and death"
+        },
+        {
+          "book_id": "BK-39E7FBF49B3B",
+          "title": "Reckless: A Teenage Love Story (An Avon Flare Book)",
+          "author": "Jeanette Mines",
+          "year": 1983,
+          "genres": "Dating (Social customs)",
+          "description": "On her first day of high school, Jeannie Tanger meets Sam Bensen, a handsome troublemaker, and decides that she can change him."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.004,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-87C2E7004E41",
+          "title": "Different Brains, Different Learners: How to Reach the Hard to Reach",
+          "author": "Eric Jensen",
+          "year": 2010,
+          "genres": "Education",
+          "description": "Provides instructions for teachers on identifying common impairments and symptomsm, allowing educators to make adjustments that enable students to learn effectively."
+        },
+        {
+          "book_id": "BK-CA2F2BCC542E",
+          "title": "Brain-Based Learning: The New Science of Teaching and Training, Revised Edition",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "The author presents research on how the brain processes information and offers practical methods to infuse your teaching and training with a renewed sense of purpose."
+        },
+        {
+          "book_id": "BK-17E671BA13C6",
+          "title": "Music with the Brain in Mind",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "... With sections devoted to theory, as well as practical strategies and applications for the classroom ... a primer on how the body hears music to music's impact on stress level, perceptual-motor skills, memory, and emotional intelligence ... Included are tips for choosing music and the various..."
+        },
+        {
+          "book_id": "BK-83644CAC7A61",
+          "title": "Learning with the Body in Mind",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "Capitalize on the high energy that is natural to young learners! Research suggests that movement activities are an integral part of the learning process. From role plays to relays, learning is better activated when the body gets involved. Whether you're a primary school teacher or a secondary maths..."
+        },
+        {
+          "book_id": "BK-4D09201A8BAF",
+          "title": "Thimbleberries Beginner's Luck: Over 20 Tried and True Quilts",
+          "author": "Lynette Jensen",
+          "year": 2003,
+          "genres": "Crafts & Hobbies",
+          "description": "A collection of tried and true patterns that beginner's can successfully complete."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.084,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-CA2F2BCC542E",
+          "title": "Brain-Based Learning: The New Science of Teaching and Training, Revised Edition",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "The author presents research on how the brain processes information and offers practical methods to infuse your teaching and training with a renewed sense of purpose."
+        },
+        {
+          "book_id": "BK-87C2E7004E41",
+          "title": "Different Brains, Different Learners: How to Reach the Hard to Reach",
+          "author": "Eric Jensen",
+          "year": 2010,
+          "genres": "Education",
+          "description": "Provides instructions for teachers on identifying common impairments and symptomsm, allowing educators to make adjustments that enable students to learn effectively."
+        },
+        {
+          "book_id": "BK-9A71264AF16D",
+          "title": "Edge of Danger",
+          "author": "Jack Higgins",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "The action-packed new Sean Dillon novel. Master thriller writer Jack Higgins plunges his hugely popular hero into his ninth adventure – racing against time to prevent an assassination that would shock the world."
+        },
+        {
+          "book_id": "BK-AD6D832B9009",
+          "title": "Joshua and the Children",
+          "author": "Joseph Girzone",
+          "year": 1995,
+          "genres": "Fiction",
+          "description": "Tells the story of Joshua, the simple, hardworking man who does beautiful carpentry and has an extraordinary effect on everyone he meets, transforming them with warmth and love"
+        },
+        {
+          "book_id": "BK-17E671BA13C6",
+          "title": "Music with the Brain in Mind",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "... With sections devoted to theory, as well as practical strategies and applications for the classroom ... a primer on how the body hears music to music's impact on stress level, perceptual-motor skills, memory, and emotional intelligence ... Included are tips for choosing music and the various..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 1.438,
+      "plan": {
+        "keyword_query": "Eric Jensen",
+        "semantic_query": "",
+        "metadata_filter": {
+          "author": "Eric Jensen",
+          "genre": null,
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-87C2E7004E41",
+          "title": "Different Brains, Different Learners: How to Reach the Hard to Reach",
+          "author": "Eric Jensen",
+          "year": 2010,
+          "genres": "Education",
+          "description": "Provides instructions for teachers on identifying common impairments and symptomsm, allowing educators to make adjustments that enable students to learn effectively."
+        },
+        {
+          "book_id": "BK-CA2F2BCC542E",
+          "title": "Brain-Based Learning: The New Science of Teaching and Training, Revised Edition",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "The author presents research on how the brain processes information and offers practical methods to infuse your teaching and training with a renewed sense of purpose."
+        },
+        {
+          "book_id": "BK-17E671BA13C6",
+          "title": "Music with the Brain in Mind",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "... With sections devoted to theory, as well as practical strategies and applications for the classroom ... a primer on how the body hears music to music's impact on stress level, perceptual-motor skills, memory, and emotional intelligence ... Included are tips for choosing music and the various..."
+        },
+        {
+          "book_id": "BK-83644CAC7A61",
+          "title": "Learning with the Body in Mind",
+          "author": "Eric Jensen",
+          "year": 2000,
+          "genres": "Education",
+          "description": "Capitalize on the high energy that is natural to young learners! Research suggests that movement activities are an integral part of the learning process. From role plays to relays, learning is better activated when the body gets involved. Whether you're a primary school teacher or a secondary maths..."
+        }
+      ]
+    }
+  },
+  "relevant_ids": [
+    "BK-CA2F2BCC542E",
+    "BK-17E671BA13C6",
+    "BK-83644CAC7A61",
+    "BK-87C2E7004E41"
+  ]
+}

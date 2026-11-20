@@ -1,0 +1,212 @@
+{
+  "id": "M5",
+  "variant": "genre + year",
+  "query": "Any computer books from the 1990s?",
+  "relevant_if": {
+    "genre": "Computers",
+    "year_from": 1990,
+    "year_to": 1999
+  },
+  "type": "metadata",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.073,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-DCFF40288919",
+          "title": "The Essentials of PL/1 Programming Language (Essential Series)",
+          "author": "William Wesley Peterson",
+          "year": 1974,
+          "genres": "Computers",
+          "description": "This book provides students the essentials of programming languages such as, BASIC, FORTRAN, ALGOL, PL/1 APL, COBOL, SNOBOL."
+        },
+        {
+          "book_id": "BK-9C7F3DD71BA1",
+          "title": "Macintosh Bible, The (8th Edition)",
+          "author": "Clifford Colby, Marty Cortinas",
+          "year": 2001,
+          "genres": "Macintosh (Computer)",
+          "description": "The original and much-imitated Macintosh Bible has undergone a complete rehaul--and returned to its roots. The Macintosh Bible, Eighth Edition is the most comprehensive volume ever, and like the original, was written by a group of Macintosh community leaders, each an expert in his or her subject...."
+        },
+        {
+          "book_id": "BK-8836E962F221",
+          "title": "The Simple Book: An Introduction to Networking Management (Prentice Hall Series in Innovative Technology)",
+          "author": "Marshall T. Rose",
+          "year": 1996,
+          "genres": "Computers",
+          "description": "A guide to the latest changes in the most widely used technology for managing TCP/IP -- SNMP. Accompanied by CD with Tcl/Tk computer and CMA agent software. Author is developer of technology and the standard."
+        },
+        {
+          "book_id": "BK-7B5AF376ADA4",
+          "title": "A MANUAL OF STYLE",
+          "author": "Microsoft Corporation",
+          "year": 2012,
+          "genres": "Computers",
+          "description": "A guide for creating manuals, online help, and Web publications showing correct grammar, punctuation, and common misspellings of computer topics and terms."
+        },
+        {
+          "book_id": "BK-B5F2040B7E00",
+          "title": "Radical Tectonics (4x4 Series)",
+          "author": "Rosemary Sassoon",
+          "year": 2002,
+          "genres": "Computers",
+          "description": "Rosemary Sassoon alerts those involved in computer interface design that the skills of layout, spacing and typeface are equally vital in the construction of onscreen layouts as they are on the printed page. This second volume of Computers and Typography reflects the new developments in this..."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.004,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-AF25AADAAFF1",
+          "title": "Understanding Beth Henley (Understanding Contemporary American Literature)",
+          "author": "Robert J. Andreach, Robert J.. Andreach",
+          "year": 2006,
+          "genres": "Drama",
+          "description": "Beth Henley remains best known for Crimes of the Heart, a play that won the Pulitzer Prize and the New York Drama Critics Circle Award and later was made into a major motion picture. In this introduction to the Mississippi-born playwright and her body of work, Robert J. Andreach presents Henley's..."
+        },
+        {
+          "book_id": "BK-349BDC93CD5A",
+          "title": "Irish Writing in the Twentieth Century: A Reader",
+          "author": "David Pierce",
+          "year": 2000,
+          "genres": "History",
+          "description": "\"Arranged chronologically by decade, from the 1890s to the 1990s, each decade is divided into two different types of writing: critical/documentary and imaginative writing, and is accompanied by a headnote which situates it thematically and chronologically. The Reader is also structured for thematic..."
+        },
+        {
+          "book_id": "BK-B5F2040B7E00",
+          "title": "Radical Tectonics (4x4 Series)",
+          "author": "Rosemary Sassoon",
+          "year": 2002,
+          "genres": "Computers",
+          "description": "Rosemary Sassoon alerts those involved in computer interface design that the skills of layout, spacing and typeface are equally vital in the construction of onscreen layouts as they are on the printed page. This second volume of Computers and Typography reflects the new developments in this..."
+        },
+        {
+          "book_id": "BK-8836E962F221",
+          "title": "The Simple Book: An Introduction to Networking Management (Prentice Hall Series in Innovative Technology)",
+          "author": "Marshall T. Rose",
+          "year": 1996,
+          "genres": "Computers",
+          "description": "A guide to the latest changes in the most widely used technology for managing TCP/IP -- SNMP. Accompanied by CD with Tcl/Tk computer and CMA agent software. Author is developer of technology and the standard."
+        },
+        {
+          "book_id": "BK-AB5026649FAB",
+          "title": "Anthology of American Folk Music",
+          "author": "Ross Hair, Thomas Ruys Smith",
+          "year": 2016,
+          "genres": "Music",
+          "description": "Released in 1952, The Anthology of American Folk Music was the singular vision of the enigmatic artist, musicologist, and collector Harry Smith (1923–1991). A collection of eighty-four commercial recordings of American vernacular and folk music originally issued between 1927 and 1932, the Anthology..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.071,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-8836E962F221",
+          "title": "The Simple Book: An Introduction to Networking Management (Prentice Hall Series in Innovative Technology)",
+          "author": "Marshall T. Rose",
+          "year": 1996,
+          "genres": "Computers",
+          "description": "A guide to the latest changes in the most widely used technology for managing TCP/IP -- SNMP. Accompanied by CD with Tcl/Tk computer and CMA agent software. Author is developer of technology and the standard."
+        },
+        {
+          "book_id": "BK-B5F2040B7E00",
+          "title": "Radical Tectonics (4x4 Series)",
+          "author": "Rosemary Sassoon",
+          "year": 2002,
+          "genres": "Computers",
+          "description": "Rosemary Sassoon alerts those involved in computer interface design that the skills of layout, spacing and typeface are equally vital in the construction of onscreen layouts as they are on the printed page. This second volume of Computers and Typography reflects the new developments in this..."
+        },
+        {
+          "book_id": "BK-DCFF40288919",
+          "title": "The Essentials of PL/1 Programming Language (Essential Series)",
+          "author": "William Wesley Peterson",
+          "year": 1974,
+          "genres": "Computers",
+          "description": "This book provides students the essentials of programming languages such as, BASIC, FORTRAN, ALGOL, PL/1 APL, COBOL, SNOBOL."
+        },
+        {
+          "book_id": "BK-AF25AADAAFF1",
+          "title": "Understanding Beth Henley (Understanding Contemporary American Literature)",
+          "author": "Robert J. Andreach, Robert J.. Andreach",
+          "year": 2006,
+          "genres": "Drama",
+          "description": "Beth Henley remains best known for Crimes of the Heart, a play that won the Pulitzer Prize and the New York Drama Critics Circle Award and later was made into a major motion picture. In this introduction to the Mississippi-born playwright and her body of work, Robert J. Andreach presents Henley's..."
+        },
+        {
+          "book_id": "BK-9C7F3DD71BA1",
+          "title": "Macintosh Bible, The (8th Edition)",
+          "author": "Clifford Colby, Marty Cortinas",
+          "year": 2001,
+          "genres": "Macintosh (Computer)",
+          "description": "The original and much-imitated Macintosh Bible has undergone a complete rehaul--and returned to its roots. The Macintosh Bible, Eighth Edition is the most comprehensive volume ever, and like the original, was written by a group of Macintosh community leaders, each an expert in his or her subject...."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.777,
+      "plan": {
+        "keyword_query": "computer 1990s",
+        "semantic_query": "Books about computers, programming, or technology from the 1990s.",
+        "metadata_filter": {
+          "author": null,
+          "genre": null,
+          "year_from": 1990,
+          "year_to": 1999
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-8836E962F221",
+          "title": "The Simple Book: An Introduction to Networking Management (Prentice Hall Series in Innovative Technology)",
+          "author": "Marshall T. Rose",
+          "year": 1996,
+          "genres": "Computers",
+          "description": "A guide to the latest changes in the most widely used technology for managing TCP/IP -- SNMP. Accompanied by CD with Tcl/Tk computer and CMA agent software. Author is developer of technology and the standard."
+        },
+        {
+          "book_id": "BK-DD2CA8361039",
+          "title": "Information Breakthrough (Psi Successful Business Library)",
+          "author": "Charles J. Bodenstab",
+          "year": 1997,
+          "genres": "Computers",
+          "description": "Demonstrates how to develop specific measures of business performance by extracting relevant information out of endless amounts of data"
+        },
+        {
+          "book_id": "BK-730209717652",
+          "title": "Telecommunications Act Handbook: A Complete Reference for Business",
+          "author": "Leon T. Knauer, Ronald K. Machtley, Thomas M. Lynch",
+          "year": 1996,
+          "genres": "Technology & Engineering",
+          "description": "To find out more information about Rowman & Littlefield titles please visit us at www.rowmanlittlefield.com."
+        },
+        {
+          "book_id": "BK-EDDF9C8860CA",
+          "title": "The MIDI Companion: The Ins, Outs and Throughs",
+          "author": "Jeffrey Carl Rona",
+          "year": 1994,
+          "genres": "Music",
+          "description": "(Book). Here's your complete guide to using MIDI synthesizers, samplers, soundcards, sequencers, computers and more! The MIDI Companion shows how a MIDI system or systems for a wide range of situations can be assembled quickly, easily and trouble-free. Describes how to synchronize MIDI sequencers,..."
+        },
+        {
+          "book_id": "BK-E53A3433C45B",
+          "title": "Ketchup Power and the Starship Meatloaf",
+          "author": "Jerry Piasecki",
+          "year": 1997,
+          "genres": "Juvenile Fiction",
+          "description": "Traveling from the year 6789 to the present to find the lost recipe for ketchup, the crew of the starship Meatloaf turns back into kids as they journey to the past and confronts two evil lunchroom ladies. Original."
+        }
+      ]
+    }
+  },
+  "relevant_ids": [
+    "BK-DD2CA8361039",
+    "BK-42F13EF3F020",
+    "BK-8836E962F221",
+    "BK-2F543A90E278"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": "T4",
+  "variant": "topic",
+  "query": "History books about the Second World War.",
+  "type": "topic",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.077,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-A713D7F2B717",
+          "title": "The Marshall Cavendish illustrated encyclopedia of World War II: Based on the original text by Lieutenant Colonel Eddy Bauer",
+          "author": "Eddy Bauer",
+          "year": 1972,
+          "genres": "World War, 1939-1945",
+          "description": "You now have the opportunity to visit or revisit the Second World War through the Marshall Cavendish Illustrated Encyclopedia of World War II. This lavishly presented, clearly written, judicious work brings the war alive through thousands of full color photographs and is made even more interesting..."
+        },
+        {
+          "book_id": "BK-E50B5A2705A7",
+          "title": "We Made the Headlines Possible: The Critical Contribution of the Rear Echelon in World War II",
+          "author": "George N. Havens",
+          "year": 2002,
+          "genres": "History",
+          "description": "We Made the Headlines Possible is George Havens' personal account of his time as a First Sergeant in the US Army in World War II."
+        },
+        {
+          "book_id": "BK-57813E71C659",
+          "title": "Winged Victory: The Army Air Forces in World War II",
+          "author": "Geoffrey Perret",
+          "year": 1993,
+          "genres": "History",
+          "description": "A behind-the-scenes look at the heroism of American fighter pilots during World War II chronicles the drama of the great aerial campaigns. By the author of A Country Made by War. 12,500 first printing."
+        },
+        {
+          "book_id": "BK-7CA873B1F4EB",
+          "title": "The Greatest Generation",
+          "author": "Tom Brokaw",
+          "year": 2001,
+          "genres": "History",
+          "description": "Focuses on the generation of Americans who were born in the 1920s, came of age during the Depression, fought in World War II, and came home to build a new America during the postwar era."
+        },
+        {
+          "book_id": "BK-AAB9DBC2F9C3",
+          "title": "The Fall and Rise of the Stately Home",
+          "author": "Pamela Horn",
+          "year": 2013,
+          "genres": "History",
+          "description": "Forget glossy period dramas, here is the real story of Britain's super-rich from the First World War to the end of the 'roaring' twenties."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-CE7C65DB3D5D",
+          "title": "Howard Zinn on War",
+          "author": "Howard Zinn",
+          "year": 2011,
+          "genres": "History",
+          "description": "This second edition of Howard Zinn on War is a collection of twenty-six short writings chosen by the author to represent his thinking on a subject that concerned and fascinated him throughout his career. He reflects on the wars against Iraq, the war in Kosovo, the Vietnam War, World War II, and on..."
+        },
+        {
+          "book_id": "BK-90C232967B7E",
+          "title": "Red Star Under the Baltic: A Soviet Submariner's Personal Account 1941-1945",
+          "author": "Viktor Korzh",
+          "year": 2004,
+          "genres": "History",
+          "description": "Red Star Under The Baltic is the graphic memoir of a Soviet submariner during his years at sea in the Baltic during the Second World War. Not only is this a superb record of the appalling conditions endured on these basic craft, but a very human account detailing the comradeship and tensions among..."
+        },
+        {
+          "book_id": "BK-B0C473395DD5",
+          "title": "Howard Zinn on History",
+          "author": "Howard Zinn",
+          "year": 2011,
+          "genres": "History",
+          "description": "Howard Zinn began work on his first book for his friends at Seven Stories Press in 1996, a big volume collecting all his shorter writings organized by subject. The themes he chose reflected his lifelong concerns: war, history, law, class, means and ends, and race. Throughout his life Zinn had..."
+        },
+        {
+          "book_id": "BK-4954465BDAF4",
+          "title": "BIRDS BEASTS AND RELATIVES.",
+          "author": "Gerald Durrell",
+          "year": 2017,
+          "genres": "",
+          "description": "The follow up to My Family and Other Animals and the second book in The Corfu Trilogy, the beloved books that inspired ITV's television series The Durrells. Just before the Second World War the Durrell family decamped to the glorious, sun-soaked island of Corfu where the youngest of the four..."
+        },
+        {
+          "book_id": "BK-A713D7F2B717",
+          "title": "The Marshall Cavendish illustrated encyclopedia of World War II: Based on the original text by Lieutenant Colonel Eddy Bauer",
+          "author": "Eddy Bauer",
+          "year": 1972,
+          "genres": "World War, 1939-1945",
+          "description": "You now have the opportunity to visit or revisit the Second World War through the Marshall Cavendish Illustrated Encyclopedia of World War II. This lavishly presented, clearly written, judicious work brings the war alive through thousands of full color photographs and is made even more interesting..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.083,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-A713D7F2B717",
+          "title": "The Marshall Cavendish illustrated encyclopedia of World War II: Based on the original text by Lieutenant Colonel Eddy Bauer",
+          "author": "Eddy Bauer",
+          "year": 1972,
+          "genres": "World War, 1939-1945",
+          "description": "You now have the opportunity to visit or revisit the Second World War through the Marshall Cavendish Illustrated Encyclopedia of World War II. This lavishly presented, clearly written, judicious work brings the war alive through thousands of full color photographs and is made even more interesting..."
+        },
+        {
+          "book_id": "BK-E50B5A2705A7",
+          "title": "We Made the Headlines Possible: The Critical Contribution of the Rear Echelon in World War II",
+          "author": "George N. Havens",
+          "year": 2002,
+          "genres": "History",
+          "description": "We Made the Headlines Possible is George Havens' personal account of his time as a First Sergeant in the US Army in World War II."
+        },
+        {
+          "book_id": "BK-91CA8F3AA6CB",
+          "title": "The First World War (History of Warfare)",
+          "author": "John Keegan",
+          "year": 2011,
+          "genres": "History",
+          "description": "The definitive account of the Great War and a national bestseller from eminent military historian John Keegan 2018 marks the centenary of the First World War – the war that created the modern world. It destroyed a century of relative peace and prosperity and saw a continent at the height of its..."
+        },
+        {
+          "book_id": "BK-CE7C65DB3D5D",
+          "title": "Howard Zinn on War",
+          "author": "Howard Zinn",
+          "year": 2011,
+          "genres": "History",
+          "description": "This second edition of Howard Zinn on War is a collection of twenty-six short writings chosen by the author to represent his thinking on a subject that concerned and fascinated him throughout his career. He reflects on the wars against Iraq, the war in Kosovo, the Vietnam War, World War II, and on..."
+        },
+        {
+          "book_id": "BK-90C232967B7E",
+          "title": "Red Star Under the Baltic: A Soviet Submariner's Personal Account 1941-1945",
+          "author": "Viktor Korzh",
+          "year": 2004,
+          "genres": "History",
+          "description": "Red Star Under The Baltic is the graphic memoir of a Soviet submariner during his years at sea in the Baltic during the Second World War. Not only is this a superb record of the appalling conditions endured on these basic craft, but a very human account detailing the comradeship and tensions among..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.617,
+      "plan": {
+        "keyword_query": "Second World War history",
+        "semantic_query": "Books about the events, people, and impacts of the Second World War.",
+        "metadata_filter": {
+          "author": null,
+          "genre": "History",
+          "year_from": 1939,
+          "year_to": 1945
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-B0E45B350500",
+          "title": "Spitfire Pilot: A Lucky Terrell Flying Story",
+          "author": "Canfield Cook",
+          "year": 1942,
+          "genres": "Aeronautics",
+          "description": "\"Lucky\" Bob Terrell continues his duties in fighting the enemy in World War II. In this episode, he wins the admiration of all despite his disobeying commands."
+        },
+        {
+          "book_id": "BK-0CC5008DEED6",
+          "title": "The Ten Grandmothers (Civilization of American Indian)",
+          "author": "Alice Lee Marriott",
+          "year": 1945,
+          "genres": "Social Science",
+          "description": "?Once in a blue moon (which means a fairly long cycle in my case) one who deals professionally with new books comes upon something that seems to him truly noteworthy and memorable-a reading experience which he will cherish for the rest of his life. And when this book is original and, indeed,..."
+        },
+        {
+          "book_id": "BK-50BB494DE29A",
+          "title": "Luther Burbank Plant Magician",
+          "author": "John Yocum Beaty",
+          "year": 1943,
+          "genres": "Biologists",
+          "description": "A biography of the famous plant breeder and horticulturist whose experiments resulted in new or improved flowers, trees, vegetables, nuts, fruits, cacti, and grasses. Emphasizes the methods he used in developing the new species."
+        }
+      ]
+    }
+  }
+}

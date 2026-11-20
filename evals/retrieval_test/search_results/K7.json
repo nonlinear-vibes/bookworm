@@ -1,0 +1,203 @@
+{
+  "id": "K7",
+  "variant": "content description, no title",
+  "query": "Do you have a recipe book about classic American roadside diner food?",
+  "target": "BK-D7FCBE881E01",
+  "target_title": "More Retro Diner: A Second Helping of Roadside Recipes",
+  "type": "known_item",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.076,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-D7FCBE881E01",
+          "title": "More Retro Diner: A Second Helping of Roadside Recipes",
+          "author": "Randy Garbin, Teri Dunn",
+          "year": 2005,
+          "genres": "Cooking",
+          "description": "From the roadsides of American highways and main streets, MORE RETRO DINER is the scrumptious sequel to the bestselling RETRO DINER, celebrating the vinyl booths, bar stools, milk shakes, french fries, and meatloaves of classic diner-style food. Beaconing from the neon signs of diners across the..."
+        },
+        {
+          "book_id": "BK-72BE82FA0E1C",
+          "title": "The Cowboy Cookbook",
+          "author": "Sherry Monahan",
+          "year": 2015,
+          "genres": "Cooking",
+          "description": "From chuckwagon recipes to dutch-oven favorites for your own campfire, The Cowboy's Cookbook features recipes, photos, and lore celebrating the cowboy s role in the shaping of the American West. From songs sung around the campfire after hearty meals of steak, beans, and skillet cornbread to the..."
+        },
+        {
+          "book_id": "BK-2886BBF17BB0",
+          "title": "Good Food, Served Right : Traditional Recipes and Food Customs from New York's North Country",
+          "author": "Mark F. Sohn",
+          "year": 2005,
+          "genres": "Cooking",
+          "description": "“The 80 recipes are important, but really, this is a food-studies book written for those who feel some nostalgia for, or connection to, Appalachia.” —Lexington Herald-Leader Mark F. Sohn’s classic book, Mountain Country Cooking, was a James Beard Award nominee in 1997. In Appalachian Home Cooking,..."
+        },
+        {
+          "book_id": "BK-223F089F5522",
+          "title": "Old-Fashioned Ckbk",
+          "author": "Don Holm",
+          "year": 1969,
+          "genres": "Cooking",
+          "description": "Distributed by the University of Nebraska Press for Caxton Press This book explains how to build the right kind of fire for the best results with a minimum of time and effort. Tempting recipes for hungry fishermen and hunters include pot roasts, mulligan stews, and dishes made from fish of various..."
+        },
+        {
+          "book_id": "BK-8BFF1D1C4FF4",
+          "title": "Cooking with Texas Highways",
+          "author": "Nola McKey",
+          "year": 2010,
+          "genres": "Cooking",
+          "description": "“Reflects the great ethnic diversity of the contemporary Texas table, offering everything from Sauerbraten . . . to Crawfish Etouffee.” —The Austin Chronicle Whether you’re hungry for down-home barbecue and Tex-Mex, or you want to try more exotic dishes such as Paella Valenciana and Thai Pesto,..."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.004,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-D7FCBE881E01",
+          "title": "More Retro Diner: A Second Helping of Roadside Recipes",
+          "author": "Randy Garbin, Teri Dunn",
+          "year": 2005,
+          "genres": "Cooking",
+          "description": "From the roadsides of American highways and main streets, MORE RETRO DINER is the scrumptious sequel to the bestselling RETRO DINER, celebrating the vinyl booths, bar stools, milk shakes, french fries, and meatloaves of classic diner-style food. Beaconing from the neon signs of diners across the..."
+        },
+        {
+          "book_id": "BK-2886BBF17BB0",
+          "title": "Good Food, Served Right : Traditional Recipes and Food Customs from New York's North Country",
+          "author": "Mark F. Sohn",
+          "year": 2005,
+          "genres": "Cooking",
+          "description": "“The 80 recipes are important, but really, this is a food-studies book written for those who feel some nostalgia for, or connection to, Appalachia.” —Lexington Herald-Leader Mark F. Sohn’s classic book, Mountain Country Cooking, was a James Beard Award nominee in 1997. In Appalachian Home Cooking,..."
+        },
+        {
+          "book_id": "BK-7AC5E9ADEA9A",
+          "title": "Alaska Sourdough",
+          "author": "Ruth Allman",
+          "year": 1976,
+          "genres": "Cooking",
+          "description": "\"Sourdough is a magical food\", as author Ruth Allman was fond of saying. There are folks in Alaska who claim the staff of life in their sourdough pots is more than 40 years old or date it to the time when Fairbanks was a mining town. Handwwritten to match the old-timers recipes, this book includes..."
+        },
+        {
+          "book_id": "BK-2F3F0D86FC79",
+          "title": "Will Work for Food or $: A Memoir from the Roadside",
+          "author": "Bruce Moody",
+          "year": 2004,
+          "genres": "Biography & Autobiography",
+          "description": "When Bruce Moody was almost 60, he got fired. In desperation, he made a simple sign and began a life on the side of the road. With neither self-pity nor pride, Moody shares his life on the roadside, the unexpected elation he feels at his contact with others, the joy he gets by being out of doors,..."
+        },
+        {
+          "book_id": "BK-649122EDD451",
+          "title": "Recipes for a Small Planet",
+          "author": "Frances Moore Lappé",
+          "year": 1991,
+          "genres": "Cooking",
+          "description": "Here again is the extraordinary bestselling book that taught America the social and personal significance of a new way of eating-- one that remains a complete guide for eating well in the 90s. Featuring: simple rules for a healthy diet; a streamlined, easy-to-use format; delicious food combinations..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.089,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-D7FCBE881E01",
+          "title": "More Retro Diner: A Second Helping of Roadside Recipes",
+          "author": "Randy Garbin, Teri Dunn",
+          "year": 2005,
+          "genres": "Cooking",
+          "description": "From the roadsides of American highways and main streets, MORE RETRO DINER is the scrumptious sequel to the bestselling RETRO DINER, celebrating the vinyl booths, bar stools, milk shakes, french fries, and meatloaves of classic diner-style food. Beaconing from the neon signs of diners across the..."
+        },
+        {
+          "book_id": "BK-2886BBF17BB0",
+          "title": "Good Food, Served Right : Traditional Recipes and Food Customs from New York's North Country",
+          "author": "Mark F. Sohn",
+          "year": 2005,
+          "genres": "Cooking",
+          "description": "“The 80 recipes are important, but really, this is a food-studies book written for those who feel some nostalgia for, or connection to, Appalachia.” —Lexington Herald-Leader Mark F. Sohn’s classic book, Mountain Country Cooking, was a James Beard Award nominee in 1997. In Appalachian Home Cooking,..."
+        },
+        {
+          "book_id": "BK-7AC5E9ADEA9A",
+          "title": "Alaska Sourdough",
+          "author": "Ruth Allman",
+          "year": 1976,
+          "genres": "Cooking",
+          "description": "\"Sourdough is a magical food\", as author Ruth Allman was fond of saying. There are folks in Alaska who claim the staff of life in their sourdough pots is more than 40 years old or date it to the time when Fairbanks was a mining town. Handwwritten to match the old-timers recipes, this book includes..."
+        },
+        {
+          "book_id": "BK-72BE82FA0E1C",
+          "title": "The Cowboy Cookbook",
+          "author": "Sherry Monahan",
+          "year": 2015,
+          "genres": "Cooking",
+          "description": "From chuckwagon recipes to dutch-oven favorites for your own campfire, The Cowboy's Cookbook features recipes, photos, and lore celebrating the cowboy s role in the shaping of the American West. From songs sung around the campfire after hearty meals of steak, beans, and skillet cornbread to the..."
+        },
+        {
+          "book_id": "BK-649122EDD451",
+          "title": "Recipes for a Small Planet",
+          "author": "Frances Moore Lappé",
+          "year": 1991,
+          "genres": "Cooking",
+          "description": "Here again is the extraordinary bestselling book that taught America the social and personal significance of a new way of eating-- one that remains a complete guide for eating well in the 90s. Featuring: simple rules for a healthy diet; a streamlined, easy-to-use format; delicious food combinations..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.026,
+      "plan": {
+        "keyword_query": "classic American roadside diner food recipe book",
+        "semantic_query": "Recipe books about classic American roadside diner food",
+        "metadata_filter": {
+          "author": null,
+          "genre": "Cookbook",
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-D7FCBE881E01",
+          "title": "More Retro Diner: A Second Helping of Roadside Recipes",
+          "author": "Randy Garbin, Teri Dunn",
+          "year": 2005,
+          "genres": "Cooking",
+          "description": "From the roadsides of American highways and main streets, MORE RETRO DINER is the scrumptious sequel to the bestselling RETRO DINER, celebrating the vinyl booths, bar stools, milk shakes, french fries, and meatloaves of classic diner-style food. Beaconing from the neon signs of diners across the..."
+        },
+        {
+          "book_id": "BK-2886BBF17BB0",
+          "title": "Good Food, Served Right : Traditional Recipes and Food Customs from New York's North Country",
+          "author": "Mark F. Sohn",
+          "year": 2005,
+          "genres": "Cooking",
+          "description": "“The 80 recipes are important, but really, this is a food-studies book written for those who feel some nostalgia for, or connection to, Appalachia.” —Lexington Herald-Leader Mark F. Sohn’s classic book, Mountain Country Cooking, was a James Beard Award nominee in 1997. In Appalachian Home Cooking,..."
+        },
+        {
+          "book_id": "BK-72BE82FA0E1C",
+          "title": "The Cowboy Cookbook",
+          "author": "Sherry Monahan",
+          "year": 2015,
+          "genres": "Cooking",
+          "description": "From chuckwagon recipes to dutch-oven favorites for your own campfire, The Cowboy's Cookbook features recipes, photos, and lore celebrating the cowboy s role in the shaping of the American West. From songs sung around the campfire after hearty meals of steak, beans, and skillet cornbread to the..."
+        },
+        {
+          "book_id": "BK-223F089F5522",
+          "title": "Old-Fashioned Ckbk",
+          "author": "Don Holm",
+          "year": 1969,
+          "genres": "Cooking",
+          "description": "Distributed by the University of Nebraska Press for Caxton Press This book explains how to build the right kind of fire for the best results with a minimum of time and effort. Tempting recipes for hungry fishermen and hunters include pot roasts, mulligan stews, and dishes made from fish of various..."
+        },
+        {
+          "book_id": "BK-8BFF1D1C4FF4",
+          "title": "Cooking with Texas Highways",
+          "author": "Nola McKey",
+          "year": 2010,
+          "genres": "Cooking",
+          "description": "“Reflects the great ethnic diversity of the contemporary Texas table, offering everything from Sauerbraten . . . to Crawfish Etouffee.” —The Austin Chronicle Whether you’re hungry for down-home barbecue and Tex-Mex, or you want to try more exotic dishes such as Paella Valenciana and Thai Pesto,..."
+        }
+      ]
+    }
+  }
+}

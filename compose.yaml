@@ -108,10 +108,13 @@ services:
   eval:
     <<: *app
     profiles: [eval]
+    # Run as the host user, so traces and results written to ./evals are
+    # owned by them. Set UID/GID in .env if they are not 1000.
+    user: "${UID:-1000}:${GID:-1000}"
     environment:
       <<: *app-env
-      LLM_TEMPERATURE: "0"   # deterministic answers for repeatable scores
-      PYTHONDONTWRITEBYTECODE: "1"   # no root-owned __pycache__ in ./evals
+      HOME: /tmp                     # the host user has no home in the image
+      PYTHONDONTWRITEBYTECODE: "1"   # no __pycache__ in ./evals
     volumes:
       - appdata:/app/data
       - ./evals:/app/evals

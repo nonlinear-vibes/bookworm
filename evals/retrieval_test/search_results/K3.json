@@ -1,0 +1,203 @@
+{
+  "id": "K3",
+  "variant": "misremembered title",
+  "query": "I'm looking for that short story collection called Welding with Kids or something like that.",
+  "target": "BK-DBFBB4CC872C",
+  "target_title": "Welding with Children: Stories",
+  "type": "known_item",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.08,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-DBFBB4CC872C",
+          "title": "Welding with Children: Stories",
+          "author": "Tim Gautreaux",
+          "year": 2009,
+          "genres": "Fiction",
+          "description": "A master storyteller's triumphant, moving collection about lost souls, found love, and rediscovered tradition Tim Gautreaux returns to the form that won him his first fans, with tales of family, sin, and redemption: from a man who realizes his grandchildren are growing up without any sense of right..."
+        },
+        {
+          "book_id": "BK-262FB737BFF1",
+          "title": "The Bedquilt and Other Stories",
+          "author": "Dorothy Canfield Fisher",
+          "year": 1997,
+          "genres": "Fiction",
+          "description": "A collection of stories touches on such topics as love, war, race relations, women's rights, and the trials of marriage"
+        },
+        {
+          "book_id": "BK-8DBEF095086E",
+          "title": "The Wonder Effect (Ballantine, F-638)",
+          "author": "C. M. Kornbluth",
+          "year": 2010,
+          "genres": "Fiction",
+          "description": "Collects eight of Kornbluth's classic science fiction stories."
+        },
+        {
+          "book_id": "BK-BD6F8B57469C",
+          "title": "The Things I Wish I'd Said",
+          "author": "Michele Vanort Cozzens",
+          "year": 2004,
+          "genres": "Literary Collections",
+          "description": "\"Exploring light topics from baby showers and kids' birthday parties, to disc golf, home improvement, gardening and bad haircuts, she also digs deep and shares intimate feelings about sexual harassment, the \"disastrous first marriage\" and the deaths of her mother and young niece, a victim of the..."
+        },
+        {
+          "book_id": "BK-6E9379A4B262",
+          "title": "The National Review Treasury of Classic Children's Literature",
+          "author": "William F. Buckley, Jr.",
+          "year": 2004,
+          "genres": "Juvenile Fiction",
+          "description": "A collection of over forty stories, tales, poems, and fables by American writers from the late nineteenth and early twentieth centuries, originally published in \"St. Nicholas Magazine.\""
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.004,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-417B05BE837D",
+          "title": "MR. RIGHT IS DEAD",
+          "author": "Rona Jaffe",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "Often regarded as her finest and most literary work, Mr. Right Is Dead is Rona Jaffe’s collection of short stories from 1965. Containing five stories and one novella, each story has the savvy and sharp tone that characterize the best of Rona Jaffe’s writing. The title novella centers on a call girl..."
+        },
+        {
+          "book_id": "BK-DBFBB4CC872C",
+          "title": "Welding with Children: Stories",
+          "author": "Tim Gautreaux",
+          "year": 2009,
+          "genres": "Fiction",
+          "description": "A master storyteller's triumphant, moving collection about lost souls, found love, and rediscovered tradition Tim Gautreaux returns to the form that won him his first fans, with tales of family, sin, and redemption: from a man who realizes his grandchildren are growing up without any sense of right..."
+        },
+        {
+          "book_id": "BK-56DCA63516CA",
+          "title": "The AUTHOR's Craft (Collected Works of Arnold Bennett)",
+          "author": "Arnold Bennett",
+          "year": 2013,
+          "genres": "Fiction",
+          "description": "The prolific novelist Arnold Bennett created a succession of stories that detailed life in the Staffordshire Potteries, which were to immortalize his beloved “Five Towns\" and establish his name as one of the leading realist authors of early Twentieth Century fiction. This comprehensive eBook..."
+        },
+        {
+          "book_id": "BK-F6148A57F395",
+          "title": "Best of Bizarro (v. 1)",
+          "author": "Jeff Strand, Adam Cesare, Adam Howe, David James Keaton, Jack Bantry, Robert Essig, Pete Kahle, Scott Emerson, Tony Knighton, The Behrg, Kristopher Triana, Lilith Morgan, Charles Austin Muir, Jorge Palacios, MP Johnson, Monica J. O'Rourke, Jason Parent, Clare de Lune, George Cotronis",
+          "year": 2016,
+          "genres": "Fiction",
+          "description": "\"Not for the faint of heart or weak of stomach, the 19 stories in this new best-of annual anthology feature episodes of graphic gore and violence—including torture, dismemberment, self-mutilation, and home abortion—that are designed to push buttons as well as boundaries...strictly for hardcore..."
+        },
+        {
+          "book_id": "BK-46B8C54751A6",
+          "title": "Mensa Number Puzzles (Mensa Word Games for Kids)",
+          "author": "Evelyn B. Christensen",
+          "year": 2018,
+          "genres": "Juvenile Nonfiction",
+          "description": "Acclaimed teacher and puzzler Evelyn B. Christensen has created one hundred brand-new perplexing and adorably illustrated games for young puzzlers. There is something for every type of learner here, including number puzzles, word puzzles, logic puzzles, and visual puzzles. She has also included..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.077,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-DBFBB4CC872C",
+          "title": "Welding with Children: Stories",
+          "author": "Tim Gautreaux",
+          "year": 2009,
+          "genres": "Fiction",
+          "description": "A master storyteller's triumphant, moving collection about lost souls, found love, and rediscovered tradition Tim Gautreaux returns to the form that won him his first fans, with tales of family, sin, and redemption: from a man who realizes his grandchildren are growing up without any sense of right..."
+        },
+        {
+          "book_id": "BK-417B05BE837D",
+          "title": "MR. RIGHT IS DEAD",
+          "author": "Rona Jaffe",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "Often regarded as her finest and most literary work, Mr. Right Is Dead is Rona Jaffe’s collection of short stories from 1965. Containing five stories and one novella, each story has the savvy and sharp tone that characterize the best of Rona Jaffe’s writing. The title novella centers on a call girl..."
+        },
+        {
+          "book_id": "BK-262FB737BFF1",
+          "title": "The Bedquilt and Other Stories",
+          "author": "Dorothy Canfield Fisher",
+          "year": 1997,
+          "genres": "Fiction",
+          "description": "A collection of stories touches on such topics as love, war, race relations, women's rights, and the trials of marriage"
+        },
+        {
+          "book_id": "BK-8DBEF095086E",
+          "title": "The Wonder Effect (Ballantine, F-638)",
+          "author": "C. M. Kornbluth",
+          "year": 2010,
+          "genres": "Fiction",
+          "description": "Collects eight of Kornbluth's classic science fiction stories."
+        },
+        {
+          "book_id": "BK-56DCA63516CA",
+          "title": "The AUTHOR's Craft (Collected Works of Arnold Bennett)",
+          "author": "Arnold Bennett",
+          "year": 2013,
+          "genres": "Fiction",
+          "description": "The prolific novelist Arnold Bennett created a succession of stories that detailed life in the Staffordshire Potteries, which were to immortalize his beloved “Five Towns\" and establish his name as one of the leading realist authors of early Twentieth Century fiction. This comprehensive eBook..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 1.776,
+      "plan": {
+        "keyword_query": "Welding with Kids",
+        "semantic_query": "A collection of short stories about welding or related to children.",
+        "metadata_filter": {
+          "author": null,
+          "genre": null,
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-DBFBB4CC872C",
+          "title": "Welding with Children: Stories",
+          "author": "Tim Gautreaux",
+          "year": 2009,
+          "genres": "Fiction",
+          "description": "A master storyteller's triumphant, moving collection about lost souls, found love, and rediscovered tradition Tim Gautreaux returns to the form that won him his first fans, with tales of family, sin, and redemption: from a man who realizes his grandchildren are growing up without any sense of right..."
+        },
+        {
+          "book_id": "BK-30C230821011",
+          "title": "The Castle in the Attic",
+          "author": "Elizabeth Winthrop",
+          "year": 2012,
+          "genres": "Juvenile Fiction",
+          "description": "The classic children's story about a young boy, his toy castle, and a magical adventure that reveals the true meaning of courage When his beloved caretaker Mrs. Phillips tells him she's leaving, William is devastated. Not even her farewell gift of a model medieval castle helps him feel..."
+        },
+        {
+          "book_id": "BK-858418438A2B",
+          "title": "Meet the Musicians: From Prodigies (or Not) to Pros",
+          "author": "Amy Nathan",
+          "year": 2006,
+          "genres": "Juvenile Nonfiction",
+          "description": "The musicians of the New York Philharmonic were kids once too! How does a kid who just wants to play baseball make the transition to creating beautiful music? Musicians from many different sections of the New York Philharmonic share how they became involved in music as kids and how their careers..."
+        },
+        {
+          "book_id": "BK-AD6D832B9009",
+          "title": "Joshua and the Children",
+          "author": "Joseph Girzone",
+          "year": 1995,
+          "genres": "Fiction",
+          "description": "Tells the story of Joshua, the simple, hardworking man who does beautiful carpentry and has an extraordinary effect on everyone he meets, transforming them with warmth and love"
+        },
+        {
+          "book_id": "BK-599B61F969A5",
+          "title": "How to Discipline Kids without Losing Their Love and Respect",
+          "author": "Jim Fay",
+          "year": 2004,
+          "genres": "Family & Relationships",
+          "description": "Imagine... No More Arguing. Imagine... No More Manipulation. Imagine... Stess Free Parenting. For over fifty years, Jim Fay has worked with schools, families, and children in the areas of teaching, parenting and discipline. In 1977, along with internationally renowned psychiatrist Dr. Foster W...."
+        }
+      ]
+    }
+  }
+}

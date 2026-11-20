@@ -1,0 +1,211 @@
+{
+  "id": "M1",
+  "variant": "author",
+  "query": "Do you have any books by Mercer Mayer?",
+  "relevant_if": {
+    "author": "Mercer Mayer"
+  },
+  "type": "metadata",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.073,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-A52BBE85581C",
+          "title": "Bye-Bye, Mom and Dad",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Families",
+          "description": "Little Critter thinks he is in charge when Mom and Dad go away for the day even though Grandma and Grandpa spend the day with him."
+        },
+        {
+          "book_id": "BK-1A9A72DF6F8B",
+          "title": "Little Critter: Just a Snowman",
+          "author": "Mercer Mayer",
+          "year": 2012,
+          "genres": "Juvenile Fiction",
+          "description": "Join Mercer Mayer’s classic and beloved character, Little Critter®, on his snow day! Snow is piled high and school is cancelled. But before Little Critter can build his snowman, he must help his sister wear her snow boots, his dad shovel the sidewalk, and Gator build a fort. Will Little Critter..."
+        },
+        {
+          "book_id": "BK-DF2BB3CAACC1",
+          "title": "The House on Mulberry Street",
+          "author": "Maan Meyers",
+          "year": null,
+          "genres": "Fiction",
+          "description": ""
+        },
+        {
+          "book_id": "BK-4859CDD13D35",
+          "title": "The painter's craft,",
+          "author": "Ralph Mayer",
+          "year": 1975,
+          "genres": "Artists' materials",
+          "description": ""
+        },
+        {
+          "book_id": "BK-DC302E1236B0",
+          "title": "Little Critter: Good for Me and You",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Juvenile Fiction",
+          "description": "At school, Little Critter learns all about having a healthy lifestyle—from a balanced diet and the food pyramid to exercises that keep him in shape. Now Little Critter can showhis family how to stay fit and have fun doing it!"
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-1A9A72DF6F8B",
+          "title": "Little Critter: Just a Snowman",
+          "author": "Mercer Mayer",
+          "year": 2012,
+          "genres": "Juvenile Fiction",
+          "description": "Join Mercer Mayer’s classic and beloved character, Little Critter®, on his snow day! Snow is piled high and school is cancelled. But before Little Critter can build his snowman, he must help his sister wear her snow boots, his dad shovel the sidewalk, and Gator build a fort. Will Little Critter..."
+        },
+        {
+          "book_id": "BK-064E744FD08E",
+          "title": "Little Critter: Just a School Project",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Caterpillars",
+          "description": "Little Critter studies caterpillars as his project for the science fair."
+        },
+        {
+          "book_id": "BK-A52BBE85581C",
+          "title": "Bye-Bye, Mom and Dad",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Families",
+          "description": "Little Critter thinks he is in charge when Mom and Dad go away for the day even though Grandma and Grandpa spend the day with him."
+        },
+        {
+          "book_id": "BK-DC302E1236B0",
+          "title": "Little Critter: Good for Me and You",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Juvenile Fiction",
+          "description": "At school, Little Critter learns all about having a healthy lifestyle—from a balanced diet and the food pyramid to exercises that keep him in shape. Now Little Critter can showhis family how to stay fit and have fun doing it!"
+        },
+        {
+          "book_id": "BK-BD6D68069985",
+          "title": "Little Critter: My Trip to the Hospital",
+          "author": "Mercer Mayer",
+          "year": 2005,
+          "genres": "Juvenile Fiction",
+          "description": "When Little Critter breaks his leg in a soccer game, he has to make his first trip to the hospital. Follow brave Little Critter as he rides in an ambulance, meets the doctor, and gets his first X-ray and his first cast."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.074,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-1A9A72DF6F8B",
+          "title": "Little Critter: Just a Snowman",
+          "author": "Mercer Mayer",
+          "year": 2012,
+          "genres": "Juvenile Fiction",
+          "description": "Join Mercer Mayer’s classic and beloved character, Little Critter®, on his snow day! Snow is piled high and school is cancelled. But before Little Critter can build his snowman, he must help his sister wear her snow boots, his dad shovel the sidewalk, and Gator build a fort. Will Little Critter..."
+        },
+        {
+          "book_id": "BK-A52BBE85581C",
+          "title": "Bye-Bye, Mom and Dad",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Families",
+          "description": "Little Critter thinks he is in charge when Mom and Dad go away for the day even though Grandma and Grandpa spend the day with him."
+        },
+        {
+          "book_id": "BK-064E744FD08E",
+          "title": "Little Critter: Just a School Project",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Caterpillars",
+          "description": "Little Critter studies caterpillars as his project for the science fair."
+        },
+        {
+          "book_id": "BK-DC302E1236B0",
+          "title": "Little Critter: Good for Me and You",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Juvenile Fiction",
+          "description": "At school, Little Critter learns all about having a healthy lifestyle—from a balanced diet and the food pyramid to exercises that keep him in shape. Now Little Critter can showhis family how to stay fit and have fun doing it!"
+        },
+        {
+          "book_id": "BK-4859CDD13D35",
+          "title": "The painter's craft,",
+          "author": "Ralph Mayer",
+          "year": 1975,
+          "genres": "Artists' materials",
+          "description": ""
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 1.44,
+      "plan": {
+        "keyword_query": "Mercer Mayer",
+        "semantic_query": "",
+        "metadata_filter": {
+          "author": "Mercer Mayer",
+          "genre": null,
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-1A9A72DF6F8B",
+          "title": "Little Critter: Just a Snowman",
+          "author": "Mercer Mayer",
+          "year": 2012,
+          "genres": "Juvenile Fiction",
+          "description": "Join Mercer Mayer’s classic and beloved character, Little Critter®, on his snow day! Snow is piled high and school is cancelled. But before Little Critter can build his snowman, he must help his sister wear her snow boots, his dad shovel the sidewalk, and Gator build a fort. Will Little Critter..."
+        },
+        {
+          "book_id": "BK-064E744FD08E",
+          "title": "Little Critter: Just a School Project",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Caterpillars",
+          "description": "Little Critter studies caterpillars as his project for the science fair."
+        },
+        {
+          "book_id": "BK-A52BBE85581C",
+          "title": "Bye-Bye, Mom and Dad",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Families",
+          "description": "Little Critter thinks he is in charge when Mom and Dad go away for the day even though Grandma and Grandpa spend the day with him."
+        },
+        {
+          "book_id": "BK-DC302E1236B0",
+          "title": "Little Critter: Good for Me and You",
+          "author": "Mercer Mayer",
+          "year": 2004,
+          "genres": "Juvenile Fiction",
+          "description": "At school, Little Critter learns all about having a healthy lifestyle—from a balanced diet and the food pyramid to exercises that keep him in shape. Now Little Critter can showhis family how to stay fit and have fun doing it!"
+        },
+        {
+          "book_id": "BK-BD6D68069985",
+          "title": "Little Critter: My Trip to the Hospital",
+          "author": "Mercer Mayer",
+          "year": 2005,
+          "genres": "Juvenile Fiction",
+          "description": "When Little Critter breaks his leg in a soccer game, he has to make his first trip to the hospital. Follow brave Little Critter as he rides in an ambulance, meets the doctor, and gets his first X-ray and his first cast."
+        }
+      ]
+    }
+  },
+  "relevant_ids": [
+    "BK-A52BBE85581C",
+    "BK-064E744FD08E",
+    "BK-1A9A72DF6F8B",
+    "BK-DC302E1236B0",
+    "BK-BD6D68069985"
+  ]
+}

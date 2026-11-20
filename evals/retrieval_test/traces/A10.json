@@ -1,0 +1,403 @@
+{
+  "case": {
+    "id": "A10",
+    "category": "reservation (approved)",
+    "setup": {
+      "copies": {
+        "BK-920D2BE40DB5": 1
+      }
+    },
+    "message": "Please reserve Frommer's South Africa for me.",
+    "approve": true,
+    "expect": {
+      "intent": "reservation or combined",
+      "route": "search+lending",
+      "approval": "make_reservation, BK-920D2BE40DB5 (approved)",
+      "outcome": "Active reservation for Frommer's South Africa; the answer confirms it."
+    }
+  },
+  "user": {
+    "user_id": "UR-6F10",
+    "loan_id": "loan-ea80cd15"
+  },
+  "latency_s": 13.94,
+  "final": {
+    "intent": "reservation",
+    "task_plan": [
+      {
+        "agent": "search",
+        "description": "Search for 'Frommer's South Africa' to get the book_id"
+      },
+      {
+        "agent": "lending",
+        "description": "Reserve the book with the obtained book_id"
+      }
+    ],
+    "lending_result": "Successfully reserved 'Frommer's South Africa'.",
+    "answer": " I'm delighted to inform you that your request to reserve 'Frommer's South Africa' has been successfully processed. The book, authored by Pippa de Bruyn, is a comprehensive guide to a memorable trip to southern Africa. It offers complete travel information, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. Enjoy your reading!"
+  },
+  "account_before": {
+    "loans": [
+      {
+        "loan_id": "loan-ea80cd15",
+        "book_id": "BK-D9EA48C9DC9F",
+        "title": "Second Person Rural: More Essays of a Sometime Farmer",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-fe52d153",
+        "book_id": "BK-2794EDCCD77B",
+        "title": "Gray Wolf, Mustafa Kemal: An intimate study of a dictator",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "account_after": {
+    "loans": [
+      {
+        "loan_id": "loan-ea80cd15",
+        "book_id": "BK-D9EA48C9DC9F",
+        "title": "Second Person Rural: More Essays of a Sometime Farmer",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-fe52d153",
+        "book_id": "BK-2794EDCCD77B",
+        "title": "Gray Wolf, Mustafa Kemal: An intimate study of a dictator",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": [
+      {
+        "book_id": "BK-920D2BE40DB5",
+        "title": "Frommer's South Africa",
+        "status": "active"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "node": "intent_detector",
+      "update": {
+        "intent": "reservation",
+        "task_plan": [],
+        "lending_result": "",
+        "response_attempts": 0,
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    },
+    {
+      "node": "task_planner",
+      "update": {
+        "task_plan": [
+          {
+            "agent": "search",
+            "description": "Search for 'Frommer's South Africa' to get the book_id"
+          },
+          {
+            "agent": "lending",
+            "description": "Reserve the book with the obtained book_id"
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/query_processor",
+      "update": {
+        "retrieval_plan": {
+          "keyword_query": "Frommer's South Africa",
+          "semantic_query": "",
+          "metadata_filter": {
+            "author": "",
+            "genre": "",
+            "year_from": null,
+            "year_to": null
+          }
+        },
+        "semantic_results": [],
+        "lexical_results": [],
+        "retrieval_attempts": 1
+      }
+    },
+    {
+      "node": "rag/lexical_search",
+      "update": {
+        "lexical_results": [
+          {
+            "book_id": "BK-920D2BE40DB5",
+            "title": "Frommer's South Africa",
+            "author": "Pippa de Bruyn",
+            "year": 2003,
+            "genres": "Travel",
+            "description": "Meticulously researched and beautifully written by a South African native, Frommer's South Africa, 3rd Edition, should be the discerning reader's only guide to a memorable trip to southern Africa, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. It offers complete..."
+          },
+          {
+            "book_id": "BK-578033DCE232",
+            "title": "Frommer's California 2005 (Frommer's Complete Guides)",
+            "author": "Matthew Poole",
+            "year": 2004,
+            "genres": "Travel",
+            "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go—they've done the legwork for you, and they're not afraid to tell it like it is,..."
+          },
+          {
+            "book_id": "BK-068AD675D776",
+            "title": "DISEASES OF LIVESTOCK",
+            "author": "I. Ristic, Ian McIntyre",
+            "year": 2013,
+            "genres": "Medical",
+            "description": "Most of the future increase in livestock production is expected to occur in the tropical and subtropical regions of the world. Cattle are the most numerous of the ruminant species in the tropics and provide the largest quantity of animal food products. More than one-third of the world's cattle are..."
+          },
+          {
+            "book_id": "BK-FE2E6C8CD138",
+            "title": "Frommer's Alaska 2004",
+            "author": "Charles P. Wohlforth",
+            "year": 2003,
+            "genres": "Travel",
+            "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go-- they've done the legwork for you, and they're not afraid to tell it like it..."
+          },
+          {
+            "book_id": "BK-B9547522F4DC",
+            "title": "Change and Continuity in Spatial Planning",
+            "author": "Vanessa Watson",
+            "year": 2003,
+            "genres": "Architecture",
+            "description": "Change and Continuity in Spatial Planning addresses a question of enduring interest to planners: can planning really bring about significant and positive change? In South Africa the process of political transition appeared to create the preconditions for planners to demonstrate how their..."
+          },
+          {
+            "book_id": "BK-901BC9F228F4",
+            "title": "Elizabeth Sinkler Coxe's Tales from the Grand Tour, 1890-1910 (Women's Diaries and Letters of the South)",
+            "author": "Anne Sinkler Whaley LeClercq",
+            "year": 2012,
+            "genres": "Travel",
+            "description": "The international adventures of a southern widow turned patron of historical discovery, Elizabeth Sinkler Coxe's Tales from the Grand Tour, 1890–1910 is a travelogue of captivating episodes in exotic lands as experienced by an intrepid American aristocrat and her son at the dawn of the twentieth..."
+          },
+          {
+            "book_id": "BK-E60607560080",
+            "title": "International Children's Literature: A special issue of the journal Early Child Development and Care",
+            "author": "Karin Murris",
+            "year": 2016,
+            "genres": "Education",
+            "description": "The Posthuman Child combats institutionalised ageist practices in primary, early childhood and teacher education. Grounded in a critical posthumanist perspective on the purpose of education, it provides a genealogy of psychology, sociology and philosophy of childhood in which dominant figurations..."
+          },
+          {
+            "book_id": "BK-2D028F2E2071",
+            "title": "Walt Disney World with Kids, 2001 (Special-Interest Titles)",
+            "author": "Cynthia Tunstall",
+            "year": 2000,
+            "genres": "Travel",
+            "description": "All-new information is given on attractions, hotels, and restaurants in Orlando, the number one tourist destination in the world. Revised with updated maps, this guide gives advice and information for a wide range of visitors, from honeymooners to grandparents and children."
+          },
+          {
+            "book_id": "BK-FF6949E5392D",
+            "title": "Vino Para Dummies",
+            "author": "Ed McCarthy, Mary Ewing-Mulligan",
+            "year": 2011,
+            "genres": "Cooking",
+            "description": "Wine enthusiasts and novices, raise your glasses! The #1 wine book has been extensively updated! If you’re a connoisseur, Wine For Dummies, Fourth Edition will get you up to speed on what’s in and show you how to take your hobby to the next level. If you’re new to the world of wine, it will clue..."
+          },
+          {
+            "book_id": "BK-FD3CD7A941D2",
+            "title": "An Antebellum Plantation Household: Including the South Carolina Low Country Receipts and Remedies of Emily Wharton Sinkler with Eighty-Two Newly Dis (Women's Diaries and Letters of the South)",
+            "author": "Anne Sinkler Whaley LeClercq",
+            "year": 2006,
+            "genres": "Cooking",
+            "description": "This receipt book provides a flavorful record of plantation cooking, folk medicine, travel, and social life in the antebellum South, with 82 recently discovered additional receipts."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/result_fusion",
+      "update": {
+        "fused_results": [
+          {
+            "book_id": "BK-920D2BE40DB5",
+            "title": "Frommer's South Africa",
+            "author": "Pippa de Bruyn",
+            "year": 2003,
+            "genres": "Travel",
+            "description": "Meticulously researched and beautifully written by a South African native, Frommer's South Africa, 3rd Edition, should be the discerning reader's only guide to a memorable trip to southern Africa, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. It offers complete..."
+          },
+          {
+            "book_id": "BK-578033DCE232",
+            "title": "Frommer's California 2005 (Frommer's Complete Guides)",
+            "author": "Matthew Poole",
+            "year": 2004,
+            "genres": "Travel",
+            "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go—they've done the legwork for you, and they're not afraid to tell it like it is,..."
+          },
+          {
+            "book_id": "BK-068AD675D776",
+            "title": "DISEASES OF LIVESTOCK",
+            "author": "I. Ristic, Ian McIntyre",
+            "year": 2013,
+            "genres": "Medical",
+            "description": "Most of the future increase in livestock production is expected to occur in the tropical and subtropical regions of the world. Cattle are the most numerous of the ruminant species in the tropics and provide the largest quantity of animal food products. More than one-third of the world's cattle are..."
+          },
+          {
+            "book_id": "BK-FE2E6C8CD138",
+            "title": "Frommer's Alaska 2004",
+            "author": "Charles P. Wohlforth",
+            "year": 2003,
+            "genres": "Travel",
+            "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go-- they've done the legwork for you, and they're not afraid to tell it like it..."
+          },
+          {
+            "book_id": "BK-B9547522F4DC",
+            "title": "Change and Continuity in Spatial Planning",
+            "author": "Vanessa Watson",
+            "year": 2003,
+            "genres": "Architecture",
+            "description": "Change and Continuity in Spatial Planning addresses a question of enduring interest to planners: can planning really bring about significant and positive change? In South Africa the process of political transition appeared to create the preconditions for planners to demonstrate how their..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/retrieval_evaluator",
+      "update": {
+        "retrieval_feedback": "",
+        "retry_retrieval": false
+      }
+    },
+    {
+      "node": "rag",
+      "update": {
+        "search_results": [
+          {
+            "book_id": "BK-920D2BE40DB5",
+            "title": "Frommer's South Africa",
+            "author": "Pippa de Bruyn",
+            "year": 2003,
+            "genres": "Travel",
+            "description": "Meticulously researched and beautifully written by a South African native, Frommer's South Africa, 3rd Edition, should be the discerning reader's only guide to a memorable trip to southern Africa, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. It offers complete..."
+          },
+          {
+            "book_id": "BK-578033DCE232",
+            "title": "Frommer's California 2005 (Frommer's Complete Guides)",
+            "author": "Matthew Poole",
+            "year": 2004,
+            "genres": "Travel",
+            "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go—they've done the legwork for you, and they're not afraid to tell it like it is,..."
+          },
+          {
+            "book_id": "BK-068AD675D776",
+            "title": "DISEASES OF LIVESTOCK",
+            "author": "I. Ristic, Ian McIntyre",
+            "year": 2013,
+            "genres": "Medical",
+            "description": "Most of the future increase in livestock production is expected to occur in the tropical and subtropical regions of the world. Cattle are the most numerous of the ruminant species in the tropics and provide the largest quantity of animal food products. More than one-third of the world's cattle are..."
+          },
+          {
+            "book_id": "BK-FE2E6C8CD138",
+            "title": "Frommer's Alaska 2004",
+            "author": "Charles P. Wohlforth",
+            "year": 2003,
+            "genres": "Travel",
+            "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go-- they've done the legwork for you, and they're not afraid to tell it like it..."
+          },
+          {
+            "book_id": "BK-B9547522F4DC",
+            "title": "Change and Continuity in Spatial Planning",
+            "author": "Vanessa Watson",
+            "year": 2003,
+            "genres": "Architecture",
+            "description": "Change and Continuity in Spatial Planning addresses a question of enduring interest to planners: can planning really bring about significant and positive change? In South Africa the process of political transition appeared to create the preconditions for planners to demonstrate how their..."
+          }
+        ]
+      }
+    },
+    {
+      "tool_call": "check_availability",
+      "input": {
+        "book_id": "BK-920D2BE40DB5"
+      },
+      "output": "'Frommer's South Africa': 1 of 1 copies available."
+    },
+    {
+      "tool_call": "check_availability",
+      "input": {
+        "book_id": "BK-920D2BE40DB5"
+      },
+      "output": "'Frommer's South Africa': 1 of 1 copies available."
+    },
+    {
+      "node": "lending/lending_agent",
+      "update": {
+        "pending_lending_action": {
+          "tool_name": "make_reservation",
+          "arguments": {
+            "user_id": "UR-6F10",
+            "book_id": "BK-920D2BE40DB5"
+          }
+        }
+      }
+    },
+    {
+      "approval_request": {
+        "tool_name": "make_reservation",
+        "arguments": {
+          "user_id": "UR-6F10",
+          "book_id": "BK-920D2BE40DB5"
+        }
+      },
+      "approved": true
+    },
+    {
+      "tool_call": "make_reservation",
+      "input": {
+        "user_id": "UR-6F10",
+        "book_id": "BK-920D2BE40DB5"
+      },
+      "output": "Successfully reserved 'Frommer's South Africa'."
+    },
+    {
+      "node": "lending/approval",
+      "update": {
+        "approval_granted": true
+      }
+    },
+    {
+      "node": "lending/executor",
+      "update": {
+        "lending_result": "Successfully reserved 'Frommer's South Africa'.",
+        "pending_lending_action": null
+      }
+    },
+    {
+      "node": "lending",
+      "update": {
+        "lending_result": "Successfully reserved 'Frommer's South Africa'."
+      }
+    },
+    {
+      "node": "response_generator",
+      "update": {
+        "messages": [
+          {
+            "type": "ai",
+            "content": " I'm delighted to inform you that your request to reserve 'Frommer's South Africa' has been successfully processed. The book, authored by Pippa de Bruyn, is a comprehensive guide to a memorable trip to southern Africa. It offers complete travel information, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. Enjoy your reading!"
+          }
+        ],
+        "response_attempts": 1
+      }
+    },
+    {
+      "node": "evaluator",
+      "update": {
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    }
+  ]
+}

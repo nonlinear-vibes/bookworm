@@ -112,14 +112,14 @@ def intent_detector(llm, state: MainState) -> dict:
     # _debug_print_llm_output("intent_detector", result)
 
     return {
-        "intent": result.intent,
-        "task_plan": [],
-        "lending_result": "",
+        "intent":                 result.intent,
+        "task_plan":              [],
+        "lending_result":         "",
         "pending_lending_action": None,
-        "approval_granted": False,
-        "response_attempts": 0,
-        "evaluation_feedback": "",
-        "revision_requested": False,
+        "approval_granted":       False,
+        "response_attempts":      0,
+        "evaluation_feedback":    "",
+        "revision_requested":     False,
     }
 
 
@@ -485,7 +485,7 @@ def lending_executor(state: LendingState) -> dict:
             "pending_lending_action": None,
         }
 
-    tool_map = {tool.name: tool for tool in LENDING_TOOLS}
+    tool_map  = {tool.name: tool for tool in LENDING_TOOLS}
     tool_name = action["tool_name"]
 
     selected_tool = tool_map[tool_name]

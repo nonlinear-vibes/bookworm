@@ -1,0 +1,208 @@
+{
+  "case": {
+    "id": "A03",
+    "category": "unclear",
+    "message": "asdf qwerty zxcv",
+    "expect": {
+      "intent": "unknown or general",
+      "route": "none",
+      "approval": "none",
+      "outcome": "Asks the user what they mean."
+    }
+  },
+  "user": {
+    "user_id": "UR-A221",
+    "loan_id": "loan-078801f0"
+  },
+  "latency_s": 14.47,
+  "final": {
+    "intent": "unknown",
+    "task_plan": [
+      {
+        "agent": "search",
+        "description": "Search for books with the title, author, or any other identifying information that matches 'asdf qwerty zxcv'"
+      },
+      {
+        "agent": "lending",
+        "description": "Check the availability of the book found by the search agent with the title, author, or any other identifying information that matches 'asdf qwerty zxcv'"
+      }
+    ],
+    "lending_result": "I couldn't find a book with the title 'asdf qwerty zxcv'. Could you please provide the book ID so I can check its availability?",
+    "answer": " I'm sorry for any confusion, but it seems there's no book in our catalogue with the title 'asdf qwerty zxcv'. To check the availability of a specific book, please provide its title or ID."
+  },
+  "account_before": {
+    "loans": [
+      {
+        "loan_id": "loan-078801f0",
+        "book_id": "BK-8E256B46802B",
+        "title": "Head Lock: A Tom Bethany Mystery",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-18ec26bb",
+        "book_id": "BK-1B9131A5C14B",
+        "title": "Starry Nights (Night Glow Board Books)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-9a26ce08",
+        "book_id": "BK-8E2023B6D609",
+        "title": "A Boy Named Boomer (Hello Reader! Level 3)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "account_after": {
+    "loans": [
+      {
+        "loan_id": "loan-078801f0",
+        "book_id": "BK-8E256B46802B",
+        "title": "Head Lock: A Tom Bethany Mystery",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-18ec26bb",
+        "book_id": "BK-1B9131A5C14B",
+        "title": "Starry Nights (Night Glow Board Books)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-9a26ce08",
+        "book_id": "BK-8E2023B6D609",
+        "title": "A Boy Named Boomer (Hello Reader! Level 3)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "steps": [
+    {
+      "node": "intent_detector",
+      "update": {
+        "intent": "unknown",
+        "task_plan": [],
+        "lending_result": "",
+        "response_attempts": 0,
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    },
+    {
+      "node": "task_planner",
+      "update": {
+        "task_plan": [
+          {
+            "agent": "search",
+            "description": "Search for books with the title, author, or any other identifying information that matches 'asdf qwerty zxcv'"
+          },
+          {
+            "agent": "lending",
+            "description": "Check the availability of the book found by the search agent with the title, author, or any other identifying information that matches 'asdf qwerty zxcv'"
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/query_processor",
+      "update": {
+        "retrieval_plan": {
+          "keyword_query": "asdf qwerty zxcv",
+          "semantic_query": "",
+          "metadata_filter": {
+            "author": null,
+            "genre": null,
+            "year_from": null,
+            "year_to": null
+          }
+        },
+        "semantic_results": [],
+        "lexical_results": [],
+        "retrieval_attempts": 1
+      }
+    },
+    {
+      "node": "rag/lexical_search",
+      "update": {
+        "lexical_results": []
+      }
+    },
+    {
+      "node": "rag/result_fusion",
+      "update": {
+        "fused_results": []
+      }
+    },
+    {
+      "node": "rag/retrieval_evaluator",
+      "update": {
+        "retrieval_feedback": "",
+        "retry_retrieval": false
+      }
+    },
+    {
+      "node": "rag",
+      "update": {
+        "search_results": []
+      }
+    },
+    {
+      "tool_call": "check_availability",
+      "input": {
+        "book_id": ""
+      },
+      "output": "No book with ID  exists in the catalogue."
+    },
+    {
+      "tool_call": "check_availability",
+      "input": {
+        "book_id": ""
+      },
+      "output": "No book with ID  exists in the catalogue."
+    },
+    {
+      "node": "lending/lending_agent",
+      "update": {
+        "lending_result": "I couldn't find a book with the title 'asdf qwerty zxcv'. Could you please provide the book ID so I can check its availability?",
+        "pending_lending_action": null
+      }
+    },
+    {
+      "node": "lending",
+      "update": {
+        "lending_result": "I couldn't find a book with the title 'asdf qwerty zxcv'. Could you please provide the book ID so I can check its availability?"
+      }
+    },
+    {
+      "node": "response_generator",
+      "update": {
+        "messages": [
+          {
+            "type": "ai",
+            "content": " I'm sorry for any confusion, but it seems there's no book in our catalogue with the title 'asdf qwerty zxcv'. To check the availability of a specific book, please provide its title or ID."
+          }
+        ],
+        "response_attempts": 1
+      }
+    },
+    {
+      "node": "evaluator",
+      "update": {
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    }
+  ]
+}

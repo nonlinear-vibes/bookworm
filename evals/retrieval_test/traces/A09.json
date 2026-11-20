@@ -1,0 +1,240 @@
+{
+  "case": {
+    "id": "A09",
+    "category": "availability",
+    "setup": {
+      "copies": {
+        "BK-70D843303170": 0
+      }
+    },
+    "message": "Is The Manikin by Joanna Scott available?",
+    "expect": {
+      "intent": "catalogue_search, reservation or combined",
+      "route": "search+lending",
+      "approval": "none",
+      "outcome": "Lending result: no available copies; the answer says it is not available. No account change."
+    }
+  },
+  "user": {
+    "user_id": "UR-0691",
+    "loan_id": "loan-8d822ed2"
+  },
+  "latency_s": 18.01,
+  "final": {
+    "intent": "catalogue_search",
+    "task_plan": [
+      {
+        "agent": "search",
+        "description": "Search the library catalogue for 'The Manikin' by Joanna Scott"
+      },
+      {
+        "agent": "lending",
+        "description": "Check the availability of the found book 'The Manikin' by Joanna Scott"
+      }
+    ],
+    "lending_result": "No available copies of 'The Manikin: A Novel'. Please specify a different book or reserve it if you have a reservation.",
+    "answer": " I'm sorry for any inconvenience, but 'The Manikin: A Novel' by Joanna Scott is currently not available to borrow. If you'd like to reserve a copy for future use, please let me know and I can assist with that. Alternatively, you might find another book that interests you from our extensive collection."
+  },
+  "account_before": {
+    "loans": [
+      {
+        "loan_id": "loan-8d822ed2",
+        "book_id": "BK-0F66009E0B37",
+        "title": "Shape Of The Good: Christian Reflections on the Foundation of Ethics",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-ec71dd13",
+        "book_id": "BK-A8D67F3EF478",
+        "title": "Veterinary Board Review (CD-ROM)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-fb58f06e",
+        "book_id": "BK-1E2E4D982A77",
+        "title": "The Cosmological Eye",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "account_after": {
+    "loans": [
+      {
+        "loan_id": "loan-8d822ed2",
+        "book_id": "BK-0F66009E0B37",
+        "title": "Shape Of The Good: Christian Reflections on the Foundation of Ethics",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-ec71dd13",
+        "book_id": "BK-A8D67F3EF478",
+        "title": "Veterinary Board Review (CD-ROM)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-fb58f06e",
+        "book_id": "BK-1E2E4D982A77",
+        "title": "The Cosmological Eye",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "steps": [
+    {
+      "node": "intent_detector",
+      "update": {
+        "intent": "catalogue_search",
+        "task_plan": [],
+        "lending_result": "",
+        "response_attempts": 0,
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    },
+    {
+      "node": "task_planner",
+      "update": {
+        "task_plan": [
+          {
+            "agent": "search",
+            "description": "Search the library catalogue for 'The Manikin' by Joanna Scott"
+          },
+          {
+            "agent": "lending",
+            "description": "Check the availability of the found book 'The Manikin' by Joanna Scott"
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/query_processor",
+      "update": {
+        "retrieval_plan": {
+          "keyword_query": "The Manikin",
+          "semantic_query": "",
+          "metadata_filter": {
+            "author": "Joanna Scott",
+            "genre": null,
+            "year_from": null,
+            "year_to": null
+          }
+        },
+        "semantic_results": [],
+        "lexical_results": [],
+        "retrieval_attempts": 1
+      }
+    },
+    {
+      "node": "rag/lexical_search",
+      "update": {
+        "lexical_results": [
+          {
+            "book_id": "BK-70D843303170",
+            "title": "The Manikin: A Novel",
+            "author": "Joanna Scott",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/result_fusion",
+      "update": {
+        "fused_results": [
+          {
+            "book_id": "BK-70D843303170",
+            "title": "The Manikin: A Novel",
+            "author": "Joanna Scott",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/retrieval_evaluator",
+      "update": {
+        "retrieval_feedback": "",
+        "retry_retrieval": false
+      }
+    },
+    {
+      "node": "rag",
+      "update": {
+        "search_results": [
+          {
+            "book_id": "BK-70D843303170",
+            "title": "The Manikin: A Novel",
+            "author": "Joanna Scott",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+          }
+        ]
+      }
+    },
+    {
+      "tool_call": "check_availability",
+      "input": {
+        "book_id": "BK-70D843303170"
+      },
+      "output": "'The Manikin: A Novel': No available copies."
+    },
+    {
+      "tool_call": "check_availability",
+      "input": {
+        "book_id": "BK-70D843303170"
+      },
+      "output": "'The Manikin: A Novel': No available copies."
+    },
+    {
+      "node": "lending/lending_agent",
+      "update": {
+        "lending_result": "No available copies of 'The Manikin: A Novel'. Please specify a different book or reserve it if you have a reservation.",
+        "pending_lending_action": null
+      }
+    },
+    {
+      "node": "lending",
+      "update": {
+        "lending_result": "No available copies of 'The Manikin: A Novel'. Please specify a different book or reserve it if you have a reservation."
+      }
+    },
+    {
+      "node": "response_generator",
+      "update": {
+        "messages": [
+          {
+            "type": "ai",
+            "content": " I'm sorry for any inconvenience, but 'The Manikin: A Novel' by Joanna Scott is currently not available to borrow. If you'd like to reserve a copy for future use, please let me know and I can assist with that. Alternatively, you might find another book that interests you from our extensive collection."
+          }
+        ],
+        "response_attempts": 1
+      }
+    },
+    {
+      "node": "evaluator",
+      "update": {
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    }
+  ]
+}

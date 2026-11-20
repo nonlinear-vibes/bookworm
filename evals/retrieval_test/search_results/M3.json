@@ -1,0 +1,193 @@
+{
+  "id": "M3",
+  "variant": "author",
+  "query": "Show me Raymond Chandler's books.",
+  "relevant_if": {
+    "author": "Raymond Chandler"
+  },
+  "type": "metadata",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.266,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-F217882BF39B",
+          "title": "Raymond Chandler: Stories and Early Novels: Pulp Stories / The Big Sleep / Farewell, My Lovely / The High Window (Library of America)",
+          "author": "Raymond Chandler",
+          "year": 1995,
+          "genres": "Detective and mystery stories",
+          "description": "Stories and Early Novels includes every story that Chandler did not later incorporate into a novel - thirteen in all. Drawn from the pages of Black Mask and Dime Detective, these stories show how Chandler adapted the violent conventions of the pulp magazines - with their brisk exposition and..."
+        },
+        {
+          "book_id": "BK-6BC732201AE0",
+          "title": "Raymond Chandler: Later Novels and Other Writings: The Lady in the Lake / The Little Sister / The Long Goodbye / Playback /Double Indemnity / Selected Essays and Letters (Library of America)",
+          "author": "Raymond Chandler",
+          "year": 1995,
+          "genres": "Detective and mystery stories, American",
+          "description": "Later Novels and Other Writings begins with The Lady in the Lake (1943). Written during the war, the story takes Marlowe out of the seamy L.A. streets to the deceptive tranquility of the surrounding mountains, as the search for a businessman's missing wife expands into an elegy of loneliness and..."
+        },
+        {
+          "book_id": "BK-50031660AB28",
+          "title": "All That Glitters: The Crime and the Cover-Up",
+          "author": "Raymond Chandler",
+          "year": 2005,
+          "genres": "Child sexual abuse",
+          "description": "Raymond Chandler, the uncle of the boy that first accused Michael Jackson of molestation in 1993, sets the record straight in an extraordinary and very readable case study. All That Glitters meticulously examines details of accusations against Michael Jackson by Jordie Chandler, and his family"
+        },
+        {
+          "book_id": "BK-D516A1818816",
+          "title": "EXPENDABLE.",
+          "author": "Dorothy B. Hughes",
+          "year": 2012,
+          "genres": "Fiction",
+          "description": "“It was surprising what old experiences remembered could do to a presumably educated, civilized man.” And Hugh Denismore, a young doctor driving his mother’s Cadillac from Los Angeles to Phoenix, is eminently educated and civilized. He is privileged, would seem to have the world at his feet, even...."
+        },
+        {
+          "book_id": "BK-C8F3541B8426",
+          "title": "Perry Mason in the Case of Too Many Murders",
+          "author": "Thomas Chastain",
+          "year": 1990,
+          "genres": "Fiction",
+          "description": "A Los Angeles businessman kills his dinner companion and is himself murdered minutes later, leaving his estranged wife, the prime suspect in the case, to contact Perry Mason for help"
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-F217882BF39B",
+          "title": "Raymond Chandler: Stories and Early Novels: Pulp Stories / The Big Sleep / Farewell, My Lovely / The High Window (Library of America)",
+          "author": "Raymond Chandler",
+          "year": 1995,
+          "genres": "Detective and mystery stories",
+          "description": "Stories and Early Novels includes every story that Chandler did not later incorporate into a novel - thirteen in all. Drawn from the pages of Black Mask and Dime Detective, these stories show how Chandler adapted the violent conventions of the pulp magazines - with their brisk exposition and..."
+        },
+        {
+          "book_id": "BK-50031660AB28",
+          "title": "All That Glitters: The Crime and the Cover-Up",
+          "author": "Raymond Chandler",
+          "year": 2005,
+          "genres": "Child sexual abuse",
+          "description": "Raymond Chandler, the uncle of the boy that first accused Michael Jackson of molestation in 1993, sets the record straight in an extraordinary and very readable case study. All That Glitters meticulously examines details of accusations against Michael Jackson by Jordie Chandler, and his family"
+        },
+        {
+          "book_id": "BK-6BC732201AE0",
+          "title": "Raymond Chandler: Later Novels and Other Writings: The Lady in the Lake / The Little Sister / The Long Goodbye / Playback /Double Indemnity / Selected Essays and Letters (Library of America)",
+          "author": "Raymond Chandler",
+          "year": 1995,
+          "genres": "Detective and mystery stories, American",
+          "description": "Later Novels and Other Writings begins with The Lady in the Lake (1943). Written during the war, the story takes Marlowe out of the seamy L.A. streets to the deceptive tranquility of the surrounding mountains, as the search for a businessman's missing wife expands into an elegy of loneliness and..."
+        },
+        {
+          "book_id": "BK-D516A1818816",
+          "title": "EXPENDABLE.",
+          "author": "Dorothy B. Hughes",
+          "year": 2012,
+          "genres": "Fiction",
+          "description": "“It was surprising what old experiences remembered could do to a presumably educated, civilized man.” And Hugh Denismore, a young doctor driving his mother’s Cadillac from Los Angeles to Phoenix, is eminently educated and civilized. He is privileged, would seem to have the world at his feet, even...."
+        },
+        {
+          "book_id": "BK-F0E256CDDF9F",
+          "title": "50 Ways to Create Great Relationships: How to Stop Taking and Start Giving",
+          "author": "Steve Chandler",
+          "year": 2000,
+          "genres": "Family & Relationships",
+          "description": "Learn how to gain a brand-new sense of ownership for all your relationships. Through Chandler's wit and wisdom, readers will learn how to be a creator of great relationships and not just a reactor to circumstances."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.11,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-F217882BF39B",
+          "title": "Raymond Chandler: Stories and Early Novels: Pulp Stories / The Big Sleep / Farewell, My Lovely / The High Window (Library of America)",
+          "author": "Raymond Chandler",
+          "year": 1995,
+          "genres": "Detective and mystery stories",
+          "description": "Stories and Early Novels includes every story that Chandler did not later incorporate into a novel - thirteen in all. Drawn from the pages of Black Mask and Dime Detective, these stories show how Chandler adapted the violent conventions of the pulp magazines - with their brisk exposition and..."
+        },
+        {
+          "book_id": "BK-6BC732201AE0",
+          "title": "Raymond Chandler: Later Novels and Other Writings: The Lady in the Lake / The Little Sister / The Long Goodbye / Playback /Double Indemnity / Selected Essays and Letters (Library of America)",
+          "author": "Raymond Chandler",
+          "year": 1995,
+          "genres": "Detective and mystery stories, American",
+          "description": "Later Novels and Other Writings begins with The Lady in the Lake (1943). Written during the war, the story takes Marlowe out of the seamy L.A. streets to the deceptive tranquility of the surrounding mountains, as the search for a businessman's missing wife expands into an elegy of loneliness and..."
+        },
+        {
+          "book_id": "BK-50031660AB28",
+          "title": "All That Glitters: The Crime and the Cover-Up",
+          "author": "Raymond Chandler",
+          "year": 2005,
+          "genres": "Child sexual abuse",
+          "description": "Raymond Chandler, the uncle of the boy that first accused Michael Jackson of molestation in 1993, sets the record straight in an extraordinary and very readable case study. All That Glitters meticulously examines details of accusations against Michael Jackson by Jordie Chandler, and his family"
+        },
+        {
+          "book_id": "BK-D516A1818816",
+          "title": "EXPENDABLE.",
+          "author": "Dorothy B. Hughes",
+          "year": 2012,
+          "genres": "Fiction",
+          "description": "“It was surprising what old experiences remembered could do to a presumably educated, civilized man.” And Hugh Denismore, a young doctor driving his mother’s Cadillac from Los Angeles to Phoenix, is eminently educated and civilized. He is privileged, would seem to have the world at his feet, even...."
+        },
+        {
+          "book_id": "BK-F0E256CDDF9F",
+          "title": "50 Ways to Create Great Relationships: How to Stop Taking and Start Giving",
+          "author": "Steve Chandler",
+          "year": 2000,
+          "genres": "Family & Relationships",
+          "description": "Learn how to gain a brand-new sense of ownership for all your relationships. Through Chandler's wit and wisdom, readers will learn how to be a creator of great relationships and not just a reactor to circumstances."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 1.454,
+      "plan": {
+        "keyword_query": "Raymond Chandler",
+        "semantic_query": "",
+        "metadata_filter": {
+          "author": "Raymond Chandler",
+          "genre": null,
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-F217882BF39B",
+          "title": "Raymond Chandler: Stories and Early Novels: Pulp Stories / The Big Sleep / Farewell, My Lovely / The High Window (Library of America)",
+          "author": "Raymond Chandler",
+          "year": 1995,
+          "genres": "Detective and mystery stories",
+          "description": "Stories and Early Novels includes every story that Chandler did not later incorporate into a novel - thirteen in all. Drawn from the pages of Black Mask and Dime Detective, these stories show how Chandler adapted the violent conventions of the pulp magazines - with their brisk exposition and..."
+        },
+        {
+          "book_id": "BK-50031660AB28",
+          "title": "All That Glitters: The Crime and the Cover-Up",
+          "author": "Raymond Chandler",
+          "year": 2005,
+          "genres": "Child sexual abuse",
+          "description": "Raymond Chandler, the uncle of the boy that first accused Michael Jackson of molestation in 1993, sets the record straight in an extraordinary and very readable case study. All That Glitters meticulously examines details of accusations against Michael Jackson by Jordie Chandler, and his family"
+        },
+        {
+          "book_id": "BK-6BC732201AE0",
+          "title": "Raymond Chandler: Later Novels and Other Writings: The Lady in the Lake / The Little Sister / The Long Goodbye / Playback /Double Indemnity / Selected Essays and Letters (Library of America)",
+          "author": "Raymond Chandler",
+          "year": 1995,
+          "genres": "Detective and mystery stories, American",
+          "description": "Later Novels and Other Writings begins with The Lady in the Lake (1943). Written during the war, the story takes Marlowe out of the seamy L.A. streets to the deceptive tranquility of the surrounding mountains, as the search for a businessman's missing wife expands into an elegy of loneliness and..."
+        }
+      ]
+    }
+  },
+  "relevant_ids": [
+    "BK-F217882BF39B",
+    "BK-6BC732201AE0",
+    "BK-50031660AB28"
+  ]
+}

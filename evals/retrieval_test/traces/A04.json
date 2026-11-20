@@ -1,0 +1,342 @@
+{
+  "case": {
+    "id": "A04",
+    "category": "search",
+    "message": "Can you recommend a dark psychological thriller?",
+    "expect": {
+      "intent": "catalogue_search",
+      "route": "search",
+      "approval": "none",
+      "outcome": "Recommends thrillers from the search results."
+    }
+  },
+  "user": {
+    "user_id": "UR-8936",
+    "loan_id": "loan-6bc09cb8"
+  },
+  "latency_s": 18.49,
+  "final": {
+    "intent": "catalogue_search",
+    "task_plan": [
+      {
+        "agent": "search",
+        "description": "Search for a dark psychological thriller in the library catalogue."
+      }
+    ],
+    "lending_result": "",
+    "answer": " I'm delighted to recommend a few dark psychological thrillers from our collection. Here are some options that might interest you:\n\n1. \"Woman at the window, a novel\" by A. J. Finn. This instant New York Times Bestseller is often compared to works by Gillian Flynn and Tana French.\n\n2. \"Star girl\" by Louise Beech. This book is a taut, emotive, and all-consuming psychological thriller, reminiscent of Play Misty for Me.\n\n3. \"Trust No One\" by Debra Webb. This gripping thriller involves a detective uncovering disturbing secrets in a double-homicide case.\n\n4. \"The Cruelest Months\" by Louise Penny. This is a traditional murder mystery that has been credited with reviving the genre made famous by Agatha Christie.\n\nPlease note that the availability of these books may vary, so I recommend checking the library catalog for the most up-to-date information. Enjoy your reading!"
+  },
+  "account_before": {
+    "loans": [
+      {
+        "loan_id": "loan-6bc09cb8",
+        "book_id": "BK-982CE7F032ED",
+        "title": "Healthy Sleep Habits, Happy Child / Your Fussy Baby",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-aa8b651f",
+        "book_id": "BK-C25595809D0D",
+        "title": "The Ultimate Man's Guide to Internet Dating: The premier men's resource for finding, attracting, meeting and dating women online (Ultimate Man's Guide)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-ebc5a0e8",
+        "book_id": "BK-05C01543D6AF",
+        "title": "Multimedia Systems, Standards, and Networks (Signal Processing and Communications)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "account_after": {
+    "loans": [
+      {
+        "loan_id": "loan-6bc09cb8",
+        "book_id": "BK-982CE7F032ED",
+        "title": "Healthy Sleep Habits, Happy Child / Your Fussy Baby",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-aa8b651f",
+        "book_id": "BK-C25595809D0D",
+        "title": "The Ultimate Man's Guide to Internet Dating: The premier men's resource for finding, attracting, meeting and dating women online (Ultimate Man's Guide)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-ebc5a0e8",
+        "book_id": "BK-05C01543D6AF",
+        "title": "Multimedia Systems, Standards, and Networks (Signal Processing and Communications)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "steps": [
+    {
+      "node": "intent_detector",
+      "update": {
+        "intent": "catalogue_search",
+        "task_plan": [],
+        "lending_result": "",
+        "response_attempts": 0,
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    },
+    {
+      "node": "task_planner",
+      "update": {
+        "task_plan": [
+          {
+            "agent": "search",
+            "description": "Search for a dark psychological thriller in the library catalogue."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/query_processor",
+      "update": {
+        "retrieval_plan": {
+          "keyword_query": "dark psychological thriller",
+          "semantic_query": "A suspenseful and thought-provoking novel with complex characters and a gripping plot.",
+          "metadata_filter": {
+            "author": null,
+            "genre": "Psychological thriller",
+            "year_from": null,
+            "year_to": null
+          }
+        },
+        "semantic_results": [],
+        "lexical_results": [],
+        "retrieval_attempts": 1
+      }
+    },
+    {
+      "node": "rag/lexical_search",
+      "update": {
+        "lexical_results": []
+      }
+    },
+    {
+      "node": "rag/semantic_search",
+      "update": {
+        "semantic_results": [
+          {
+            "book_id": "BK-FE652DC225F5",
+            "title": "Woman at the window, a novel",
+            "author": "A. J. Finn",
+            "year": 2019,
+            "genres": "Fiction",
+            "description": "Instant #1 New York Times Bestseller! For readers of Gillian Flynn and Tana French comes one of the decade’s most anticipated debuts, to be published in thirty-six languages around the world and already in development as a major film from Fox: a twisty, powerful Hitchcockian thriller about an..."
+          },
+          {
+            "book_id": "BK-8CA6E2A03A2E",
+            "title": "Trust No One",
+            "author": "Debra Webb",
+            "year": 2020,
+            "genres": "Fiction",
+            "description": "A double homicide and a missing woman lead a detective to unearth disturbing secrets in this gripping thriller from USA Today bestselling author Debra Webb. It's the worst possible time for Detective Kerri Devlin to be involved in an all-consuming double-homicide case. She's locked in a bitter..."
+          },
+          {
+            "book_id": "BK-D3A0626556D7",
+            "title": "Star girl",
+            "author": "Louise Beech",
+            "year": 2019,
+            "genres": "Fiction",
+            "description": "A taut, emotive, devastating dark and all-consuming psychological thriller, reminiscent of Play Misty for Me ... from the critically acclaimed author of Maria in the Moon and The Lion Tamer Who Lost... WINNER of Best magazine’s BIG Book of the Year 2019 LONGLISTED for Guardian‘s NOT THE BOOKER..."
+          },
+          {
+            "book_id": "BK-9A71264AF16D",
+            "title": "Edge of Danger",
+            "author": "Jack Higgins",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The action-packed new Sean Dillon novel. Master thriller writer Jack Higgins plunges his hugely popular hero into his ninth adventure – racing against time to prevent an assassination that would shock the world."
+          },
+          {
+            "book_id": "BK-6AEAFD80F0D5",
+            "title": "The Cruelest Months",
+            "author": "Louise Penny",
+            "year": 2011,
+            "genres": "Fiction",
+            "description": "\"Many mystery buffs have credited Louise Penny with the revival of the type of traditional murder mystery made famous by Agatha Christie. . . . The book's title is a metaphor not only for the month of April but also for Gamache's personal and professional challenges---making this the series..."
+          },
+          {
+            "book_id": "BK-3062505DA82C",
+            "title": "The Death of the Detective",
+            "author": "Juliet Hebden",
+            "year": 2000,
+            "genres": "Pel, Chief Inspector (Fictitious character)",
+            "description": "This new Chief Inspector Pel novel sees the French detective desperate to catch a group of violent terrorists, and devastated by the loss of the one of his team.'"
+          },
+          {
+            "book_id": "BK-0AFB6D8CB523",
+            "title": "Dead Sexy",
+            "author": "Amanda Ashley",
+            "year": 2013,
+            "genres": "Fiction",
+            "description": "In The Still Of The Night The city is in a panic. In the still of the night, a vicious killer is leaving a trail of mutilated bodies drained of blood. A chilling M.O. that puts ex-vampire hunter Regan Delaney on the case, her gun clip packed with silver bullets, her instincts edgy. But the victims..."
+          },
+          {
+            "book_id": "BK-55B871F685D9",
+            "title": "Intruder in the dust: A novel",
+            "author": "William Faulkner",
+            "year": 1991,
+            "genres": "Fiction",
+            "description": "Dramatizes the events that surround the murder of a white man in a volatile Southern community"
+          },
+          {
+            "book_id": "BK-BCA8D7B1BE4C",
+            "title": "All Families Are Different",
+            "author": "Lisa Jewell",
+            "year": 2020,
+            "genres": "Fiction",
+            "description": "‘Opnieuw een duistere topper van Jewell, vol verbluffende momenten en kleurrijke personages.’ – Booklist In een groot huis in het Londense Chelsea ligt een baby wakker in haar wiegje. Gevoed en verzorgd, wacht ze vrolijk tot iemand haar oppakt. In de keuken liggen, naast een haastig gekrabbeld..."
+          },
+          {
+            "book_id": "BK-F2E1F99C582E",
+            "title": "Swimming Lessons",
+            "author": "Claire Fuller",
+            "year": 2017,
+            "genres": "Fiction",
+            "description": "***SHORTLISTED FOR THE RSL ENCORE AWARD 2018*** The second novel from the author of Our Endless Numbered Days, which won the 2015 Desmond Elliott Prize and was a 2016 Richard and Judy Book Club Pick. 'Gil Coleman looked down from the window and saw his dead wife standing on the pavement below.'..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/result_fusion",
+      "update": {
+        "fused_results": [
+          {
+            "book_id": "BK-FE652DC225F5",
+            "title": "Woman at the window, a novel",
+            "author": "A. J. Finn",
+            "year": 2019,
+            "genres": "Fiction",
+            "description": "Instant #1 New York Times Bestseller! For readers of Gillian Flynn and Tana French comes one of the decade’s most anticipated debuts, to be published in thirty-six languages around the world and already in development as a major film from Fox: a twisty, powerful Hitchcockian thriller about an..."
+          },
+          {
+            "book_id": "BK-8CA6E2A03A2E",
+            "title": "Trust No One",
+            "author": "Debra Webb",
+            "year": 2020,
+            "genres": "Fiction",
+            "description": "A double homicide and a missing woman lead a detective to unearth disturbing secrets in this gripping thriller from USA Today bestselling author Debra Webb. It's the worst possible time for Detective Kerri Devlin to be involved in an all-consuming double-homicide case. She's locked in a bitter..."
+          },
+          {
+            "book_id": "BK-D3A0626556D7",
+            "title": "Star girl",
+            "author": "Louise Beech",
+            "year": 2019,
+            "genres": "Fiction",
+            "description": "A taut, emotive, devastating dark and all-consuming psychological thriller, reminiscent of Play Misty for Me ... from the critically acclaimed author of Maria in the Moon and The Lion Tamer Who Lost... WINNER of Best magazine’s BIG Book of the Year 2019 LONGLISTED for Guardian‘s NOT THE BOOKER..."
+          },
+          {
+            "book_id": "BK-9A71264AF16D",
+            "title": "Edge of Danger",
+            "author": "Jack Higgins",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The action-packed new Sean Dillon novel. Master thriller writer Jack Higgins plunges his hugely popular hero into his ninth adventure – racing against time to prevent an assassination that would shock the world."
+          },
+          {
+            "book_id": "BK-6AEAFD80F0D5",
+            "title": "The Cruelest Months",
+            "author": "Louise Penny",
+            "year": 2011,
+            "genres": "Fiction",
+            "description": "\"Many mystery buffs have credited Louise Penny with the revival of the type of traditional murder mystery made famous by Agatha Christie. . . . The book's title is a metaphor not only for the month of April but also for Gamache's personal and professional challenges---making this the series..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/retrieval_evaluator",
+      "update": {
+        "retrieval_feedback": "",
+        "retry_retrieval": false
+      }
+    },
+    {
+      "node": "rag",
+      "update": {
+        "search_results": [
+          {
+            "book_id": "BK-FE652DC225F5",
+            "title": "Woman at the window, a novel",
+            "author": "A. J. Finn",
+            "year": 2019,
+            "genres": "Fiction",
+            "description": "Instant #1 New York Times Bestseller! For readers of Gillian Flynn and Tana French comes one of the decade’s most anticipated debuts, to be published in thirty-six languages around the world and already in development as a major film from Fox: a twisty, powerful Hitchcockian thriller about an..."
+          },
+          {
+            "book_id": "BK-8CA6E2A03A2E",
+            "title": "Trust No One",
+            "author": "Debra Webb",
+            "year": 2020,
+            "genres": "Fiction",
+            "description": "A double homicide and a missing woman lead a detective to unearth disturbing secrets in this gripping thriller from USA Today bestselling author Debra Webb. It's the worst possible time for Detective Kerri Devlin to be involved in an all-consuming double-homicide case. She's locked in a bitter..."
+          },
+          {
+            "book_id": "BK-D3A0626556D7",
+            "title": "Star girl",
+            "author": "Louise Beech",
+            "year": 2019,
+            "genres": "Fiction",
+            "description": "A taut, emotive, devastating dark and all-consuming psychological thriller, reminiscent of Play Misty for Me ... from the critically acclaimed author of Maria in the Moon and The Lion Tamer Who Lost... WINNER of Best magazine’s BIG Book of the Year 2019 LONGLISTED for Guardian‘s NOT THE BOOKER..."
+          },
+          {
+            "book_id": "BK-9A71264AF16D",
+            "title": "Edge of Danger",
+            "author": "Jack Higgins",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The action-packed new Sean Dillon novel. Master thriller writer Jack Higgins plunges his hugely popular hero into his ninth adventure – racing against time to prevent an assassination that would shock the world."
+          },
+          {
+            "book_id": "BK-6AEAFD80F0D5",
+            "title": "The Cruelest Months",
+            "author": "Louise Penny",
+            "year": 2011,
+            "genres": "Fiction",
+            "description": "\"Many mystery buffs have credited Louise Penny with the revival of the type of traditional murder mystery made famous by Agatha Christie. . . . The book's title is a metaphor not only for the month of April but also for Gamache's personal and professional challenges---making this the series..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "response_generator",
+      "update": {
+        "messages": [
+          {
+            "type": "ai",
+            "content": " I'm delighted to recommend a few dark psychological thrillers from our collection. Here are some options that might interest you:\n\n1. \"Woman at the window, a novel\" by A. J. Finn. This instant New York Times Bestseller is often compared to works by Gillian Flynn and Tana French.\n\n2. \"Star girl\" by Louise Beech. This book is a taut, emotive, and all-consuming psychological thriller, reminiscent of Play Misty for Me.\n\n3. \"Trust No One\" by Debra Webb. This gripping thriller involves a detective uncovering disturbing secrets in a double-homicide case.\n\n4. \"The Cruelest Months\" by Louise Penny. This is a traditional murder mystery that has been credited with reviving the genre made famous by Agatha Christie.\n\nPlease note that the availability of these books may vary, so I recommend checking the library catalog for the most up-to-date information. Enjoy your reading!"
+          }
+        ],
+        "response_attempts": 1
+      }
+    },
+    {
+      "node": "evaluator",
+      "update": {
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    }
+  ]
+}

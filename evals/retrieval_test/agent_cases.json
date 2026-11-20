@@ -1,0 +1,118 @@
+{
+  "_about": [
+    "End-to-end cases for the main graph, run by run_agent.py. Each case runs for a fresh demo user on a scratch copy of the database.",
+    "history: earlier turns as [role, text]. message: the user's new message; {loan_id} is filled with the user's first loan.",
+    "setup.copies: number of FREE copies of a book before the run. setup.reservations: active reservations the user already has.",
+    "approve: the answer given to every approval request (default: decline).",
+    "expect: the reference for manual scoring in agent.md. route = which agents should run: none, search, lending, search+lending."
+  ],
+  "cases": [
+    {"id": "A01", "category": "general",
+     "message": "Hi! What can you help me with?",
+     "expect": {"intent": "general", "route": "none", "approval": "none",
+                "outcome": "Explains what the assistant can do."}},
+
+    {"id": "A02", "category": "general",
+     "history": [["human", "Do you have any books by Mercer Mayer?"],
+                 ["ai", "Yes, we have several Little Critter books by Mercer Mayer, for example Little Critter: Just a Snowman and Little Critter: My Trip to the Hospital."]],
+     "message": "Great, thanks. That's all for today!",
+     "expect": {"intent": "general", "route": "none", "approval": "none",
+                "outcome": "Polite goodbye, no new search."}},
+
+    {"id": "A03", "category": "unclear",
+     "message": "asdf qwerty zxcv",
+     "expect": {"intent": "unknown or general", "route": "none", "approval": "none",
+                "outcome": "Asks the user what they mean."}},
+
+    {"id": "A04", "category": "search",
+     "message": "Can you recommend a dark psychological thriller?",
+     "expect": {"intent": "catalogue_search", "route": "search", "approval": "none",
+                "outcome": "Recommends thrillers from the search results."}},
+
+    {"id": "A05", "category": "search",
+     "message": "Do you have any books by Mercer Mayer?",
+     "expect": {"intent": "catalogue_search", "route": "search", "approval": "none",
+                "outcome": "Lists Mercer Mayer books (5 in the catalogue)."}},
+
+    {"id": "A06", "category": "search",
+     "message": "Do you have The Stone that the Builder Refused?",
+     "expect": {"intent": "catalogue_search", "route": "search", "approval": "none",
+                "outcome": "Confirms the book is in the catalogue (BK-6AC635321B55); no availability claim."}},
+
+    {"id": "A07", "category": "search (follow-up)",
+     "history": [["human", "Do you have books by Eric Jensen?"],
+                 ["ai", "Yes, we have four: 1. Brain-Based Learning (2000), 2. Music with the Brain in Mind (2000), 3. Learning with the Body in Mind (2000), 4. Different Brains, Different Learners (2010)."]],
+     "message": "Do you have anything else about how the brain learns, by other authors?",
+     "expect": {"intent": "catalogue_search", "route": "search", "approval": "none",
+                "outcome": "Brain/learning books not by Eric Jensen."}},
+
+    {"id": "A08", "category": "availability",
+     "setup": {"copies": {"BK-8049D388D382": 2}},
+     "message": "Is Camera Lucida by Roland Barthes available right now?",
+     "expect": {"intent": "catalogue_search, reservation or combined", "route": "search+lending", "approval": "none",
+                "outcome": "Lending result: 2 of 2 copies available; the answer says it is available. No account change."}},
+
+    {"id": "A09", "category": "availability",
+     "setup": {"copies": {"BK-70D843303170": 0}},
+     "message": "Is The Manikin by Joanna Scott available?",
+     "expect": {"intent": "catalogue_search, reservation or combined", "route": "search+lending", "approval": "none",
+                "outcome": "Lending result: no available copies; the answer says it is not available. No account change."}},
+
+    {"id": "A10", "category": "reservation (approved)",
+     "setup": {"copies": {"BK-920D2BE40DB5": 1}},
+     "message": "Please reserve Frommer's South Africa for me.",
+     "approve": true,
+     "expect": {"intent": "reservation or combined", "route": "search+lending",
+                "approval": "make_reservation, BK-920D2BE40DB5 (approved)",
+                "outcome": "Active reservation for Frommer's South Africa; the answer confirms it."}},
+
+    {"id": "A11", "category": "reservation (declined)",
+     "setup": {"copies": {"BK-DBFBB4CC872C": 2}},
+     "message": "I'd like to reserve Welding with Children.",
+     "approve": false,
+     "expect": {"intent": "reservation or combined", "route": "search+lending",
+                "approval": "make_reservation, BK-DBFBB4CC872C (declined)",
+                "outcome": "No reservation; the answer acknowledges the declined request."}},
+
+    {"id": "A12", "category": "reservation (no copies)",
+     "setup": {"copies": {"BK-70D843303170": 0}},
+     "message": "Reserve The Manikin by Joanna Scott for me, please.",
+     "approve": true,
+     "expect": {"intent": "reservation or combined", "route": "search+lending",
+                "approval": "none, or make_reservation BK-70D843303170 that then fails",
+                "outcome": "No reservation; the answer says no copies are available."}},
+
+    {"id": "A13", "category": "reservation (by reference)",
+     "setup": {"copies": {"BK-2E912A6BB5EC": 1}},
+     "history": [["human", "Do you have any Tom Bethany mysteries?"],
+                 ["ai", "Yes, I found these Tom Bethany mysteries by Jerome Doolittle: 1. Bear Hug (2000), 2. Half Nelson (1995), 3. Head Lock (2000)."]],
+     "message": "Please reserve the second one.",
+     "approve": true,
+     "expect": {"intent": "reservation or combined", "route": "search+lending",
+                "approval": "make_reservation, BK-2E912A6BB5EC = Half Nelson (approved)",
+                "outcome": "Active reservation for Half Nelson; the answer confirms Half Nelson."}},
+
+    {"id": "A14", "category": "cancellation",
+     "setup": {"copies": {"BK-9496F8EE3A62": 1}, "reservations": ["BK-9496F8EE3A62"]},
+     "message": "Please cancel my reservation for Moon Spells.",
+     "approve": true,
+     "expect": {"intent": "cancellation", "route": "search+lending",
+                "approval": "cancel_reservation, BK-9496F8EE3A62 (approved)",
+                "outcome": "Moon Spells reservation cancelled; the answer confirms it."}},
+
+    {"id": "A15", "category": "renewal",
+     "message": "Please renew my loan {loan_id}.",
+     "approve": true,
+     "expect": {"intent": "renewal", "route": "lending",
+                "approval": "renew_loan with the loan ID from the message (approved)",
+                "outcome": "Loan renewed (renewals = 1, new due date); the answer confirms it."}},
+
+    {"id": "A16", "category": "combined",
+     "setup": {"copies": {"BK-207966F0F224": 1}},
+     "message": "Find Conversations With Lincoln and reserve it for me.",
+     "approve": true,
+     "expect": {"intent": "combined or reservation", "route": "search+lending",
+                "approval": "make_reservation, BK-207966F0F224 (approved)",
+                "outcome": "Active reservation for Conversations With Lincoln; the answer confirms it."}}
+  ]
+}

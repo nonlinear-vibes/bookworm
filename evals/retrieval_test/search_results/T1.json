@@ -1,0 +1,201 @@
+{
+  "id": "T1",
+  "variant": "mood",
+  "query": "Something cozy and uplifting to read on a rainy weekend.",
+  "type": "topic",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.079,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-DDA52F593DA1",
+          "title": "Voices in Summer",
+          "author": "Rosamunde Pilcher",
+          "year": 2020,
+          "genres": "Fiction",
+          "description": "A phenomenal, heartwarming tale by the much-loved Rosamunde Pilcher. Laura, newly married and ever conscious she may be living in the shadow of her husband Alec's first wife, decides to take a holiday with his family in Cornwall. Through the long hot summer days she is slowly charmed by the..."
+        },
+        {
+          "book_id": "BK-46F5AC42FBAD",
+          "title": "Stuck with You (Time of Your Life)",
+          "author": "Greg A. Gerrie",
+          "year": 2013,
+          "genres": "",
+          "description": "\"If you need a dose of upbeat medicine - this is it.\" TONY CAMPOLO, PHD - EASTERN UNIVERSITY \"A book that sizzles with wisdom. Tremendous thoughts to rekindle the fires of a servant.\" CHARLES \"TREMENDOUS\" JONES, AUTHOR OF Life Is Tremendous \"This book reminds you to become your best. Uplifting and..."
+        },
+        {
+          "book_id": "BK-1B9131A5C14B",
+          "title": "Starry Nights (Night Glow Board Books)",
+          "author": "Judith Moffatt",
+          "year": 1997,
+          "genres": "Glow-in-the-dark books",
+          "description": "Shows various creatures enjoying a summer evening under the light of the moon and stars, with glow-in-the-dark pages that can be \"charged\" under a light. On board pages."
+        },
+        {
+          "book_id": "BK-BD6F8B57469C",
+          "title": "The Things I Wish I'd Said",
+          "author": "Michele Vanort Cozzens",
+          "year": 2004,
+          "genres": "Literary Collections",
+          "description": "\"Exploring light topics from baby showers and kids' birthday parties, to disc golf, home improvement, gardening and bad haircuts, she also digs deep and shares intimate feelings about sexual harassment, the \"disastrous first marriage\" and the deaths of her mother and young niece, a victim of the..."
+        },
+        {
+          "book_id": "BK-0EA8EED8D178",
+          "title": "Campfire for Cowboy Billy",
+          "author": "Wendy K. Ulmer",
+          "year": 2011,
+          "genres": "Juvenile Fiction",
+          "description": "After a day of riding his stick horse, Splinter, across an imaginary landscape, Billy returns to the rooftop of his apartment to sit beneath the stars and remember Grandpa."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-46F5AC42FBAD",
+          "title": "Stuck with You (Time of Your Life)",
+          "author": "Greg A. Gerrie",
+          "year": 2013,
+          "genres": "",
+          "description": "\"If you need a dose of upbeat medicine - this is it.\" TONY CAMPOLO, PHD - EASTERN UNIVERSITY \"A book that sizzles with wisdom. Tremendous thoughts to rekindle the fires of a servant.\" CHARLES \"TREMENDOUS\" JONES, AUTHOR OF Life Is Tremendous \"This book reminds you to become your best. Uplifting and..."
+        },
+        {
+          "book_id": "BK-121ACEC308D7",
+          "title": "Rainy's Powwow",
+          "author": "Linda Theresa Raczek, Gary Bennett",
+          "year": 1999,
+          "genres": "Juvenile Fiction",
+          "description": "A Native American girl attends the traditional powwow where she is expected to choose for herself a specific form of dance and receive her special name."
+        },
+        {
+          "book_id": "BK-928654C53E7A",
+          "title": "The Ears of Corn (Ike and Mem Story)",
+          "author": "Patrick Jennings",
+          "year": 2003,
+          "genres": "Juvenile Fiction",
+          "description": "When Ike and his little sister Mem spend the weekend at their grandparents' farm, they resent all the work they must do, until they realize that there is more to their visit than just doing chores, and that everyone must cooperate and pitch in if they are to get along."
+        },
+        {
+          "book_id": "BK-B07B56FA9FD4",
+          "title": "A Year of Afghans (Bk. 5)",
+          "author": "Leisure Arts, Inc.",
+          "year": 2011,
+          "genres": "Crafts & Hobbies",
+          "description": "LA# 5260 - A Year of Baby Afghans Book 5 When there's a new baby on the way, these 12 darling afghan patterns give you an entire year of soft-and-cozy blankets to crochet. In June, welcome that sweet girl or boy with an ocean of colorful fish. Treat Baby to the fun of peppermints at Christmas, or a..."
+        },
+        {
+          "book_id": "BK-803BFDCA3564",
+          "title": "Manga! Manga!: World of Japanese Comic Books",
+          "author": "Frederik L. Schodt",
+          "year": 1983,
+          "genres": "Comic books, strips, etc",
+          "description": "Manga in Japanese means \"comics,\" and comics in Japan are simply the most marvelous multifaceted misunderstood mass-market monster publishing phenomenon ever, anywhere. A multibillion dollar industry ... tens of millions of devoted fans ... thousands of ceaselessly toiling artists, a few of whom..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.084,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-46F5AC42FBAD",
+          "title": "Stuck with You (Time of Your Life)",
+          "author": "Greg A. Gerrie",
+          "year": 2013,
+          "genres": "",
+          "description": "\"If you need a dose of upbeat medicine - this is it.\" TONY CAMPOLO, PHD - EASTERN UNIVERSITY \"A book that sizzles with wisdom. Tremendous thoughts to rekindle the fires of a servant.\" CHARLES \"TREMENDOUS\" JONES, AUTHOR OF Life Is Tremendous \"This book reminds you to become your best. Uplifting and..."
+        },
+        {
+          "book_id": "BK-DDA52F593DA1",
+          "title": "Voices in Summer",
+          "author": "Rosamunde Pilcher",
+          "year": 2020,
+          "genres": "Fiction",
+          "description": "A phenomenal, heartwarming tale by the much-loved Rosamunde Pilcher. Laura, newly married and ever conscious she may be living in the shadow of her husband Alec's first wife, decides to take a holiday with his family in Cornwall. Through the long hot summer days she is slowly charmed by the..."
+        },
+        {
+          "book_id": "BK-121ACEC308D7",
+          "title": "Rainy's Powwow",
+          "author": "Linda Theresa Raczek, Gary Bennett",
+          "year": 1999,
+          "genres": "Juvenile Fiction",
+          "description": "A Native American girl attends the traditional powwow where she is expected to choose for herself a specific form of dance and receive her special name."
+        },
+        {
+          "book_id": "BK-1B9131A5C14B",
+          "title": "Starry Nights (Night Glow Board Books)",
+          "author": "Judith Moffatt",
+          "year": 1997,
+          "genres": "Glow-in-the-dark books",
+          "description": "Shows various creatures enjoying a summer evening under the light of the moon and stars, with glow-in-the-dark pages that can be \"charged\" under a light. On board pages."
+        },
+        {
+          "book_id": "BK-928654C53E7A",
+          "title": "The Ears of Corn (Ike and Mem Story)",
+          "author": "Patrick Jennings",
+          "year": 2003,
+          "genres": "Juvenile Fiction",
+          "description": "When Ike and his little sister Mem spend the weekend at their grandparents' farm, they resent all the work they must do, until they realize that there is more to their visit than just doing chores, and that everyone must cooperate and pitch in if they are to get along."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 1.864,
+      "plan": {
+        "keyword_query": "cozy uplifting",
+        "semantic_query": "Cozy, uplifting, comforting books for a relaxing read.",
+        "metadata_filter": {
+          "author": null,
+          "genre": null,
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-46F5AC42FBAD",
+          "title": "Stuck with You (Time of Your Life)",
+          "author": "Greg A. Gerrie",
+          "year": 2013,
+          "genres": "",
+          "description": "\"If you need a dose of upbeat medicine - this is it.\" TONY CAMPOLO, PHD - EASTERN UNIVERSITY \"A book that sizzles with wisdom. Tremendous thoughts to rekindle the fires of a servant.\" CHARLES \"TREMENDOUS\" JONES, AUTHOR OF Life Is Tremendous \"This book reminds you to become your best. Uplifting and..."
+        },
+        {
+          "book_id": "BK-B07B56FA9FD4",
+          "title": "A Year of Afghans (Bk. 5)",
+          "author": "Leisure Arts, Inc.",
+          "year": 2011,
+          "genres": "Crafts & Hobbies",
+          "description": "LA# 5260 - A Year of Baby Afghans Book 5 When there's a new baby on the way, these 12 darling afghan patterns give you an entire year of soft-and-cozy blankets to crochet. In June, welcome that sweet girl or boy with an ocean of colorful fish. Treat Baby to the fun of peppermints at Christmas, or a..."
+        },
+        {
+          "book_id": "BK-954436ECDA7E",
+          "title": "Light of the Soul: Its Science and Effect (1927)",
+          "author": "David Alfred Tetley",
+          "year": 2014,
+          "genres": "Religion",
+          "description": "Your fondest dreams are about to come true. Imagine talking with Christ, face to face, and hearing His reassuring voice ringing in your mind and heart. David Alfred Tetley has been there and can lead you to an inner peace perhaps you have never known. Follow the simple steps outlined in this book..."
+        },
+        {
+          "book_id": "BK-006618BB4336",
+          "title": "Destined to survive: Uplifting stories from the worst of times (ArtScroll history series)",
+          "author": "Israel I. Cohen",
+          "year": 2001,
+          "genres": "Holocaust survivors",
+          "description": "Memoirs of a Jew born ca. 1925 in Łódź to a hasidic family. Relates his experiences in the Holocaust, stressing his efforts to observe religious practices whenever possible. He and his family were interned for four years in the Łódź ghetto, where his father died of starvation. In summer 1944 the..."
+        },
+        {
+          "book_id": "BK-D7E3722AB58B",
+          "title": "The Wind in the Willows",
+          "author": "Kenneth Grahame",
+          "year": 2021,
+          "genres": "Self-Help",
+          "description": "Since its beginnings as a series of stories told to Kenneth Grahame’s young son, The Wind in the Willows has gone on to become one of the best-loved children’s books of all time. The timeless story of Toad, Rat, Mole, and Badger has delighted readers of all ages for more than eighty years. Friendly..."
+        }
+      ]
+    }
+  }
+}

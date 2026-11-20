@@ -1,0 +1,203 @@
+{
+  "id": "K5",
+  "variant": "plot description, no title",
+  "query": "I want the last book of a trilogy about the Haitian Revolution.",
+  "target": "BK-6AC635321B55",
+  "target_title": "The Stone that the Builder Refused: A Novel",
+  "type": "known_item",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.071,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-6AC635321B55",
+          "title": "The Stone that the Builder Refused: A Novel",
+          "author": "Madison Smartt Bell",
+          "year": 2007,
+          "genres": "Fiction",
+          "description": "The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with..."
+        },
+        {
+          "book_id": "BK-B5DA2F31AAAC",
+          "title": "Colsec Rebellion",
+          "author": "Douglas Hill",
+          "year": 2014,
+          "genres": "Fiction",
+          "description": "In this thrilling conclusion to the ColSec Trilogy, five young outcasts return from exile to free Earth from an authoritarian government. In the savage streets, they rally the Earth's people to fight for freedom."
+        },
+        {
+          "book_id": "BK-7BC406EDFF22",
+          "title": "The Magic Orange Tree and Other Haitian Folktales",
+          "author": "Diane Wolkstein",
+          "year": 1980,
+          "genres": "Folklore",
+          "description": "A collection of folktales gathered by the author in Haiti with comments on Haitian folklore."
+        },
+        {
+          "book_id": "BK-E8D1BB451C95",
+          "title": "The Handsome road",
+          "author": "Gwen Bristow",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "A saga of Louisiana by an author who “belongs among those Southern novelists who are trying to interpret the South and its past in critical terms” (The New York Times). Published in the late 1930s by New York Times–bestselling author Gwen Bristow, the Plantation Trilogy is an epic series of novels..."
+        },
+        {
+          "book_id": "BK-3480C9E9B2EB",
+          "title": "Blood games: A novel of historical horror, third in the Count de Saint-Germain series",
+          "author": "Chelsea Quinn Yarbro",
+          "year": 1979,
+          "genres": "Historical fiction",
+          "description": "Blending the dark eroticism of the vampire with the suspenseful adventure in history's most exotic locales, Yarbro's Saint-Germain epic continues in this third book that takes place in the last chaotic days of Nero's Rome."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-6AC635321B55",
+          "title": "The Stone that the Builder Refused: A Novel",
+          "author": "Madison Smartt Bell",
+          "year": 2007,
+          "genres": "Fiction",
+          "description": "The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with..."
+        },
+        {
+          "book_id": "BK-BCA2CA7AF5B3",
+          "title": "In the Coils of the Snake: Book III -- The Hollow Kingdom Trilogy",
+          "author": "Clare B. Dunkle",
+          "year": 2006,
+          "genres": "Juvenile Fiction",
+          "description": "\"What is the spell for?\" Miranda asked curiously, stepping close beside him to squeeze through the first ring of trees. She didn't know of any goblin spells that used flowers unless they were crushed like herbs. \"Do you really want to know?\" murmured the elf absently, looking up at the dark crowns..."
+        },
+        {
+          "book_id": "BK-7BC406EDFF22",
+          "title": "The Magic Orange Tree and Other Haitian Folktales",
+          "author": "Diane Wolkstein",
+          "year": 1980,
+          "genres": "Folklore",
+          "description": "A collection of folktales gathered by the author in Haiti with comments on Haitian folklore."
+        },
+        {
+          "book_id": "BK-1A407A26E62C",
+          "title": "China Since 1911",
+          "author": "Richard T. Phillips",
+          "year": 1996,
+          "genres": "History",
+          "description": "A narrative history of China since the end of dynastic rule at the 1911 Revolution, this book seeks in nine chapters to outline the major political developments of the last eighty years, with attention also given to economic, social and cultural change. Although concerned mainly with the Chinese..."
+        },
+        {
+          "book_id": "BK-8DCDB4694ECA",
+          "title": "Thomas Paine : Collected Writings : Common Sense / The Crisis / Rights of Man / The Age of Reason / Pamphlets, Articles, and Letters (Library of America)",
+          "author": "Thomas Paine",
+          "year": 1995,
+          "genres": "History",
+          "description": "Thomas Paine was the impassioned democratic voice of the Age of Revolution, and this volume brings together his best-known works: Common Sense, The American Crisis, Rights of Man, The Age of Reason, along with a selection of letters, articles and pamphlets that emphasizes Paine's American years. “I..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.075,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-6AC635321B55",
+          "title": "The Stone that the Builder Refused: A Novel",
+          "author": "Madison Smartt Bell",
+          "year": 2007,
+          "genres": "Fiction",
+          "description": "The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with..."
+        },
+        {
+          "book_id": "BK-7BC406EDFF22",
+          "title": "The Magic Orange Tree and Other Haitian Folktales",
+          "author": "Diane Wolkstein",
+          "year": 1980,
+          "genres": "Folklore",
+          "description": "A collection of folktales gathered by the author in Haiti with comments on Haitian folklore."
+        },
+        {
+          "book_id": "BK-E8D1BB451C95",
+          "title": "The Handsome road",
+          "author": "Gwen Bristow",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "A saga of Louisiana by an author who “belongs among those Southern novelists who are trying to interpret the South and its past in critical terms” (The New York Times). Published in the late 1930s by New York Times–bestselling author Gwen Bristow, the Plantation Trilogy is an epic series of novels..."
+        },
+        {
+          "book_id": "BK-B5DA2F31AAAC",
+          "title": "Colsec Rebellion",
+          "author": "Douglas Hill",
+          "year": 2014,
+          "genres": "Fiction",
+          "description": "In this thrilling conclusion to the ColSec Trilogy, five young outcasts return from exile to free Earth from an authoritarian government. In the savage streets, they rally the Earth's people to fight for freedom."
+        },
+        {
+          "book_id": "BK-BCA2CA7AF5B3",
+          "title": "In the Coils of the Snake: Book III -- The Hollow Kingdom Trilogy",
+          "author": "Clare B. Dunkle",
+          "year": 2006,
+          "genres": "Juvenile Fiction",
+          "description": "\"What is the spell for?\" Miranda asked curiously, stepping close beside him to squeeze through the first ring of trees. She didn't know of any goblin spells that used flowers unless they were crushed like herbs. \"Do you really want to know?\" murmured the elf absently, looking up at the dark crowns..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 1.942,
+      "plan": {
+        "keyword_query": "Haitian Revolution trilogy last",
+        "semantic_query": "The last book of a trilogy about the Haitian Revolution.",
+        "metadata_filter": {
+          "author": null,
+          "genre": null,
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-6AC635321B55",
+          "title": "The Stone that the Builder Refused: A Novel",
+          "author": "Madison Smartt Bell",
+          "year": 2007,
+          "genres": "Fiction",
+          "description": "The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with..."
+        },
+        {
+          "book_id": "BK-7BC406EDFF22",
+          "title": "The Magic Orange Tree and Other Haitian Folktales",
+          "author": "Diane Wolkstein",
+          "year": 1980,
+          "genres": "Folklore",
+          "description": "A collection of folktales gathered by the author in Haiti with comments on Haitian folklore."
+        },
+        {
+          "book_id": "BK-E8D1BB451C95",
+          "title": "The Handsome road",
+          "author": "Gwen Bristow",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "A saga of Louisiana by an author who “belongs among those Southern novelists who are trying to interpret the South and its past in critical terms” (The New York Times). Published in the late 1930s by New York Times–bestselling author Gwen Bristow, the Plantation Trilogy is an epic series of novels..."
+        },
+        {
+          "book_id": "BK-E9AE0841E97D",
+          "title": "The Theban Plays: Oedipus the King, Oedipus at Colonus, Antigone",
+          "author": "Sophocles",
+          "year": 2006,
+          "genres": "Drama",
+          "description": "The stirring tale of a legendary royal family's fall and ultimate redemption, the Theban trilogy endures as the crowning achievement of Greek drama. Sophocles' three-play cycle, chronicling Oedipus's search for the truth and its tragic results, remains essential reading for English and classical..."
+        },
+        {
+          "book_id": "BK-B5DA2F31AAAC",
+          "title": "Colsec Rebellion",
+          "author": "Douglas Hill",
+          "year": 2014,
+          "genres": "Fiction",
+          "description": "In this thrilling conclusion to the ColSec Trilogy, five young outcasts return from exile to free Earth from an authoritarian government. In the savage streets, they rally the Earth's people to fight for freedom."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "case": {
+    "id": "A15",
+    "category": "renewal",
+    "message": "Please renew my loan loan-54956aab.",
+    "approve": true,
+    "expect": {
+      "intent": "renewal",
+      "route": "lending",
+      "approval": "renew_loan with the loan ID from the message (approved)",
+      "outcome": "Loan renewed (renewals = 1, new due date); the answer confirms it."
+    }
+  },
+  "user": {
+    "user_id": "UR-EEEF",
+    "loan_id": "loan-54956aab"
+  },
+  "latency_s": 5.64,
+  "final": {
+    "intent": "renewal",
+    "task_plan": [
+      {
+        "agent": "lending",
+        "description": "Renew the loan with loan ID 'loan-54956aab'"
+      }
+    ],
+    "lending_result": "Successfully renewed 'Lillian Too's Feng Shui Year 2002'. New due date: 2027-01-01.",
+    "answer": " I'm glad to help! Your loan for 'Lillian Too's Feng Shui Year 2002' has been successfully renewed. The new due date is now January 1, 2027. Enjoy reading!"
+  },
+  "account_before": {
+    "loans": [
+      {
+        "loan_id": "loan-54956aab",
+        "book_id": "BK-722944E46F8F",
+        "title": "Lillian Too's Feng Shui Year 2002",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-871e4ed5",
+        "book_id": "BK-4E3A27AC2957",
+        "title": "Thoreau As World Traveler",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-f2c15612",
+        "book_id": "BK-44570EF57E32",
+        "title": "Mas Que Humano/More Than Human (Spanish Edition)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "account_after": {
+    "loans": [
+      {
+        "loan_id": "loan-54956aab",
+        "book_id": "BK-722944E46F8F",
+        "title": "Lillian Too's Feng Shui Year 2002",
+        "due_date": "2027-01-01",
+        "renewals": 1,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-871e4ed5",
+        "book_id": "BK-4E3A27AC2957",
+        "title": "Thoreau As World Traveler",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-f2c15612",
+        "book_id": "BK-44570EF57E32",
+        "title": "Mas Que Humano/More Than Human (Spanish Edition)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "steps": [
+    {
+      "node": "intent_detector",
+      "update": {
+        "intent": "renewal",
+        "task_plan": [],
+        "lending_result": "",
+        "response_attempts": 0,
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    },
+    {
+      "node": "task_planner",
+      "update": {
+        "task_plan": [
+          {
+            "agent": "lending",
+            "description": "Renew the loan with loan ID 'loan-54956aab'"
+          }
+        ]
+      }
+    },
+    {
+      "node": "lending/lending_agent",
+      "update": {
+        "pending_lending_action": {
+          "tool_name": "renew_loan",
+          "arguments": {
+            "user_id": "UR-EEEF",
+            "loan_id": "loan-54956aab"
+          }
+        }
+      }
+    },
+    {
+      "approval_request": {
+        "tool_name": "renew_loan",
+        "arguments": {
+          "user_id": "UR-EEEF",
+          "loan_id": "loan-54956aab"
+        }
+      },
+      "approved": true
+    },
+    {
+      "tool_call": "renew_loan",
+      "input": {
+        "user_id": "UR-EEEF",
+        "loan_id": "loan-54956aab"
+      },
+      "output": "Successfully renewed 'Lillian Too's Feng Shui Year 2002'. New due date: 2027-01-01."
+    },
+    {
+      "node": "lending/approval",
+      "update": {
+        "approval_granted": true
+      }
+    },
+    {
+      "node": "lending/executor",
+      "update": {
+        "lending_result": "Successfully renewed 'Lillian Too's Feng Shui Year 2002'. New due date: 2027-01-01.",
+        "pending_lending_action": null
+      }
+    },
+    {
+      "node": "lending",
+      "update": {
+        "lending_result": "Successfully renewed 'Lillian Too's Feng Shui Year 2002'. New due date: 2027-01-01."
+      }
+    },
+    {
+      "node": "response_generator",
+      "update": {
+        "messages": [
+          {
+            "type": "ai",
+            "content": " I'm glad to help! Your loan for 'Lillian Too's Feng Shui Year 2002' has been successfully renewed. The new due date is now January 1, 2027. Enjoy reading!"
+          }
+        ],
+        "response_attempts": 1
+      }
+    },
+    {
+      "node": "evaluator",
+      "update": {
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    }
+  ]
+}

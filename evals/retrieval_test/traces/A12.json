@@ -1,0 +1,247 @@
+{
+  "case": {
+    "id": "A12",
+    "category": "reservation (no copies)",
+    "setup": {
+      "copies": {
+        "BK-70D843303170": 0
+      }
+    },
+    "message": "Reserve The Manikin by Joanna Scott for me, please.",
+    "approve": true,
+    "expect": {
+      "intent": "reservation or combined",
+      "route": "search+lending",
+      "approval": "none, or make_reservation BK-70D843303170 that then fails",
+      "outcome": "No reservation; the answer says no copies are available."
+    }
+  },
+  "user": {
+    "user_id": "UR-062B",
+    "loan_id": "loan-0ac25196"
+  },
+  "latency_s": 8.72,
+  "final": {
+    "intent": "reservation",
+    "task_plan": [
+      {
+        "agent": "search",
+        "description": "Search for 'The Manikin' by Joanna Scott"
+      },
+      {
+        "agent": "lending",
+        "description": "Reserve the found book 'The Manikin' by Joanna Scott"
+      }
+    ],
+    "lending_result": "Reservation failed: no copies of 'The Manikin: A Novel' are available.",
+    "answer": " I'm sorry for any inconvenience, but I'm unable to reserve 'The Manikin: A Novel' by Joanna Scott at this time. It appears that all copies of the book are currently checked out and no reservations can be made. If you'd like, I can notify you as soon as a copy becomes available. Please let me know if you'd like to be added to the waitlist."
+  },
+  "account_before": {
+    "loans": [
+      {
+        "loan_id": "loan-0ac25196",
+        "book_id": "BK-06565C423EC0",
+        "title": "Cadillac",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-f7c712c8",
+        "book_id": "BK-5244F09939AB",
+        "title": "Diccionario Visual Grijalbo (SPANISH) (Spanish Edition)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "account_after": {
+    "loans": [
+      {
+        "loan_id": "loan-0ac25196",
+        "book_id": "BK-06565C423EC0",
+        "title": "Cadillac",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-f7c712c8",
+        "book_id": "BK-5244F09939AB",
+        "title": "Diccionario Visual Grijalbo (SPANISH) (Spanish Edition)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "steps": [
+    {
+      "node": "intent_detector",
+      "update": {
+        "intent": "reservation",
+        "task_plan": [],
+        "lending_result": "",
+        "response_attempts": 0,
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    },
+    {
+      "node": "task_planner",
+      "update": {
+        "task_plan": [
+          {
+            "agent": "search",
+            "description": "Search for 'The Manikin' by Joanna Scott"
+          },
+          {
+            "agent": "lending",
+            "description": "Reserve the found book 'The Manikin' by Joanna Scott"
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/query_processor",
+      "update": {
+        "retrieval_plan": {
+          "keyword_query": "The Manikin",
+          "semantic_query": "",
+          "metadata_filter": {
+            "author": "Joanna Scott",
+            "genre": null,
+            "year_from": null,
+            "year_to": null
+          }
+        },
+        "semantic_results": [],
+        "lexical_results": [],
+        "retrieval_attempts": 1
+      }
+    },
+    {
+      "node": "rag/lexical_search",
+      "update": {
+        "lexical_results": [
+          {
+            "book_id": "BK-70D843303170",
+            "title": "The Manikin: A Novel",
+            "author": "Joanna Scott",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/result_fusion",
+      "update": {
+        "fused_results": [
+          {
+            "book_id": "BK-70D843303170",
+            "title": "The Manikin: A Novel",
+            "author": "Joanna Scott",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/retrieval_evaluator",
+      "update": {
+        "retrieval_feedback": "",
+        "retry_retrieval": false
+      }
+    },
+    {
+      "node": "rag",
+      "update": {
+        "search_results": [
+          {
+            "book_id": "BK-70D843303170",
+            "title": "The Manikin: A Novel",
+            "author": "Joanna Scott",
+            "year": 2015,
+            "genres": "Fiction",
+            "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "lending/lending_agent",
+      "update": {
+        "pending_lending_action": {
+          "tool_name": "make_reservation",
+          "arguments": {
+            "user_id": "UR-062B",
+            "book_id": "BK-70D843303170"
+          }
+        }
+      }
+    },
+    {
+      "approval_request": {
+        "tool_name": "make_reservation",
+        "arguments": {
+          "user_id": "UR-062B",
+          "book_id": "BK-70D843303170"
+        }
+      },
+      "approved": true
+    },
+    {
+      "tool_call": "make_reservation",
+      "input": {
+        "user_id": "UR-062B",
+        "book_id": "BK-70D843303170"
+      },
+      "output": "Reservation failed: no copies of 'The Manikin: A Novel' are available."
+    },
+    {
+      "node": "lending/approval",
+      "update": {
+        "approval_granted": true
+      }
+    },
+    {
+      "node": "lending/executor",
+      "update": {
+        "lending_result": "Reservation failed: no copies of 'The Manikin: A Novel' are available.",
+        "pending_lending_action": null
+      }
+    },
+    {
+      "node": "lending",
+      "update": {
+        "lending_result": "Reservation failed: no copies of 'The Manikin: A Novel' are available."
+      }
+    },
+    {
+      "node": "response_generator",
+      "update": {
+        "messages": [
+          {
+            "type": "ai",
+            "content": " I'm sorry for any inconvenience, but I'm unable to reserve 'The Manikin: A Novel' by Joanna Scott at this time. It appears that all copies of the book are currently checked out and no reservations can be made. If you'd like, I can notify you as soon as a copy becomes available. Please let me know if you'd like to be added to the waitlist."
+          }
+        ],
+        "response_attempts": 1
+      }
+    },
+    {
+      "node": "evaluator",
+      "update": {
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    }
+  ]
+}

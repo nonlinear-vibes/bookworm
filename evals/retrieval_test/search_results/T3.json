@@ -1,0 +1,201 @@
+{
+  "id": "T3",
+  "variant": "topic",
+  "query": "Books that help parents raise their children.",
+  "type": "topic",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.07,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-F9C1AC49418E",
+          "title": "How to Rear Children",
+          "author": "William Kabzinski",
+          "year": 2021,
+          "genres": "",
+          "description": "This book was written for parents who do not feel they have adequate information on child-rearing or who lack confidence in their skills. Parenting skills are acquired from your childhood experiences and information acquired from a variety of sources. This may include books, lectures, classes, and..."
+        },
+        {
+          "book_id": "BK-1FB446C74C63",
+          "title": "Raising Gifted Kids: Everything You Need to Know to Help Your Exceptional Child Thrive",
+          "author": "Barbara Schave Klein",
+          "year": 2007,
+          "genres": "Family & Relationships",
+          "description": "Raising an extremely bright child - quick, curious, sensitive, and introspective - is a daunting challenge. Parents need insight into their own motivations (as well as those of their children), and the courage and ability to make tough decisions about their child's development. \"Raising Gifted..."
+        },
+        {
+          "book_id": "BK-220B98770078",
+          "title": "Multicoloured Mayhem: Parenting the Many Shades of Adolescents and Children With Autism, Asperger Syndrome and Ad/Hd",
+          "author": "Jacqui Jackson",
+          "year": 2004,
+          "genres": "Family & Relationships",
+          "description": "Presents advice for parents on how to raise children with autism, Asperger's syndrome, and AD/HD."
+        },
+        {
+          "book_id": "BK-0FF2D9792073",
+          "title": "Mommy, Why Can't I Watch That TV Show?",
+          "author": "Dian Layton",
+          "year": 1995,
+          "genres": "Family & Relationships",
+          "description": "Sometimes children ask the toughest questions! As a parent, you want to give them the best answers. These amazing children's books will help dedicated parents answer tough questions simply, biblically, and lovingly. Christ-centered and sensitively written, these books will help satisfy the..."
+        },
+        {
+          "book_id": "BK-8111424E610D",
+          "title": "Bringing Baby Home: A New Owners Manual for First Time Parents",
+          "author": "Laura Zahn",
+          "year": 1993,
+          "genres": "Family & Relationships",
+          "description": "Zahn's sense of humor and clear directions make this a simple, enjoyable book to read. Real advice for the real world -- go buy it today. The Best Books for You & Your Baby. Benjamin Franklin and Midwest Book Achievement Award winner."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-1FB446C74C63",
+          "title": "Raising Gifted Kids: Everything You Need to Know to Help Your Exceptional Child Thrive",
+          "author": "Barbara Schave Klein",
+          "year": 2007,
+          "genres": "Family & Relationships",
+          "description": "Raising an extremely bright child - quick, curious, sensitive, and introspective - is a daunting challenge. Parents need insight into their own motivations (as well as those of their children), and the courage and ability to make tough decisions about their child's development. \"Raising Gifted..."
+        },
+        {
+          "book_id": "BK-C3F041F81F82",
+          "title": "Why Doesn't Anybody Like Me?: A Guide To Raising Socially Confident Kids",
+          "author": "Hara E. Marano",
+          "year": 1998,
+          "genres": "Family & Relationships",
+          "description": "A parent's love is absolutely essential, but there comes a point when it alone is not sufficient -- when the epiccenter of acceptance shifts from home to school, from family to peer. This practical, persuasive guide shows parents how to raise their children so that they will be popular -- well..."
+        },
+        {
+          "book_id": "BK-220B98770078",
+          "title": "Multicoloured Mayhem: Parenting the Many Shades of Adolescents and Children With Autism, Asperger Syndrome and Ad/Hd",
+          "author": "Jacqui Jackson",
+          "year": 2004,
+          "genres": "Family & Relationships",
+          "description": "Presents advice for parents on how to raise children with autism, Asperger's syndrome, and AD/HD."
+        },
+        {
+          "book_id": "BK-738A0CB89505",
+          "title": "Mommy, Why Did Jesus Have to Die?",
+          "author": "Dian Layton",
+          "year": 1995,
+          "genres": "Family & Relationships",
+          "description": "Sometimes children ask the toughest questions! As a parent, you want to give them the best answers. These amazing children's books will help dedicated parents answer tough questions simply, biblically, and lovingly. Christ-centered and sensitively written, these books will help satisfy the..."
+        },
+        {
+          "book_id": "BK-0FF2D9792073",
+          "title": "Mommy, Why Can't I Watch That TV Show?",
+          "author": "Dian Layton",
+          "year": 1995,
+          "genres": "Family & Relationships",
+          "description": "Sometimes children ask the toughest questions! As a parent, you want to give them the best answers. These amazing children's books will help dedicated parents answer tough questions simply, biblically, and lovingly. Christ-centered and sensitively written, these books will help satisfy the..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.073,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-1FB446C74C63",
+          "title": "Raising Gifted Kids: Everything You Need to Know to Help Your Exceptional Child Thrive",
+          "author": "Barbara Schave Klein",
+          "year": 2007,
+          "genres": "Family & Relationships",
+          "description": "Raising an extremely bright child - quick, curious, sensitive, and introspective - is a daunting challenge. Parents need insight into their own motivations (as well as those of their children), and the courage and ability to make tough decisions about their child's development. \"Raising Gifted..."
+        },
+        {
+          "book_id": "BK-220B98770078",
+          "title": "Multicoloured Mayhem: Parenting the Many Shades of Adolescents and Children With Autism, Asperger Syndrome and Ad/Hd",
+          "author": "Jacqui Jackson",
+          "year": 2004,
+          "genres": "Family & Relationships",
+          "description": "Presents advice for parents on how to raise children with autism, Asperger's syndrome, and AD/HD."
+        },
+        {
+          "book_id": "BK-0FF2D9792073",
+          "title": "Mommy, Why Can't I Watch That TV Show?",
+          "author": "Dian Layton",
+          "year": 1995,
+          "genres": "Family & Relationships",
+          "description": "Sometimes children ask the toughest questions! As a parent, you want to give them the best answers. These amazing children's books will help dedicated parents answer tough questions simply, biblically, and lovingly. Christ-centered and sensitively written, these books will help satisfy the..."
+        },
+        {
+          "book_id": "BK-27E58CBB2A5A",
+          "title": "Smart Parenting for African-Americans: Helping Your Kids Thrive in a Difficult World",
+          "author": "Jeffrey Roger Gardere",
+          "year": 2002,
+          "genres": "Family & Relationships",
+          "description": "A guide for African American parents focuses on the problems their children face, stresses the necessity of strong parent-child communication for promoting self-esteem, and features a wealth of parenting tips and tools."
+        },
+        {
+          "book_id": "BK-F9C1AC49418E",
+          "title": "How to Rear Children",
+          "author": "William Kabzinski",
+          "year": 2021,
+          "genres": "",
+          "description": "This book was written for parents who do not feel they have adequate information on child-rearing or who lack confidence in their skills. Parenting skills are acquired from your childhood experiences and information acquired from a variety of sources. This may include books, lectures, classes, and..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 1.929,
+      "plan": {
+        "keyword_query": "parenting children",
+        "semantic_query": "Books that provide advice, tips, and strategies for raising children effectively.",
+        "metadata_filter": {
+          "author": null,
+          "genre": "Self-help",
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-F9C1AC49418E",
+          "title": "How to Rear Children",
+          "author": "William Kabzinski",
+          "year": 2021,
+          "genres": "",
+          "description": "This book was written for parents who do not feel they have adequate information on child-rearing or who lack confidence in their skills. Parenting skills are acquired from your childhood experiences and information acquired from a variety of sources. This may include books, lectures, classes, and..."
+        },
+        {
+          "book_id": "BK-FD48DF8A2511",
+          "title": "Changing the Magic in Your Life: Don't Become Your Parents",
+          "author": "Ken Renshaw",
+          "year": 2003,
+          "genres": "Self-Help",
+          "description": "This book shows readers how to change their life by systematically examining the rules which determine who they are, their personal magic. It shows readers how to not \"become their parents.\""
+        },
+        {
+          "book_id": "BK-1FB446C74C63",
+          "title": "Raising Gifted Kids: Everything You Need to Know to Help Your Exceptional Child Thrive",
+          "author": "Barbara Schave Klein",
+          "year": 2007,
+          "genres": "Family & Relationships",
+          "description": "Raising an extremely bright child - quick, curious, sensitive, and introspective - is a daunting challenge. Parents need insight into their own motivations (as well as those of their children), and the courage and ability to make tough decisions about their child's development. \"Raising Gifted..."
+        },
+        {
+          "book_id": "BK-D7E3722AB58B",
+          "title": "The Wind in the Willows",
+          "author": "Kenneth Grahame",
+          "year": 2021,
+          "genres": "Self-Help",
+          "description": "Since its beginnings as a series of stories told to Kenneth Grahame’s young son, The Wind in the Willows has gone on to become one of the best-loved children’s books of all time. The timeless story of Toad, Rat, Mole, and Badger has delighted readers of all ages for more than eighty years. Friendly..."
+        },
+        {
+          "book_id": "BK-220B98770078",
+          "title": "Multicoloured Mayhem: Parenting the Many Shades of Adolescents and Children With Autism, Asperger Syndrome and Ad/Hd",
+          "author": "Jacqui Jackson",
+          "year": 2004,
+          "genres": "Family & Relationships",
+          "description": "Presents advice for parents on how to raise children with autism, Asperger's syndrome, and AD/HD."
+        }
+      ]
+    }
+  }
+}

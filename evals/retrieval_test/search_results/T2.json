@@ -1,0 +1,201 @@
+{
+  "id": "T2",
+  "variant": "mood / genre",
+  "query": "I'd like a dark psychological thriller.",
+  "type": "topic",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.069,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-D3A0626556D7",
+          "title": "Star girl",
+          "author": "Louise Beech",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "A taut, emotive, devastating dark and all-consuming psychological thriller, reminiscent of Play Misty for Me ... from the critically acclaimed author of Maria in the Moon and The Lion Tamer Who Lost... WINNER of Best magazine’s BIG Book of the Year 2019 LONGLISTED for Guardian‘s NOT THE BOOKER..."
+        },
+        {
+          "book_id": "BK-FE652DC225F5",
+          "title": "Woman at the window, a novel",
+          "author": "A. J. Finn",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "Instant #1 New York Times Bestseller! For readers of Gillian Flynn and Tana French comes one of the decade’s most anticipated debuts, to be published in thirty-six languages around the world and already in development as a major film from Fox: a twisty, powerful Hitchcockian thriller about an..."
+        },
+        {
+          "book_id": "BK-AFCE2F0A5CF4",
+          "title": "My Sleepy Room",
+          "author": "F. R. Tallis",
+          "year": 2013,
+          "genres": "Fiction",
+          "description": "As haunting as Susan Hill’s The Woman in Black and as dark as James Herbert's The Secret of Crickley Hall, F. R. Tallis’s The Sleep Room is where your nightmares begin. From the author of the Vienna Blood series. When promising psychiatrist, James Richardson, is offered the job opportunity of a..."
+        },
+        {
+          "book_id": "BK-8CA6E2A03A2E",
+          "title": "Trust No One",
+          "author": "Debra Webb",
+          "year": 2020,
+          "genres": "Fiction",
+          "description": "A double homicide and a missing woman lead a detective to unearth disturbing secrets in this gripping thriller from USA Today bestselling author Debra Webb. It's the worst possible time for Detective Kerri Devlin to be involved in an all-consuming double-homicide case. She's locked in a bitter..."
+        },
+        {
+          "book_id": "BK-BBC787E6DFF7",
+          "title": "La Fille de La Nuit (Ldp Thrillers) (French Edition)",
+          "author": "Wulf Dorn",
+          "year": 2011,
+          "genres": "Fiction",
+          "description": "Een verleden vol vragen. Een cassetteband met niets dan ruis. En één antwoord, verborgen in ijzige stilte.. Al drieëntwintig jaar wordt psychiater Jan Forstner geplaagd door de verdwijning van zijn broer. Het enige wat hij nog van hem heeft, is de dictafoon die de toen zesjarige Sven voor zijn..."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-D3A0626556D7",
+          "title": "Star girl",
+          "author": "Louise Beech",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "A taut, emotive, devastating dark and all-consuming psychological thriller, reminiscent of Play Misty for Me ... from the critically acclaimed author of Maria in the Moon and The Lion Tamer Who Lost... WINNER of Best magazine’s BIG Book of the Year 2019 LONGLISTED for Guardian‘s NOT THE BOOKER..."
+        },
+        {
+          "book_id": "BK-4537238BF982",
+          "title": "Seven Perennial Sins and Their Offspring",
+          "author": "Ken Bazyn",
+          "year": 2002,
+          "genres": "Religion",
+          "description": "Who was it who asked, \"Why does the devil have all the good tunes?\"The seven \"deadly sins\" are not to be found in scripture as such, but they have been a staple of Christian preaching since the early church. Ken BazynÆs The Seven Perennial Sins and Their Offspring is more indebted to literature..."
+        },
+        {
+          "book_id": "BK-FE652DC225F5",
+          "title": "Woman at the window, a novel",
+          "author": "A. J. Finn",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "Instant #1 New York Times Bestseller! For readers of Gillian Flynn and Tana French comes one of the decade’s most anticipated debuts, to be published in thirty-six languages around the world and already in development as a major film from Fox: a twisty, powerful Hitchcockian thriller about an..."
+        },
+        {
+          "book_id": "BK-8CA6E2A03A2E",
+          "title": "Trust No One",
+          "author": "Debra Webb",
+          "year": 2020,
+          "genres": "Fiction",
+          "description": "A double homicide and a missing woman lead a detective to unearth disturbing secrets in this gripping thriller from USA Today bestselling author Debra Webb. It's the worst possible time for Detective Kerri Devlin to be involved in an all-consuming double-homicide case. She's locked in a bitter..."
+        },
+        {
+          "book_id": "BK-64963E16D471",
+          "title": "Night World: Daughters Of Darkness",
+          "author": "L.J. Smith",
+          "year": 2016,
+          "genres": "Juvenile Fiction",
+          "description": "\"There’s something strange about the new girls in town. Briar Creek, Oregon, has never seen anything like the supernatural grace of Rowan, Kestrel, and Jade, three sisters who move into the dilapidated old house next to Mark and Mary-Lynnette Carter\"--Publisher."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.084,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-D3A0626556D7",
+          "title": "Star girl",
+          "author": "Louise Beech",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "A taut, emotive, devastating dark and all-consuming psychological thriller, reminiscent of Play Misty for Me ... from the critically acclaimed author of Maria in the Moon and The Lion Tamer Who Lost... WINNER of Best magazine’s BIG Book of the Year 2019 LONGLISTED for Guardian‘s NOT THE BOOKER..."
+        },
+        {
+          "book_id": "BK-FE652DC225F5",
+          "title": "Woman at the window, a novel",
+          "author": "A. J. Finn",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "Instant #1 New York Times Bestseller! For readers of Gillian Flynn and Tana French comes one of the decade’s most anticipated debuts, to be published in thirty-six languages around the world and already in development as a major film from Fox: a twisty, powerful Hitchcockian thriller about an..."
+        },
+        {
+          "book_id": "BK-8CA6E2A03A2E",
+          "title": "Trust No One",
+          "author": "Debra Webb",
+          "year": 2020,
+          "genres": "Fiction",
+          "description": "A double homicide and a missing woman lead a detective to unearth disturbing secrets in this gripping thriller from USA Today bestselling author Debra Webb. It's the worst possible time for Detective Kerri Devlin to be involved in an all-consuming double-homicide case. She's locked in a bitter..."
+        },
+        {
+          "book_id": "BK-4537238BF982",
+          "title": "Seven Perennial Sins and Their Offspring",
+          "author": "Ken Bazyn",
+          "year": 2002,
+          "genres": "Religion",
+          "description": "Who was it who asked, \"Why does the devil have all the good tunes?\"The seven \"deadly sins\" are not to be found in scripture as such, but they have been a staple of Christian preaching since the early church. Ken BazynÆs The Seven Perennial Sins and Their Offspring is more indebted to literature..."
+        },
+        {
+          "book_id": "BK-AFCE2F0A5CF4",
+          "title": "My Sleepy Room",
+          "author": "F. R. Tallis",
+          "year": 2013,
+          "genres": "Fiction",
+          "description": "As haunting as Susan Hill’s The Woman in Black and as dark as James Herbert's The Secret of Crickley Hall, F. R. Tallis’s The Sleep Room is where your nightmares begin. From the author of the Vienna Blood series. When promising psychiatrist, James Richardson, is offered the job opportunity of a..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.053,
+      "plan": {
+        "keyword_query": "dark psychological thriller",
+        "semantic_query": "Dark, suspenseful, and thought-provoking psychological thrillers.",
+        "metadata_filter": {
+          "author": null,
+          "genre": "Psychological thriller",
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-D3A0626556D7",
+          "title": "Star girl",
+          "author": "Louise Beech",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "A taut, emotive, devastating dark and all-consuming psychological thriller, reminiscent of Play Misty for Me ... from the critically acclaimed author of Maria in the Moon and The Lion Tamer Who Lost... WINNER of Best magazine’s BIG Book of the Year 2019 LONGLISTED for Guardian‘s NOT THE BOOKER..."
+        },
+        {
+          "book_id": "BK-FE652DC225F5",
+          "title": "Woman at the window, a novel",
+          "author": "A. J. Finn",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "Instant #1 New York Times Bestseller! For readers of Gillian Flynn and Tana French comes one of the decade’s most anticipated debuts, to be published in thirty-six languages around the world and already in development as a major film from Fox: a twisty, powerful Hitchcockian thriller about an..."
+        },
+        {
+          "book_id": "BK-8CA6E2A03A2E",
+          "title": "Trust No One",
+          "author": "Debra Webb",
+          "year": 2020,
+          "genres": "Fiction",
+          "description": "A double homicide and a missing woman lead a detective to unearth disturbing secrets in this gripping thriller from USA Today bestselling author Debra Webb. It's the worst possible time for Detective Kerri Devlin to be involved in an all-consuming double-homicide case. She's locked in a bitter..."
+        },
+        {
+          "book_id": "BK-AFCE2F0A5CF4",
+          "title": "My Sleepy Room",
+          "author": "F. R. Tallis",
+          "year": 2013,
+          "genres": "Fiction",
+          "description": "As haunting as Susan Hill’s The Woman in Black and as dark as James Herbert's The Secret of Crickley Hall, F. R. Tallis’s The Sleep Room is where your nightmares begin. From the author of the Vienna Blood series. When promising psychiatrist, James Richardson, is offered the job opportunity of a..."
+        },
+        {
+          "book_id": "BK-FE1E7A31047D",
+          "title": "Best Mysteries of All Time: A Stranger in My Grave (The Best Mysteries of All Time)",
+          "author": "Margaret Millar",
+          "year": 2002,
+          "genres": "Nightmares",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

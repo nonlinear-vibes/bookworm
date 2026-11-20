@@ -1,0 +1,213 @@
+{
+  "id": "M4",
+  "variant": "genre + year",
+  "query": "Cookbooks published before 2000, please.",
+  "relevant_if": {
+    "genre": "Cooking",
+    "year_to": 1999
+  },
+  "type": "metadata",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.079,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-223F089F5522",
+          "title": "Old-Fashioned Ckbk",
+          "author": "Don Holm",
+          "year": 1969,
+          "genres": "Cooking",
+          "description": "Distributed by the University of Nebraska Press for Caxton Press This book explains how to build the right kind of fire for the best results with a minimum of time and effort. Tempting recipes for hungry fishermen and hunters include pot roasts, mulligan stews, and dishes made from fish of various..."
+        },
+        {
+          "book_id": "BK-7AC5E9ADEA9A",
+          "title": "Alaska Sourdough",
+          "author": "Ruth Allman",
+          "year": 1976,
+          "genres": "Cooking",
+          "description": "\"Sourdough is a magical food\", as author Ruth Allman was fond of saying. There are folks in Alaska who claim the staff of life in their sourdough pots is more than 40 years old or date it to the time when Fairbanks was a mining town. Handwwritten to match the old-timers recipes, this book includes..."
+        },
+        {
+          "book_id": "BK-8D0B0C7172E6",
+          "title": "Indian Cooking",
+          "author": "Suvir Saran, Stephanie Lyness",
+          "year": 2004,
+          "genres": "Cooking",
+          "description": "Providing easy-to-follow techniques and detailed ingredient descriptions, a collection of more than 150 regional recipes includes options from every major tradition and features such dishes as Punjabi Kadai Chicken and Spiced Basmati Rice Pudding. 20,000 first printing."
+        },
+        {
+          "book_id": "BK-92E8DF901FBC",
+          "title": "DEEP FRY COOKERY",
+          "author": "Mable Hoffman, Gar Hoffman",
+          "year": 1977,
+          "genres": "Cooking",
+          "description": ""
+        },
+        {
+          "book_id": "BK-EE0C82BA18B3",
+          "title": "Special Occasions: The Best of Martha Stewart Living",
+          "author": "Martha Stewart",
+          "year": 2002,
+          "genres": "Cooking",
+          "description": ""
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-72BE82FA0E1C",
+          "title": "The Cowboy Cookbook",
+          "author": "Sherry Monahan",
+          "year": 2015,
+          "genres": "Cooking",
+          "description": "From chuckwagon recipes to dutch-oven favorites for your own campfire, The Cowboy's Cookbook features recipes, photos, and lore celebrating the cowboy s role in the shaping of the American West. From songs sung around the campfire after hearty meals of steak, beans, and skillet cornbread to the..."
+        },
+        {
+          "book_id": "BK-8BFF1D1C4FF4",
+          "title": "Cooking with Texas Highways",
+          "author": "Nola McKey",
+          "year": 2010,
+          "genres": "Cooking",
+          "description": "“Reflects the great ethnic diversity of the contemporary Texas table, offering everything from Sauerbraten . . . to Crawfish Etouffee.” —The Austin Chronicle Whether you’re hungry for down-home barbecue and Tex-Mex, or you want to try more exotic dishes such as Paella Valenciana and Thai Pesto,..."
+        },
+        {
+          "book_id": "BK-C47856356038",
+          "title": "Zainabu's African Cookbook with Food and Stories",
+          "author": "Zainabu Kpaka Kallon",
+          "year": 2004,
+          "genres": "Cooking",
+          "description": "Featuring such culinary delights as mango chicken and rice balls, tilapia in kobo kobo groundnut sauce, and banana ginger akara, a delectable combination of recipes, myths, and folklore from Africa promotes healthy living, for both the body and mind, that is steeped in tradition. Original."
+        },
+        {
+          "book_id": "BK-803E62942057",
+          "title": "Nonna's Italian Kitchen: Delicious Home-Style Vegan Cuisine (Healthy World Cuisine)",
+          "author": "Bryanna Clark Grogan",
+          "year": 1998,
+          "genres": "Cooking",
+          "description": "Many Italian dishes are traditionally vegetarian, focusing on grains, legumes, vegetables and fruits, and vegan cook Bryanna Clark Grogan takes readers on a tour of tempting possibilities in this cookbook."
+        },
+        {
+          "book_id": "BK-D4DE860DDA89",
+          "title": "New Dieter's Cookbook: Eat Well, Feel Great, Lose Weight",
+          "author": "Kristi M. Thomas",
+          "year": 2006,
+          "genres": "Cooking",
+          "description": "Kitchen-tested recipes make losing weight a delicious experience, while vibrant full-color photography of every recipe entices dieters to prepare each dish. The handy ringbound format lies flat and pre-inserted tab dividers make finding recipes quick and easy."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.085,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-C47856356038",
+          "title": "Zainabu's African Cookbook with Food and Stories",
+          "author": "Zainabu Kpaka Kallon",
+          "year": 2004,
+          "genres": "Cooking",
+          "description": "Featuring such culinary delights as mango chicken and rice balls, tilapia in kobo kobo groundnut sauce, and banana ginger akara, a delectable combination of recipes, myths, and folklore from Africa promotes healthy living, for both the body and mind, that is steeped in tradition. Original."
+        },
+        {
+          "book_id": "BK-223F089F5522",
+          "title": "Old-Fashioned Ckbk",
+          "author": "Don Holm",
+          "year": 1969,
+          "genres": "Cooking",
+          "description": "Distributed by the University of Nebraska Press for Caxton Press This book explains how to build the right kind of fire for the best results with a minimum of time and effort. Tempting recipes for hungry fishermen and hunters include pot roasts, mulligan stews, and dishes made from fish of various..."
+        },
+        {
+          "book_id": "BK-72BE82FA0E1C",
+          "title": "The Cowboy Cookbook",
+          "author": "Sherry Monahan",
+          "year": 2015,
+          "genres": "Cooking",
+          "description": "From chuckwagon recipes to dutch-oven favorites for your own campfire, The Cowboy's Cookbook features recipes, photos, and lore celebrating the cowboy s role in the shaping of the American West. From songs sung around the campfire after hearty meals of steak, beans, and skillet cornbread to the..."
+        },
+        {
+          "book_id": "BK-7AC5E9ADEA9A",
+          "title": "Alaska Sourdough",
+          "author": "Ruth Allman",
+          "year": 1976,
+          "genres": "Cooking",
+          "description": "\"Sourdough is a magical food\", as author Ruth Allman was fond of saying. There are folks in Alaska who claim the staff of life in their sourdough pots is more than 40 years old or date it to the time when Fairbanks was a mining town. Handwwritten to match the old-timers recipes, this book includes..."
+        },
+        {
+          "book_id": "BK-8BFF1D1C4FF4",
+          "title": "Cooking with Texas Highways",
+          "author": "Nola McKey",
+          "year": 2010,
+          "genres": "Cooking",
+          "description": "“Reflects the great ethnic diversity of the contemporary Texas table, offering everything from Sauerbraten . . . to Crawfish Etouffee.” —The Austin Chronicle Whether you’re hungry for down-home barbecue and Tex-Mex, or you want to try more exotic dishes such as Paella Valenciana and Thai Pesto,..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.581,
+      "plan": {
+        "keyword_query": "cookbook before 2000",
+        "semantic_query": "Cookbooks published before the year 2000.",
+        "metadata_filter": {
+          "author": null,
+          "genre": "Cookbook",
+          "year_from": 1901,
+          "year_to": 1999
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-223F089F5522",
+          "title": "Old-Fashioned Ckbk",
+          "author": "Don Holm",
+          "year": 1969,
+          "genres": "Cooking",
+          "description": "Distributed by the University of Nebraska Press for Caxton Press This book explains how to build the right kind of fire for the best results with a minimum of time and effort. Tempting recipes for hungry fishermen and hunters include pot roasts, mulligan stews, and dishes made from fish of various..."
+        },
+        {
+          "book_id": "BK-7AC5E9ADEA9A",
+          "title": "Alaska Sourdough",
+          "author": "Ruth Allman",
+          "year": 1976,
+          "genres": "Cooking",
+          "description": "\"Sourdough is a magical food\", as author Ruth Allman was fond of saying. There are folks in Alaska who claim the staff of life in their sourdough pots is more than 40 years old or date it to the time when Fairbanks was a mining town. Handwwritten to match the old-timers recipes, this book includes..."
+        },
+        {
+          "book_id": "BK-92E8DF901FBC",
+          "title": "DEEP FRY COOKERY",
+          "author": "Mable Hoffman, Gar Hoffman",
+          "year": 1977,
+          "genres": "Cooking",
+          "description": ""
+        },
+        {
+          "book_id": "BK-649122EDD451",
+          "title": "Recipes for a Small Planet",
+          "author": "Frances Moore Lappé",
+          "year": 1991,
+          "genres": "Cooking",
+          "description": "Here again is the extraordinary bestselling book that taught America the social and personal significance of a new way of eating-- one that remains a complete guide for eating well in the 90s. Featuring: simple rules for a healthy diet; a streamlined, easy-to-use format; delicious food combinations..."
+        },
+        {
+          "book_id": "BK-4B9362D60AB9",
+          "title": "Flavors of Korea: Delicious Vegetarian Cuisine (Healthy World Cuisine)",
+          "author": "Deborah Coultrip-Davis, Young Sook Ramsay",
+          "year": 1998,
+          "genres": "Cooking",
+          "description": "Presents traditional Korean recipes - ranging from mild to piquant - that have been handed down through the generations. The book provides low-fat, vegetarian variations of recipes including dumpling soup, red pepper broccoli, sesame bean curd, and honey cookies."
+        }
+      ]
+    }
+  },
+  "relevant_ids": [
+    "BK-7AC5E9ADEA9A",
+    "BK-223F089F5522",
+    "BK-4B9362D60AB9",
+    "BK-92E8DF901FBC",
+    "BK-803E62942057",
+    "BK-649122EDD451"
+  ]
+}

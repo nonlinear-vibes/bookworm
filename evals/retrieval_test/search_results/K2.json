@@ -1,0 +1,203 @@
+{
+  "id": "K2",
+  "variant": "exact title",
+  "query": "Is Frommer's South Africa in the catalogue?",
+  "target": "BK-920D2BE40DB5",
+  "target_title": "Frommer's South Africa",
+  "type": "known_item",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.076,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-920D2BE40DB5",
+          "title": "Frommer's South Africa",
+          "author": "Pippa de Bruyn",
+          "year": 2003,
+          "genres": "Travel",
+          "description": "Meticulously researched and beautifully written by a South African native, Frommer's South Africa, 3rd Edition, should be the discerning reader's only guide to a memorable trip to southern Africa, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. It offers complete..."
+        },
+        {
+          "book_id": "BK-FE2E6C8CD138",
+          "title": "Frommer's Alaska 2004",
+          "author": "Charles P. Wohlforth",
+          "year": 2003,
+          "genres": "Travel",
+          "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go-- they've done the legwork for you, and they're not afraid to tell it like it..."
+        },
+        {
+          "book_id": "BK-E967E8777B00",
+          "title": "Lonely Planet Zimbabwe, Botswana and Namibia Travel Atlas",
+          "author": "Deanna Swaney, Myra L. Shackley",
+          "year": 1992,
+          "genres": "Botswana",
+          "description": "Practical travel guide to three southern African countries. Includes a 32-page colour safari guide, detailed historical and cultural information, and advice on accommodation, etiquette, driving, and walking in the bush. Also contains useful words and phrases in appropriate languages, 80 maps and an..."
+        },
+        {
+          "book_id": "BK-578033DCE232",
+          "title": "Frommer's California 2005 (Frommer's Complete Guides)",
+          "author": "Matthew Poole",
+          "year": 2004,
+          "genres": "Travel",
+          "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go—they've done the legwork for you, and they're not afraid to tell it like it is,..."
+        },
+        {
+          "book_id": "BK-868B48569907",
+          "title": "Reading the Wild",
+          "author": "Maria Dermoût",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "Een Moluks eiland, in de nadagen van de Nederlandse kolonialisering. Felicia, ‘mevrouw van Kleyntjes’, woont alleen met haar bedienden op een afgelegen plantage aan een baai. Ze herinnert zich de doden en de levenden, met weemoed maar berustend in haar lot. De tienduizend dingen werd wereldwijd een..."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.004,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-920D2BE40DB5",
+          "title": "Frommer's South Africa",
+          "author": "Pippa de Bruyn",
+          "year": 2003,
+          "genres": "Travel",
+          "description": "Meticulously researched and beautifully written by a South African native, Frommer's South Africa, 3rd Edition, should be the discerning reader's only guide to a memorable trip to southern Africa, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. It offers complete..."
+        },
+        {
+          "book_id": "BK-578033DCE232",
+          "title": "Frommer's California 2005 (Frommer's Complete Guides)",
+          "author": "Matthew Poole",
+          "year": 2004,
+          "genres": "Travel",
+          "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go—they've done the legwork for you, and they're not afraid to tell it like it is,..."
+        },
+        {
+          "book_id": "BK-068AD675D776",
+          "title": "DISEASES OF LIVESTOCK",
+          "author": "I. Ristic, Ian McIntyre",
+          "year": 2013,
+          "genres": "Medical",
+          "description": "Most of the future increase in livestock production is expected to occur in the tropical and subtropical regions of the world. Cattle are the most numerous of the ruminant species in the tropics and provide the largest quantity of animal food products. More than one-third of the world's cattle are..."
+        },
+        {
+          "book_id": "BK-FE2E6C8CD138",
+          "title": "Frommer's Alaska 2004",
+          "author": "Charles P. Wohlforth",
+          "year": 2003,
+          "genres": "Travel",
+          "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go-- they've done the legwork for you, and they're not afraid to tell it like it..."
+        },
+        {
+          "book_id": "BK-B9547522F4DC",
+          "title": "Change and Continuity in Spatial Planning",
+          "author": "Vanessa Watson",
+          "year": 2003,
+          "genres": "Architecture",
+          "description": "Change and Continuity in Spatial Planning addresses a question of enduring interest to planners: can planning really bring about significant and positive change? In South Africa the process of political transition appeared to create the preconditions for planners to demonstrate how their..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.075,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-920D2BE40DB5",
+          "title": "Frommer's South Africa",
+          "author": "Pippa de Bruyn",
+          "year": 2003,
+          "genres": "Travel",
+          "description": "Meticulously researched and beautifully written by a South African native, Frommer's South Africa, 3rd Edition, should be the discerning reader's only guide to a memorable trip to southern Africa, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. It offers complete..."
+        },
+        {
+          "book_id": "BK-FE2E6C8CD138",
+          "title": "Frommer's Alaska 2004",
+          "author": "Charles P. Wohlforth",
+          "year": 2003,
+          "genres": "Travel",
+          "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go-- they've done the legwork for you, and they're not afraid to tell it like it..."
+        },
+        {
+          "book_id": "BK-578033DCE232",
+          "title": "Frommer's California 2005 (Frommer's Complete Guides)",
+          "author": "Matthew Poole",
+          "year": 2004,
+          "genres": "Travel",
+          "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go—they've done the legwork for you, and they're not afraid to tell it like it is,..."
+        },
+        {
+          "book_id": "BK-E967E8777B00",
+          "title": "Lonely Planet Zimbabwe, Botswana and Namibia Travel Atlas",
+          "author": "Deanna Swaney, Myra L. Shackley",
+          "year": 1992,
+          "genres": "Botswana",
+          "description": "Practical travel guide to three southern African countries. Includes a 32-page colour safari guide, detailed historical and cultural information, and advice on accommodation, etiquette, driving, and walking in the bush. Also contains useful words and phrases in appropriate languages, 80 maps and an..."
+        },
+        {
+          "book_id": "BK-068AD675D776",
+          "title": "DISEASES OF LIVESTOCK",
+          "author": "I. Ristic, Ian McIntyre",
+          "year": 2013,
+          "genres": "Medical",
+          "description": "Most of the future increase in livestock production is expected to occur in the tropical and subtropical regions of the world. Cattle are the most numerous of the ruminant species in the tropics and provide the largest quantity of animal food products. More than one-third of the world's cattle are..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.011,
+      "plan": {
+        "keyword_query": "Frommer's South Africa",
+        "semantic_query": "",
+        "metadata_filter": {
+          "author": "",
+          "genre": "",
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-920D2BE40DB5",
+          "title": "Frommer's South Africa",
+          "author": "Pippa de Bruyn",
+          "year": 2003,
+          "genres": "Travel",
+          "description": "Meticulously researched and beautifully written by a South African native, Frommer's South Africa, 3rd Edition, should be the discerning reader's only guide to a memorable trip to southern Africa, including the lion-rich reserves of Botswana and the wonders of Victoria Falls. It offers complete..."
+        },
+        {
+          "book_id": "BK-578033DCE232",
+          "title": "Frommer's California 2005 (Frommer's Complete Guides)",
+          "author": "Matthew Poole",
+          "year": 2004,
+          "genres": "Travel",
+          "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go—they've done the legwork for you, and they're not afraid to tell it like it is,..."
+        },
+        {
+          "book_id": "BK-068AD675D776",
+          "title": "DISEASES OF LIVESTOCK",
+          "author": "I. Ristic, Ian McIntyre",
+          "year": 2013,
+          "genres": "Medical",
+          "description": "Most of the future increase in livestock production is expected to occur in the tropical and subtropical regions of the world. Cattle are the most numerous of the ruminant species in the tropics and provide the largest quantity of animal food products. More than one-third of the world's cattle are..."
+        },
+        {
+          "book_id": "BK-FE2E6C8CD138",
+          "title": "Frommer's Alaska 2004",
+          "author": "Charles P. Wohlforth",
+          "year": 2003,
+          "genres": "Travel",
+          "description": "You'll never fall into the tourist traps when you travel with Frommer's. It's like having a friend show you around, taking you to the places locals like best. Our expert authors have already gone everywhere you might go-- they've done the legwork for you, and they're not afraid to tell it like it..."
+        },
+        {
+          "book_id": "BK-B9547522F4DC",
+          "title": "Change and Continuity in Spatial Planning",
+          "author": "Vanessa Watson",
+          "year": 2003,
+          "genres": "Architecture",
+          "description": "Change and Continuity in Spatial Planning addresses a question of enduring interest to planners: can planning really bring about significant and positive change? In South Africa the process of political transition appeared to create the preconditions for planners to demonstrate how their..."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "case": {
+    "id": "A06",
+    "category": "search",
+    "message": "Do you have The Stone that the Builder Refused?",
+    "expect": {
+      "intent": "catalogue_search",
+      "route": "search",
+      "approval": "none",
+      "outcome": "Confirms the book is in the catalogue (BK-6AC635321B55); no availability claim."
+    }
+  },
+  "user": {
+    "user_id": "UR-955E",
+    "loan_id": "loan-b374abb4"
+  },
+  "latency_s": 9.38,
+  "final": {
+    "intent": "catalogue_search",
+    "task_plan": [
+      {
+        "agent": "search",
+        "description": "Search the library catalogue for 'The Stone that the Builder Refused'"
+      }
+    ],
+    "lending_result": "",
+    "answer": " Yes, we have \"The Stone that the Builder Refused: A Novel\" by Madison Smartt Bell. It was published in 2007 and belongs to the Fiction genre. Here is a brief description:\n\n\"The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with...\"\n\nIf you'd like to borrow this book, please let me know."
+  },
+  "account_before": {
+    "loans": [
+      {
+        "loan_id": "loan-b374abb4",
+        "book_id": "BK-1C13DAFE53A4",
+        "title": "Penobscot Man : The life history of a forest tribe in Maine.",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-df224247",
+        "book_id": "BK-7D7B5316ADCE",
+        "title": "Get Busy, Beaver! (Book and Audio CD) (Paperback)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "account_after": {
+    "loans": [
+      {
+        "loan_id": "loan-b374abb4",
+        "book_id": "BK-1C13DAFE53A4",
+        "title": "Penobscot Man : The life history of a forest tribe in Maine.",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      },
+      {
+        "loan_id": "loan-df224247",
+        "book_id": "BK-7D7B5316ADCE",
+        "title": "Get Busy, Beaver! (Book and Audio CD) (Paperback)",
+        "due_date": "2026-12-11",
+        "renewals": 0,
+        "returned_at": null
+      }
+    ],
+    "reservations": []
+  },
+  "steps": [
+    {
+      "node": "intent_detector",
+      "update": {
+        "intent": "catalogue_search",
+        "task_plan": [],
+        "lending_result": "",
+        "response_attempts": 0,
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    },
+    {
+      "node": "task_planner",
+      "update": {
+        "task_plan": [
+          {
+            "agent": "search",
+            "description": "Search the library catalogue for 'The Stone that the Builder Refused'"
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/query_processor",
+      "update": {
+        "retrieval_plan": {
+          "keyword_query": "The Stone that the Builder Refused",
+          "semantic_query": "",
+          "metadata_filter": {
+            "author": null,
+            "genre": null,
+            "year_from": null,
+            "year_to": null
+          }
+        },
+        "semantic_results": [],
+        "lexical_results": [],
+        "retrieval_attempts": 1
+      }
+    },
+    {
+      "node": "rag/lexical_search",
+      "update": {
+        "lexical_results": [
+          {
+            "book_id": "BK-6AC635321B55",
+            "title": "The Stone that the Builder Refused: A Novel",
+            "author": "Madison Smartt Bell",
+            "year": 2007,
+            "genres": "Fiction",
+            "description": "The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with..."
+          },
+          {
+            "book_id": "BK-A96402B9CCFF",
+            "title": "Hot Property",
+            "author": "Carly Phillips",
+            "year": 2017,
+            "genres": "Fiction",
+            "description": "This hot property’s lucky streak has run out. Just one short season ago, major league center fielder John Roper had it all: the looks—and personal life—of a sports hero and the public's adoration. But this hot property's lucky streak has run out. After a World Series disaster, fans diss him, shock..."
+          },
+          {
+            "book_id": "BK-CED937F66108",
+            "title": "Rambo 3",
+            "author": "David Morrell",
+            "year": 2012,
+            "genres": "Fiction",
+            "description": "The most dangerous man in the world is back. David Morrell’s First Blood introduced Rambo, who joined the ranks of Sherlock Holmes, Tarzan, James Bond, and Harry Potter as an international thriller icon. In this further adventure, Rambo is in exile far from home in Thailand, vowing to renounce..."
+          },
+          {
+            "book_id": "BK-F18B30880B49",
+            "title": "Your Engineered House",
+            "author": "Rex Roberts, Charles Wing",
+            "year": 1987,
+            "genres": "Architecture, Domestic.",
+            "description": "Advises potential home builders about siting, heat, ventilation, size, foundations, building materials, and financing, and explains the advantages of building one's home"
+          },
+          {
+            "book_id": "BK-B28ABA60A268",
+            "title": "Snake Eyes: An Alex Stone Novel",
+            "author": "John Richardson",
+            "year": 2004,
+            "genres": "Fiction",
+            "description": "Question: What do Memphis, the Mafia, a homeless priest, a beautiful artist, quantum physics and a cat that purrs to \"Muddy Waters\" have in common? Answer: Alexander Hamilton Stone. He's an ex-con, Vietnam vet, t'ai chi practitioner, and private investigator for the lower echelon attorneys of..."
+          },
+          {
+            "book_id": "BK-A2828B385AE6",
+            "title": "Old Barns - New Homes: A Showcase Of Architectural Conversions",
+            "author": "E. Ashley Rooney, Peter Gerhard Stampfl",
+            "year": 2004,
+            "genres": "Architecture",
+            "description": "Presents 30 barn conversion projects by creative architects, developers, and homeowners who have capitalized on the flexible, timber-framed space offered by barns. Over 300 striking photographs provide fresh design ideas for the conversion of barns into residences, office space, retail..."
+          },
+          {
+            "book_id": "BK-E835C569A2D0",
+            "title": "Building the timber frame house: The revival of a forgotten craft",
+            "author": "Tedd Benson",
+            "year": 1981,
+            "genres": "Architecture",
+            "description": "For centuries, post-and-beam construction has proved to be one of the most durable building techniques. It is being enthusiastically revived today not only for its sturdiness but because it can be easily insulated, it is attractive, and it offers the builder the unique satisfaction of working with..."
+          },
+          {
+            "book_id": "BK-D41491B6C179",
+            "title": "Cast, The",
+            "author": "Jennifer Knust, Tommy Wasserman",
+            "year": 2020,
+            "genres": "Bibles",
+            "description": "The story of the woman taken in adultery features a dramatic confrontation between Jesus and the Pharisees over whether the adulteress should be stoned as the law commands. In response, Jesus famously states, “Let him who is without sin be the first to throw a stone at her.” To Cast the First Stone..."
+          },
+          {
+            "book_id": "BK-C4278F2A529D",
+            "title": "No place to cry: The hurt and healing of sexual abuse",
+            "author": "Dorie N. Van Stone, Erwin W. Lutzer",
+            "year": 1992,
+            "genres": "Religion",
+            "description": "Just as God gave Dorie Van Stone a tender heart to forgive her abusers, He also gave her the strength to reveal her past in No Place to Cry, the sequel to the best-seller Dorie: The Girl Nobody Loved. Through her candor you will gain insight into the trauma of emotional and sexual abuse."
+          },
+          {
+            "book_id": "BK-B8B8908BC637",
+            "title": "Awakening Women",
+            "author": "Dedria Bryfonski",
+            "year": 2011,
+            "genres": "Young Adult Nonfiction",
+            "description": "Published in 1899, Kate Chopin's The Awakening refused to shy away from its progressive depictions of femininity and womanhood, defying and challenging the status quo. This informative edition explores the theme of women's issues as they relate to The Awakening, investigating topics such as..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/result_fusion",
+      "update": {
+        "fused_results": [
+          {
+            "book_id": "BK-6AC635321B55",
+            "title": "The Stone that the Builder Refused: A Novel",
+            "author": "Madison Smartt Bell",
+            "year": 2007,
+            "genres": "Fiction",
+            "description": "The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with..."
+          },
+          {
+            "book_id": "BK-A96402B9CCFF",
+            "title": "Hot Property",
+            "author": "Carly Phillips",
+            "year": 2017,
+            "genres": "Fiction",
+            "description": "This hot property’s lucky streak has run out. Just one short season ago, major league center fielder John Roper had it all: the looks—and personal life—of a sports hero and the public's adoration. But this hot property's lucky streak has run out. After a World Series disaster, fans diss him, shock..."
+          },
+          {
+            "book_id": "BK-CED937F66108",
+            "title": "Rambo 3",
+            "author": "David Morrell",
+            "year": 2012,
+            "genres": "Fiction",
+            "description": "The most dangerous man in the world is back. David Morrell’s First Blood introduced Rambo, who joined the ranks of Sherlock Holmes, Tarzan, James Bond, and Harry Potter as an international thriller icon. In this further adventure, Rambo is in exile far from home in Thailand, vowing to renounce..."
+          },
+          {
+            "book_id": "BK-F18B30880B49",
+            "title": "Your Engineered House",
+            "author": "Rex Roberts, Charles Wing",
+            "year": 1987,
+            "genres": "Architecture, Domestic.",
+            "description": "Advises potential home builders about siting, heat, ventilation, size, foundations, building materials, and financing, and explains the advantages of building one's home"
+          },
+          {
+            "book_id": "BK-B28ABA60A268",
+            "title": "Snake Eyes: An Alex Stone Novel",
+            "author": "John Richardson",
+            "year": 2004,
+            "genres": "Fiction",
+            "description": "Question: What do Memphis, the Mafia, a homeless priest, a beautiful artist, quantum physics and a cat that purrs to \"Muddy Waters\" have in common? Answer: Alexander Hamilton Stone. He's an ex-con, Vietnam vet, t'ai chi practitioner, and private investigator for the lower echelon attorneys of..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "rag/retrieval_evaluator",
+      "update": {
+        "retrieval_feedback": "",
+        "retry_retrieval": false
+      }
+    },
+    {
+      "node": "rag",
+      "update": {
+        "search_results": [
+          {
+            "book_id": "BK-6AC635321B55",
+            "title": "The Stone that the Builder Refused: A Novel",
+            "author": "Madison Smartt Bell",
+            "year": 2007,
+            "genres": "Fiction",
+            "description": "The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with..."
+          },
+          {
+            "book_id": "BK-A96402B9CCFF",
+            "title": "Hot Property",
+            "author": "Carly Phillips",
+            "year": 2017,
+            "genres": "Fiction",
+            "description": "This hot property’s lucky streak has run out. Just one short season ago, major league center fielder John Roper had it all: the looks—and personal life—of a sports hero and the public's adoration. But this hot property's lucky streak has run out. After a World Series disaster, fans diss him, shock..."
+          },
+          {
+            "book_id": "BK-CED937F66108",
+            "title": "Rambo 3",
+            "author": "David Morrell",
+            "year": 2012,
+            "genres": "Fiction",
+            "description": "The most dangerous man in the world is back. David Morrell’s First Blood introduced Rambo, who joined the ranks of Sherlock Holmes, Tarzan, James Bond, and Harry Potter as an international thriller icon. In this further adventure, Rambo is in exile far from home in Thailand, vowing to renounce..."
+          },
+          {
+            "book_id": "BK-F18B30880B49",
+            "title": "Your Engineered House",
+            "author": "Rex Roberts, Charles Wing",
+            "year": 1987,
+            "genres": "Architecture, Domestic.",
+            "description": "Advises potential home builders about siting, heat, ventilation, size, foundations, building materials, and financing, and explains the advantages of building one's home"
+          },
+          {
+            "book_id": "BK-B28ABA60A268",
+            "title": "Snake Eyes: An Alex Stone Novel",
+            "author": "John Richardson",
+            "year": 2004,
+            "genres": "Fiction",
+            "description": "Question: What do Memphis, the Mafia, a homeless priest, a beautiful artist, quantum physics and a cat that purrs to \"Muddy Waters\" have in common? Answer: Alexander Hamilton Stone. He's an ex-con, Vietnam vet, t'ai chi practitioner, and private investigator for the lower echelon attorneys of..."
+          }
+        ]
+      }
+    },
+    {
+      "node": "response_generator",
+      "update": {
+        "messages": [
+          {
+            "type": "ai",
+            "content": " Yes, we have \"The Stone that the Builder Refused: A Novel\" by Madison Smartt Bell. It was published in 2007 and belongs to the Fiction genre. Here is a brief description:\n\n\"The Stone that the Builder Refused is the final volume of Madison Smartt Bell’s masterful trilogy about the Haitian Revolution–the first successful slave revolution in history–which begins with All Souls' Rising (a finalist for the National Book Award and the PEN/Faulkner Award) and continues with...\"\n\nIf you'd like to borrow this book, please let me know."
+          }
+        ],
+        "response_attempts": 1
+      }
+    },
+    {
+      "node": "evaluator",
+      "update": {
+        "evaluation_feedback": "",
+        "revision_requested": false
+      }
+    }
+  ]
+}

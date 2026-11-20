@@ -1,0 +1,203 @@
+{
+  "id": "K6",
+  "variant": "plot description, no title",
+  "query": "A book about a teenage girl who tries to contact the other side with a Ouija board.",
+  "target": "BK-27D3C50550C2",
+  "target_title": "The Healing Time of Hickeys",
+  "type": "known_item",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.07,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-27D3C50550C2",
+          "title": "The Healing Time of Hickeys",
+          "author": "Karen Rivers",
+          "year": 2003,
+          "genres": "Juvenile Fiction",
+          "description": "Sixteen-year-old Haley Andromeda would like to think she's just a normal high school senior, but during a disastrous time in her life, she turns to the Ouija board and tries to communicate with the Other Side, which only leads to further complications. Original."
+        },
+        {
+          "book_id": "BK-E8FDE40FEABC",
+          "title": "Spirit of the Moon",
+          "author": "John Boman",
+          "year": 2011,
+          "genres": "Juvenile Fiction",
+          "description": "On one fateful night, someone has used dark magic and captured the Goddess that lives within the moon. Who has done this and for what nefarious purpose? And how is this connected to a strange little town called SOVEREIGN CREEK? Two mysterious strangers, MR AND MRS WELLINGTON, have arrived in town..."
+        },
+        {
+          "book_id": "BK-64963E16D471",
+          "title": "Night World: Daughters Of Darkness",
+          "author": "L.J. Smith",
+          "year": 2016,
+          "genres": "Juvenile Fiction",
+          "description": "\"There’s something strange about the new girls in town. Briar Creek, Oregon, has never seen anything like the supernatural grace of Rowan, Kestrel, and Jade, three sisters who move into the dilapidated old house next to Mark and Mary-Lynnette Carter\"--Publisher."
+        },
+        {
+          "book_id": "BK-A24696D206EC",
+          "title": "Degrees of Guilt: Miranda's Story",
+          "author": "Melody Carlson",
+          "year": 2003,
+          "genres": "Juvenile Fiction",
+          "description": "High school senior Miranda Sanchez wants to change her boring life and, despite the concerns of her friend Sammy, she decides to become a \"wild child,\" until her partying ends up in disaster."
+        },
+        {
+          "book_id": "BK-0AD25978D1FA",
+          "title": "The Long Secret",
+          "author": "Louise Fitzhugh",
+          "year": 2002,
+          "genres": "Juvenile Fiction",
+          "description": "When she begins receiving strange and disturbing notes from a stranger, Harriet the Spy, with the help of her friend Beth Ellen, set out to find out who is behind the dirty deed and why. Reprint."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.003,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-27D3C50550C2",
+          "title": "The Healing Time of Hickeys",
+          "author": "Karen Rivers",
+          "year": 2003,
+          "genres": "Juvenile Fiction",
+          "description": "Sixteen-year-old Haley Andromeda would like to think she's just a normal high school senior, but during a disastrous time in her life, she turns to the Ouija board and tries to communicate with the Other Side, which only leads to further complications. Original."
+        },
+        {
+          "book_id": "BK-7C69B975ADDA",
+          "title": "The Chosen (Night World)",
+          "author": "L.J. Smith",
+          "year": 2017,
+          "genres": "Young Adult Fiction",
+          "description": "All nine books in L.J. Smith’s beloved Night World series are now available in a special collector’s boxed set! Vampires, werewolves, witches, shapeshifters—they live among us without our knowledge. The Night World is their secret society, a society with very strict rules. And falling in love..."
+        },
+        {
+          "book_id": "BK-6E1C69BB97B9",
+          "title": "Winter Solstice",
+          "author": "Rosamunde Pilcher",
+          "year": 2011,
+          "genres": "Fiction",
+          "description": "In Winter Solstice Rosamunde Pilcher brings her readers into the lives of five very different people.... Elfrida Phipps, once of London's stage, moved to the English village of Dibton in hopes of making a new life for herself. Gradually she settled into the comfortable familiarity of village life..."
+        },
+        {
+          "book_id": "BK-2F3F0D86FC79",
+          "title": "Will Work for Food or $: A Memoir from the Roadside",
+          "author": "Bruce Moody",
+          "year": 2004,
+          "genres": "Biography & Autobiography",
+          "description": "When Bruce Moody was almost 60, he got fired. In desperation, he made a simple sign and began a life on the side of the road. With neither self-pity nor pride, Moody shares his life on the roadside, the unexpected elation he feels at his contact with others, the joy he gets by being out of doors,..."
+        },
+        {
+          "book_id": "BK-D516A1818816",
+          "title": "EXPENDABLE.",
+          "author": "Dorothy B. Hughes",
+          "year": 2012,
+          "genres": "Fiction",
+          "description": "“It was surprising what old experiences remembered could do to a presumably educated, civilized man.” And Hugh Denismore, a young doctor driving his mother’s Cadillac from Los Angeles to Phoenix, is eminently educated and civilized. He is privileged, would seem to have the world at his feet, even...."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.075,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-27D3C50550C2",
+          "title": "The Healing Time of Hickeys",
+          "author": "Karen Rivers",
+          "year": 2003,
+          "genres": "Juvenile Fiction",
+          "description": "Sixteen-year-old Haley Andromeda would like to think she's just a normal high school senior, but during a disastrous time in her life, she turns to the Ouija board and tries to communicate with the Other Side, which only leads to further complications. Original."
+        },
+        {
+          "book_id": "BK-E8FDE40FEABC",
+          "title": "Spirit of the Moon",
+          "author": "John Boman",
+          "year": 2011,
+          "genres": "Juvenile Fiction",
+          "description": "On one fateful night, someone has used dark magic and captured the Goddess that lives within the moon. Who has done this and for what nefarious purpose? And how is this connected to a strange little town called SOVEREIGN CREEK? Two mysterious strangers, MR AND MRS WELLINGTON, have arrived in town..."
+        },
+        {
+          "book_id": "BK-7C69B975ADDA",
+          "title": "The Chosen (Night World)",
+          "author": "L.J. Smith",
+          "year": 2017,
+          "genres": "Young Adult Fiction",
+          "description": "All nine books in L.J. Smith’s beloved Night World series are now available in a special collector’s boxed set! Vampires, werewolves, witches, shapeshifters—they live among us without our knowledge. The Night World is their secret society, a society with very strict rules. And falling in love..."
+        },
+        {
+          "book_id": "BK-64963E16D471",
+          "title": "Night World: Daughters Of Darkness",
+          "author": "L.J. Smith",
+          "year": 2016,
+          "genres": "Juvenile Fiction",
+          "description": "\"There’s something strange about the new girls in town. Briar Creek, Oregon, has never seen anything like the supernatural grace of Rowan, Kestrel, and Jade, three sisters who move into the dilapidated old house next to Mark and Mary-Lynnette Carter\"--Publisher."
+        },
+        {
+          "book_id": "BK-6E1C69BB97B9",
+          "title": "Winter Solstice",
+          "author": "Rosamunde Pilcher",
+          "year": 2011,
+          "genres": "Fiction",
+          "description": "In Winter Solstice Rosamunde Pilcher brings her readers into the lives of five very different people.... Elfrida Phipps, once of London's stage, moved to the English village of Dibton in hopes of making a new life for herself. Gradually she settled into the comfortable familiarity of village life..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.125,
+      "plan": {
+        "keyword_query": "teenage girl Ouija board other side",
+        "semantic_query": "A book about a teenage girl who tries to contact the other side with a Ouija board.",
+        "metadata_filter": {
+          "author": null,
+          "genre": null,
+          "year_from": null,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-27D3C50550C2",
+          "title": "The Healing Time of Hickeys",
+          "author": "Karen Rivers",
+          "year": 2003,
+          "genres": "Juvenile Fiction",
+          "description": "Sixteen-year-old Haley Andromeda would like to think she's just a normal high school senior, but during a disastrous time in her life, she turns to the Ouija board and tries to communicate with the Other Side, which only leads to further complications. Original."
+        },
+        {
+          "book_id": "BK-E8FDE40FEABC",
+          "title": "Spirit of the Moon",
+          "author": "John Boman",
+          "year": 2011,
+          "genres": "Juvenile Fiction",
+          "description": "On one fateful night, someone has used dark magic and captured the Goddess that lives within the moon. Who has done this and for what nefarious purpose? And how is this connected to a strange little town called SOVEREIGN CREEK? Two mysterious strangers, MR AND MRS WELLINGTON, have arrived in town..."
+        },
+        {
+          "book_id": "BK-4DBABEB413F2",
+          "title": "BOYS: CLARRISA EXPLAINS IT ALL (CLARISSA ) (Nickelodeon)",
+          "author": "Melissa Joan Hart",
+          "year": 2013,
+          "genres": "Biography & Autobiography",
+          "description": "Melissa Joan Hart explained it all-from dating to bullies-in her groundbreaking role as Clarissa Darling on Clarissa Explains It All. She cast a spell on millions more viewers as Sabrina, the Teenage Witch. Now, in Melissa Explains It All, Melissa tells the frank and funny behind-the-scenes stories..."
+        },
+        {
+          "book_id": "BK-64963E16D471",
+          "title": "Night World: Daughters Of Darkness",
+          "author": "L.J. Smith",
+          "year": 2016,
+          "genres": "Juvenile Fiction",
+          "description": "\"There’s something strange about the new girls in town. Briar Creek, Oregon, has never seen anything like the supernatural grace of Rowan, Kestrel, and Jade, three sisters who move into the dilapidated old house next to Mark and Mary-Lynnette Carter\"--Publisher."
+        },
+        {
+          "book_id": "BK-D516A1818816",
+          "title": "EXPENDABLE.",
+          "author": "Dorothy B. Hughes",
+          "year": 2012,
+          "genres": "Fiction",
+          "description": "“It was surprising what old experiences remembered could do to a presumably educated, civilized man.” And Hugh Denismore, a young doctor driving his mother’s Cadillac from Los Angeles to Phoenix, is eminently educated and civilized. He is privileged, would seem to have the world at his feet, even...."
+        }
+      ]
+    }
+  }
+}

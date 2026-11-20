@@ -1,0 +1,203 @@
+{
+  "id": "K4",
+  "variant": "plot description, no title",
+  "query": "There's a novel about America's leading taxidermist and his estate in rural New York around 1917. What is it?",
+  "target": "BK-70D843303170",
+  "target_title": "The Manikin: A Novel",
+  "type": "known_item",
+  "runs": {
+    "semantic": {
+      "latency_s": 0.081,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-70D843303170",
+          "title": "The Manikin: A Novel",
+          "author": "Joanna Scott",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+        },
+        {
+          "book_id": "BK-BB4830E068A8",
+          "title": "Slaves of Obsession",
+          "author": "Anne Perry",
+          "year": 2011,
+          "genres": "Fiction",
+          "description": "The year is 1861. The American Civil War has just begun, and London arms dealer Daniel Alberton is becoming a very wealthy man. His quiet dinner party seems remote indeed from the passions rending America. Yet investigator William Monk and his bride, Hester, sense growing tensions and barely..."
+        },
+        {
+          "book_id": "BK-16F325A12497",
+          "title": "The Titan (Meridian classics)",
+          "author": "Theodore Dreiser",
+          "year": 1984,
+          "genres": "Fiction",
+          "description": "Frank Algernon Cowperwood, the central character of Theodore Dreiser's previous work \"The Financier,\" is now out of the Eastern District Penitentiary of Philadelphia. He still has his mistress and his fortune, plans to divorce his wife, and leaves for Chicago to scout its possibilities for a future..."
+        },
+        {
+          "book_id": "BK-140A6A099E49",
+          "title": "Wings Above the Diamantina",
+          "author": "Arthur W. Upfield",
+          "year": 2020,
+          "genres": "Fiction",
+          "description": "The discovery of a stolen red monoplane on the dry, flat bottom of Emu Lake meant many things for different folks. For Elizabeth Nettlefold, the chance to nurse its strangely ill meant renewed purpose in life. For Dr Knowles, brilliant physician and town drunk, it meant the revival of a romantic..."
+        },
+        {
+          "book_id": "BK-6465BF78F3DD",
+          "title": "The River and the Horsemen: A Novel of the Little Bighorn",
+          "author": "Robert Skimin",
+          "year": 1999,
+          "genres": "Fiction",
+          "description": "A novel on the private lives of participants in the Battle of Little Big Horn. The main characters are Custer and his wife, Libbie, Sitting Bull and Crazy Horse, and there are studies of minor characters as well. By the author of Ulysses S. Grant: A Novel."
+        }
+      ]
+    },
+    "lexical": {
+      "latency_s": 0.004,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-70D843303170",
+          "title": "The Manikin: A Novel",
+          "author": "Joanna Scott",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+        },
+        {
+          "book_id": "BK-693F8CE5C313",
+          "title": "Three Great Novels of World War II",
+          "author": "Joseph Panicello",
+          "year": 2002,
+          "genres": "Fiction",
+          "description": "A SLOW MOVING TARGET, The LSTs Of World War II, is a historical novel that contains many authentic stories about the turmoil and hardships that the Amphibious Fleet endured during beach invasions in World War II. To enhance the military adversities, the story revolves around the personal lives of..."
+        },
+        {
+          "book_id": "BK-850BA7EFADCC",
+          "title": "The Kashmir Affair: A Novel",
+          "author": "Sai Sankalap",
+          "year": 2005,
+          "genres": "Fiction",
+          "description": "In Afghanistan, a highly sought-after terrorist oversees the shelling of the tallest mountain-carved statue in the world-a Buddha situated in the Bamian Valley-and recruits men for his ruthless cause. Meanwhile, in the United States, Bollywood actor Joshua Borendhi narrowly escapes an early-morning..."
+        },
+        {
+          "book_id": "BK-FE652DC225F5",
+          "title": "Woman at the window, a novel",
+          "author": "A. J. Finn",
+          "year": 2019,
+          "genres": "Fiction",
+          "description": "Instant #1 New York Times Bestseller! For readers of Gillian Flynn and Tana French comes one of the decade’s most anticipated debuts, to be published in thirty-six languages around the world and already in development as a major film from Fox: a twisty, powerful Hitchcockian thriller about an..."
+        },
+        {
+          "book_id": "BK-6E1C69BB97B9",
+          "title": "Winter Solstice",
+          "author": "Rosamunde Pilcher",
+          "year": 2011,
+          "genres": "Fiction",
+          "description": "In Winter Solstice Rosamunde Pilcher brings her readers into the lives of five very different people.... Elfrida Phipps, once of London's stage, moved to the English village of Dibton in hopes of making a new life for herself. Gradually she settled into the comfortable familiarity of village life..."
+        }
+      ]
+    },
+    "hybrid": {
+      "latency_s": 0.078,
+      "plan": null,
+      "results": [
+        {
+          "book_id": "BK-70D843303170",
+          "title": "The Manikin: A Novel",
+          "author": "Joanna Scott",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+        },
+        {
+          "book_id": "BK-BB4830E068A8",
+          "title": "Slaves of Obsession",
+          "author": "Anne Perry",
+          "year": 2011,
+          "genres": "Fiction",
+          "description": "The year is 1861. The American Civil War has just begun, and London arms dealer Daniel Alberton is becoming a very wealthy man. His quiet dinner party seems remote indeed from the passions rending America. Yet investigator William Monk and his bride, Hester, sense growing tensions and barely..."
+        },
+        {
+          "book_id": "BK-693F8CE5C313",
+          "title": "Three Great Novels of World War II",
+          "author": "Joseph Panicello",
+          "year": 2002,
+          "genres": "Fiction",
+          "description": "A SLOW MOVING TARGET, The LSTs Of World War II, is a historical novel that contains many authentic stories about the turmoil and hardships that the Amphibious Fleet endured during beach invasions in World War II. To enhance the military adversities, the story revolves around the personal lives of..."
+        },
+        {
+          "book_id": "BK-16F325A12497",
+          "title": "The Titan (Meridian classics)",
+          "author": "Theodore Dreiser",
+          "year": 1984,
+          "genres": "Fiction",
+          "description": "Frank Algernon Cowperwood, the central character of Theodore Dreiser's previous work \"The Financier,\" is now out of the Eastern District Penitentiary of Philadelphia. He still has his mistress and his fortune, plans to divorce his wife, and leaves for Chicago to scout its possibilities for a future..."
+        },
+        {
+          "book_id": "BK-850BA7EFADCC",
+          "title": "The Kashmir Affair: A Novel",
+          "author": "Sai Sankalap",
+          "year": 2005,
+          "genres": "Fiction",
+          "description": "In Afghanistan, a highly sought-after terrorist oversees the shelling of the tallest mountain-carved statue in the world-a Buddha situated in the Bamian Valley-and recruits men for his ruthless cause. Meanwhile, in the United States, Bollywood actor Joshua Borendhi narrowly escapes an early-morning..."
+        }
+      ]
+    },
+    "agentic": {
+      "latency_s": 2.484,
+      "plan": {
+        "keyword_query": "taxidermist New York 1917 estate novel",
+        "semantic_query": "A novel about America's leading taxidermist and his estate in rural New York around 1917.",
+        "metadata_filter": {
+          "author": null,
+          "genre": null,
+          "year_from": 1917,
+          "year_to": null
+        }
+      },
+      "results": [
+        {
+          "book_id": "BK-70D843303170",
+          "title": "The Manikin: A Novel",
+          "author": "Joanna Scott",
+          "year": 2015,
+          "genres": "Fiction",
+          "description": "The Manikin is not a mannequin, but the curious estate of Henry Craxton, Sr. in a rural western New York State. Dubbed the \"Henry Ford of Natural History,\" by 1917 Craxton has become America's preeminent taxidermist. Into this magic box of a world-filled with eerily inanimate gibbons and bats, owls..."
+        },
+        {
+          "book_id": "BK-BB4830E068A8",
+          "title": "Slaves of Obsession",
+          "author": "Anne Perry",
+          "year": 2011,
+          "genres": "Fiction",
+          "description": "The year is 1861. The American Civil War has just begun, and London arms dealer Daniel Alberton is becoming a very wealthy man. His quiet dinner party seems remote indeed from the passions rending America. Yet investigator William Monk and his bride, Hester, sense growing tensions and barely..."
+        },
+        {
+          "book_id": "BK-E8FD3539F1DA",
+          "title": "Bisbee '17",
+          "author": "Robert Houston",
+          "year": 1999,
+          "genres": "Fiction",
+          "description": "Bisbee, Arizona, queen of the western copper camps, 1917. The protagonists in a bitter strike: the Wobblies (the IWW), the toughest union in the history of the West; and Harry Wheeler, the last of the two-gun sheriffs. In this class-war western, they face each other down in the streets of Bisbee,..."
+        },
+        {
+          "book_id": "BK-16F325A12497",
+          "title": "The Titan (Meridian classics)",
+          "author": "Theodore Dreiser",
+          "year": 1984,
+          "genres": "Fiction",
+          "description": "Frank Algernon Cowperwood, the central character of Theodore Dreiser's previous work \"The Financier,\" is now out of the Eastern District Penitentiary of Philadelphia. He still has his mistress and his fortune, plans to divorce his wife, and leaves for Chicago to scout its possibilities for a future..."
+        },
+        {
+          "book_id": "BK-CED937F66108",
+          "title": "Rambo 3",
+          "author": "David Morrell",
+          "year": 2012,
+          "genres": "Fiction",
+          "description": "The most dangerous man in the world is back. David Morrell’s First Blood introduced Rambo, who joined the ranks of Sherlock Holmes, Tarzan, James Bond, and Harry Potter as an international thriller icon. In this further adventure, Rambo is in exile far from home in Thailand, vowing to renounce..."
+        }
+      ]
+    }
+  }
+}
