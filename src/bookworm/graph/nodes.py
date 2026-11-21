@@ -80,31 +80,6 @@ def get_search_task(task_plan: list[dict]) -> str:
     raise ValueError("No search task found in task_plan.")
 
 # -----------------------------------
-# --- Debug helpers (remove when done debugging) ---
-# -----------------------------------
-def _debug_print_llm_input(node_name: str, llm_input: list) -> None:
-    """Print the messages sent to the LLM, skipping the system prompt."""
-
-    print(f"\n{'=' * 80}\n[{node_name}] LLM INPUT\n{'=' * 80}")
-    for message in llm_input:
-        role, content = message if isinstance(message, tuple) else (message.type, message.content)
-        if role == "system":
-            continue
-        print(f"--- {role.upper()} ---\n{content}")
-
-
-def _debug_print_llm_output(node_name: str, result) -> None:
-    """Print the LLM's reply (structured output or plain message)."""
-
-    print(f"\n{'-' * 80}\n[{node_name}] LLM OUTPUT\n{'-' * 80}")
-    if isinstance(result, BaseMessage):
-        print(result.content)
-    else:
-        print(pformat(result.model_dump(), width=100, sort_dicts=False))
-
-
-
-# -----------------------------------
 #             Main nodes
 # -----------------------------------
 def intent_detector(llm, state: MainState) -> dict:
@@ -117,10 +92,8 @@ def intent_detector(llm, state: MainState) -> dict:
         ("human", "Conversation history:\n" + _history(state)),
         ("human", f"User message: {msg}"),
     ]
-    # _debug_print_llm_input("intent_detector", llm_input)
 
     result = llm.with_structured_output(Intent).invoke(llm_input)
-    # _debug_print_llm_output("intent_detector", result)
 
     return {
         "intent":                 result.intent,
@@ -155,10 +128,8 @@ def task_planner(llm, state: MainState) -> dict:
             f"Latest user message: {_last_user_text(state)}\n"
         ),
     ]
-    # _debug_print_llm_input("task_planner", llm_input)
 
     result = llm.with_structured_output(TaskList).invoke(llm_input)
-    # _debug_print_llm_output("task_planner", result)
 
     return {"task_plan": [task.model_dump() for task in result.tasks]}
 
@@ -237,10 +208,8 @@ Write a new response that fixes these issues.
         SystemMessage(content=prompts.RESPONSE_GENERATOR_SYSTEM_PROMPT),
         HumanMessage(content=context),
     ]
-    # _debug_print_llm_input("response_generator", llm_input)
 
     result = llm.invoke(llm_input)
-    # _debug_print_llm_output("response_generator", result)
 
     return {
         "messages": [AIMessage(content=result.content)],
@@ -264,10 +233,8 @@ def evaluator(llm, state: MainState) -> dict:
             f"Response to evaluate:\n{draft.content}\n"
         ),
     ]
-    # _debug_print_llm_input("evaluator", llm_input)
 
     result = llm.with_structured_output(Evaluation).invoke(llm_input)
-    # _debug_print_llm_output("evaluator", result)
 
     retries_used = state.get("response_attempts", 1) - 1
 
@@ -310,10 +277,8 @@ def query_processor(llm, state: RagState) -> dict:
         ("system", prompts.QUERY_PROCESSOR_SYSTEM_PROMPT),
         ("human", context),
     ]
-    # _debug_print_llm_input("query_processor", llm_input)
 
     plan = llm.with_structured_output(RetrievalPlan, method="json_schema").invoke(llm_input)
-    # _debug_print_llm_output("query_processor", plan)
 
     # Guarantee that at least one search runs with task description fallback
     if not plan.keyword_query.strip() and not plan.semantic_query.strip():
@@ -421,9 +386,7 @@ def lending_agent(llm, state: LendingState) -> dict:
     max_iterations = 5
 
     for _ in range(max_iterations):
-        # _debug_print_llm_input("lending_agent", messages)
         action = structured_llm.invoke(messages)
-        # _debug_print_llm_output("lending_agent", action)
 
         # Keep the decision in the history so the model sees what it already did.
         messages.append(AIMessage(content=action.model_dump_json()))
