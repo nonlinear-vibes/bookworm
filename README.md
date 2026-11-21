@@ -248,14 +248,16 @@ reservation.
 | Embeddings | `qwen3-embedding:0.6b` (1024 dims) | Ollama |
 
 
-> - **Hardware used:** NVIDIA GeForce RTX 4050 Max-Q / 6 GB VRAM / Intel Core i7-13650HX
-> - **Why Mistral 7B:** open weights, fits in consumer GPU memory, reliable enough JSON output with schema-constrained decoding. A smaller Qwen3 model couldn't generate reliable JSON formats.
-> - **Trade-offs:** a 7B model is fast and cheap but does not follow complex
->   instructions well. The evaluations show this: invented metadata filters, a
->   lending agent that does more than asked, and an evaluator that misses
->   grounding errors.
-> - **Why qwen3-embedding 0.6B:** small and fast, multilingual, supports
->   instruction-formatted queries, and runs on the same Ollama server.
+- **Hardware used:** NVIDIA GeForce RTX 4050, 6 GB VRAM, Intel Core i7-13650HX
+- **Why Mistral 7B:** open weights, fits in consumer GPU memory, reliable enough JSON
+  output with schema-constrained decoding. A smaller Qwen3 model couldn't generate
+  reliable JSON formats.
+- **Trade-offs:** a 7B model is fast and cheap but does not follow complex
+  instructions well. The evaluations show this: invented metadata filters, a
+  lending agent that does more than asked, and an evaluator that misses
+  grounding errors.
+- **Why qwen3-embedding 0.6B:** small and fast, multilingual, supports
+  instruction-formatted queries, and runs on the same Ollama server.
 
 Every model setting can be changed in `.env` / [compose.yaml](compose.yaml)
 (`LLM_MODEL`, `EMBEDDING_MODEL`, `LLM_TEMPERATURE = 0.2`, `LLM_MAX_TOKENS = 512`).
@@ -470,7 +472,8 @@ On the first start:
 2. `qdrant` starts.
 3. `init` downloads the dataset (checksum verified), embeds and ingests 2000
    books into Qdrant and seeds SQLite. It then exits.
-4. `app` (Streamlit) starts once `init` has finished successfully.
+4. `app` (Streamlit) starts once `init` has finished successfully. The first
+   response will take longer, because the model has to be loaded to the GPU.
 
 Later starts skip the finished steps and are fast. Only port 8501 is published,
 and only on localhost. Reset everything with `docker compose down -v`.
